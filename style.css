@@ -14,7 +14,7 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -93,6 +93,14 @@
 
 }
 
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -106,7 +114,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: #222;}
 
 
 /* Typography
@@ -145,12 +153,55 @@ p {
   _______________________________________________ */
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 .white-text{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #ffffff;
-    }
+}
+
+.index-link{
+    position: fixed;
+    top: 20px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    z-index: 99;
+}
+.top-link{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    z-index: 99;
+}
+.side-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 68px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 98;
+}
+.side-btn{
+    display: flex;
+    background-color: #000000;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    margin: 9px 0;
+}
+
+
+
 .homepage-bg{
     min-height: 100vh;
     background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/00_old-cables.jpg);
@@ -234,6 +285,8 @@ body{
     background-size: 200px;
     height: 200px;
     width: 200px;
+    margin: 0;
+    padding: 0;
     border-radius: 100%;
     -webkit-box-shadow: 5px 5px 38px -5px rgba(0,0,0,0.4);
     -moz-box-shadow: 5px 5px 38px -5px rgba(0,0,0,0.4);
@@ -436,4 +489,19 @@ body{
     width: 35px;
     left: 390px;
     top: 70px;
+}
+.beach-ball.bb{
+    background-size: 160px;
+    height: 160px;
+    width: 160px;
+    right: 60px;
+    top: -80px;
+}
+.letter{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #3B34ED;
+}
+.letter p{
+    padding: 10em 0;
 }
