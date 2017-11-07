@@ -203,9 +203,237 @@ body{
     box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.4);
 }
 .homepage-foot{
-    height: 8em;
+    padding: 4em 2em;
     background-color: #CBFF00;
     -webkit-box-shadow: inset 0px 5px 10px -2px rgba(0,0,0,0.5);
     -moz-box-shadow: inset 0px 5px 10px -2px rgba(0,0,0,0.5);
     box-shadow: inset 0px 5px 10px -2px rgba(0,0,0,0.5);
+    text-align: center;
+}
+.homepage-foot h4{
+    display: inline-block;
+    padding: 2em 1em;
+    font-weight: bold;
+}
+.top-splash{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #CBFF00;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.top-splash img{
+    z-index: 2;
+}
+.beach-ball{
+    background-image: url(images/BeachBall.png);
+    background-size: 200px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    -webkit-box-shadow: 5px 5px 38px -5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 38px -5px rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 38px -5px rgba(0,0,0,0.4);
+    position: absolute;
+    -webkit-animation: rotation 1s infinite linear;
+    z-index: 1;
+}
+@-webkit-keyframes rotation {
+	from {
+	       -webkit-transform: rotate(0deg);}
+    to {
+	       -webkit-transform: rotate(359deg);}
+   }
+.beach-ball.a{
+    background-size: 30px;
+    height: 30px;
+    width: 30px;
+    left: 10px;
+    top: -15px;
+}
+.beach-ball.b{
+    background-size: 30px;
+    height: 30px;
+    width: 30px;
+    left: 80px;
+    top: 20px;
+}
+.beach-ball.c{
+    background-size: 35px;
+    height: 35px;
+    width: 35px;
+    left: 280px;
+    top: 35px;
+}
+.beach-ball.d{
+    background-size: 30px;
+    height: 30px;
+    width: 30px;
+    left: 25px;
+    top: 110px;
+}
+.beach-ball.e{
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    left: 95px;
+    top: 160px;
+}
+.beach-ball.f{
+    background-size: 30px;
+    height: 30px;
+    width: 30px;
+    left: -15px;
+    top: 220px;
+}
+.beach-ball.g{
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+    left: 60px;
+    top: 290px;
+}
+.beach-ball.h{
+    background-size: 70px;
+    height: 70px;
+    width: 70px;
+    left: 180px;
+    top: 85px;
+}
+.beach-ball.i{
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    left: 240px;
+    top: 210px;
+}
+.beach-ball.j{
+    background-size: 60px;
+    height: 60px;
+    width: 60px;
+    left: 285px;
+    top: 340px;
+}
+.beach-ball.k{
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    left: 185px;
+    top: 390px;
+}
+.beach-ball.l{
+    background-size: 75px;
+    height: 75px;
+    width: 75px;
+    left: 390px;
+    top: 440px;
+}
+.beach-ball.m{
+    background-size: 75px;
+    height: 75px;
+    width: 75px;
+    left: 390px;
+    top: 170px;
+}
+.beach-ball.n{
+    background-size: 60px;
+    height: 60px;
+    width: 60px;
+    right: 320px;
+    bottom: 290px;
+}
+.beach-ball.o{
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+    right: 380px;
+    bottom: 410px;
+}
+.beach-ball.p{
+    background-size: 30px;
+    height: 30px;
+    width: 30px;
+    right: 160px;
+    bottom: 370px;
+}
+.beach-ball.q{
+    background-size: 65px;
+    height: 65px;
+    width: 65px;
+    right: 210px;
+    bottom: 220px;
+}
+.beach-ball.r{
+    background-size: 100px;
+    height: 100px;
+    width: 100px;
+    right: -50px;
+    bottom: 230px;
+}
+.beach-ball.s{
+    background-size: 35px;
+    height: 35px;
+    width: 35px;
+    right: 500px;
+    bottom: 140px;
+}
+.beach-ball.t{
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    right: 620px;
+    bottom: 170px;
+}
+.beach-ball.u{
+    background-size: 70px;
+    height: 70px;
+    width: 70px;
+    right: 570px;
+    bottom: 50px;
+}
+.beach-ball.v{
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+    right: 460px;
+    bottom: 500px;
+}
+.beach-ball.w{
+    background-size: 90px;
+    height: 90px;
+    width: 90px;
+    right: 300px;
+    bottom: 100px;
+}
+.beach-ball.x{
+    background-size: 30px;
+    height: 30px;
+    width: 30px;
+    right: 230px;
+    bottom: 490px;
+}
+.beach-ball.y{
+    background-size: 80px;
+    height: 80px;
+    width: 80px;
+    right: 80px;
+    bottom: 80px;
+}
+.beach-ball.z{
+    background-size: 30px;
+    height: 30px;
+    width: 30px;
+    right: 590px;
+    bottom: 500px;
+}
+.beach-ball.aa{
+    background-size: 35px;
+    height: 35px;
+    width: 35px;
+    left: 390px;
+    top: 70px;
 }
