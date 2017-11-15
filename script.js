@@ -68,5 +68,16 @@ $(document).ready(function() {
         $('#nav-card-10').fadeOut();
     });
 
+    function matchQuoteHeights(box1, box2) {
+    var box1Height = $(box1).outerHeight();
+    console.log(box1Height);
+        $(box2).height(box1Height);
+    }
+
+
+$(document).ready(function() {
+    matchQuoteHeights('#dec-quote', '#dec-checkerboard');
+});
+
 
 });

@@ -167,8 +167,18 @@ h2{
     display: none;
     transition: all .2s ease-in-out;
 }
+.full-bleed{
+    width: 100vw;
+    min-height: 100vh;
+}
+.full-height{
+    min-height: 100vh;
+}
 .space-tp{
     margin-top: 4%;
+}
+.flex{
+    display: flex;
 }
 
 .index-link{
@@ -733,8 +743,6 @@ h2{
 #toc-6:hover div{
     opacity: 1;
 }
-
-
 #toc-7{
     background: url(images/table-of-contents/landscapes-toc.jpg);
     background-size: cover;
@@ -790,4 +798,159 @@ h2{
 }
 #toc-10:hover div{
     opacity: 1;
+}
+
+.credits{
+    border-top: 2px solid #8B8B8B;
+    padding: 1em 0;
+    color: #000000;
+    font-size: .8em;
+    margin-top: 5em;
+    position: relative;
+}
+.credits a, .credits a:visited{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.credits a, .credits p{
+    opacity: .5;
+}
+.credits a:hover{
+    opacity: 1;
+}
+.source-credit{
+    position: absolute;
+    top: 1em;
+    right: 0;
+}
+
+
+#nyc{
+    background: #8554AC;
+    padding-bottom: 6em;
+}
+.nyc-top{
+    width: 100vw;
+    height: 900px;
+    background: url(images/001a_nyc-pattern.png);
+    background-size: 30%;
+    background-repeat: repeat;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+}
+.nyc-top img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 230px;
+    margin-top: -115px;
+    margin-left: -250px;
+}
+.nyc-bottom .columns{
+    position: relative;
+}
+.nyc-cam{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -17em;
+}
+.nyc-bottom{
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 6em;
+    background: #8554AC;
+    position: relative;
+}
+.video-wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.nyc-text{
+    padding: 2em;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    );
+    margin-left: 0 !important;
+    width: 26% !important;
+}
+.nyc-text p{
+    font-size: .85em;
+}
+
+#dec{
+    background-color: #ffffff;
+    padding-bottom: 6em;
+}
+.dec-top{
+    background: url(images/001b_dec-title.svg), url(images/001b_dec-hero-front.png), url(images/001b_dec-hero-back.png);
+    background-position: center 20%, bottom, bottom;
+    background-size: 50%, 100%, 100%;
+    background-repeat: no-repeat;
+    height: 300vh;
+}
+.dec-bottom{
+    padding-top: 8em;
+}
+.dec-bottom p{
+    line-height: 1.8;
+    margin-bottom: 3em;
+}
+.dec-bottom .seven{
+    margin-left: 0;
+}
+.dec-quote-wrapper{
+    min-width: 100%;
+    position: relative;
+    padding-bottom: 4em;
+}
+.dec-quote-wrapper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+#dec-quote{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    padding: 2em;
+    width: 70%;
+    z-index: 2;
+}
+#dec-quote h5{
+    font-size: 1.4em;
+    margin-bottom: 2em;
+}
+#dec-quote h6{
+    text-transform: uppercase;
+    text-align: right;
+    font-size: .7em;
+    margin: 0;
+}
+#dec-checkerboard{
+    position: absolute;
+    width: 80%;
+    right: 5%;
+    top: 0;
+    margin-top: 50px;
+    background: url(images/001b_dec-pattern.svg) repeat;
+}
+.dec-text-bottom{
+    margin-top: 8em;
 }
