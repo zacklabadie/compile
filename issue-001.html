@@ -7,8 +7,8 @@
     <meta name="description" content="A digital quarterly highlighting humanity, technology, and modern oddities" />
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/scripts.js"></script>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="script.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicons_001/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons_001/favicon-32x32.png">
@@ -30,29 +30,138 @@
         </a>
         <div class="side-nav">
             <a href="#nyc" id="btn-1" class="nav-btn"></a>
-            <a href="#declaration" class="nav-btn"></a>
-            <a href="#swatch" class="nav-btn"></a>
-            <a href="#big-ben" class="nav-btn"></a>
-            <a href="#god" class="nav-btn"></a>
-            <a href="#danielle" class="nav-btn"></a>
-            <a href="#virtual-landscapes" class="nav-btn"></a>
-            <a href="#alww" class="nav-btn"></a>
-            <a href="#end" class="nav-btn"></a>
-            <a href="#wrapped" class="nav-btn"></a>
+            <a href="#dec" id="btn-2" class="nav-btn"></a>
+            <a href="#swatch" id="btn-3" class="nav-btn"></a>
+            <a href="#big-ben" id="btn-4" class="nav-btn"></a>
+            <a href="#danielle" id="btn-5" class="nav-btn"></a>
+            <a href="#god" id="btn-6" class="nav-btn"></a>
+            <a href="#landscapes" id="btn-7" class="nav-btn"></a>
+            <a href="#alww" id="btn-8" class="nav-btn"></a>
+            <a href="#end" id="btn-9" class="nav-btn"></a>
+            <a href="#wrapped" id="btn-10" class="nav-btn"></a>
         </div>
-        <div class="nav-card" id="card-1">
+
+        <div id="nav-card-1" class="nav-card">
             <div class="nav-card-img">
-                &nbsp;
             </div>
             <div class="nav-card-info">
-                <h5><strong>A Declaration of the Independence of Cyberspace</strong></h5>
-                <h5>John P. Barlow</h5>
+                <h5 class="nav-title"><strong>NYC '93</strong></h5>
+                <h5 class="nav-author">Mat, TechMoan</h5>
+                <div class="nav-card-media">
+                    <img src="UI/UI_Video.svg" height="20px" width="auto">
+                    <h6>5 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-2" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h5 class="nav-title"><strong>A Declaration of the Independence of Cyberspace</strong></h5>
+                <h5 class="nav-author">John P. Barlow</h5>
+                <div class="nav-card-media">
+                    <img src="UI/UI_Text.svg" height="20px" width="auto">
+                    <h6>4 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-3" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h5 class="nav-title"><strong>Keeping Time to the Same Beat</strong></h5>
+                <h5 class="nav-author">Michael Stroh</h5>
                 <div class="nav-card-media">
                     <img src="UI/UI_Text.svg" height="20px" width="auto">
                     <h6>5 MIN</h6>
                 </div>
             </div>
-
+        </div>
+        <div id="nav-card-4" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h5 class="nav-title"><strong>The Fundamental Truth</strong></h5>
+                <h5 class="nav-author">Satya Nadella</h5>
+                <div class="nav-card-media">
+                    <img src="UI/UI_Twitter.svg" height="20px" width="auto">
+                    <h6>2 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-5" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h5 class="nav-title"><strong>Danielle</strong></h5>
+                <h5 class="nav-author">Anthony Cerniello</h5>
+                <div class="nav-card-media">
+                    <img src="UI/UI_Video.svg" height="20px" width="auto">
+                    <h6>5 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-6" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h5 class="nav-title"><strong>God in the Machine</strong></h5>
+                <h5 class="nav-author">Meghan O'Gieblyn</h5>
+                <div class="nav-card-media">
+                    <img src="UI/UI_Text.svg" height="20px" width="auto">
+                    <h6>14 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-7" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h5 class="nav-title"><strong>Virtual Landscapes</strong></h5>
+                <h5 class="nav-author">Ana Mar&Iacute;a Guerra</h5>
+                <div class="nav-card-media">
+                    <img src="UI/UI_Image.svg" height="20px" width="auto">
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-8" class="nav-card">
+            <div class="nav-card-img">
+                &nbsp;
+            </div>
+            <div class="nav-card-info">
+                <h5 class="nav-title"><strong>A Life Well Wasted</strong></h5>
+                <h5 class="nav-author">Robert Ashley</h5>
+                <div class="nav-card-media">
+                    <img src="UI/UI_Audio.svg" height="20px" width="auto">
+                    <h6>5 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-9" class="nav-card">
+            <div class="nav-card-img">
+                &nbsp;
+            </div>
+            <div class="nav-card-info">
+                <h5 class="nav-title"><strong>What I'll Be Thinking About When the World Ends</strong></h5>
+                <h5 class="nav-author">Tom Mitchell</h5>
+                <div class="nav-card-media">
+                    <img src="UI/UI_Text.svg" height="20px" width="auto">
+                    <h6>4 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-10" class="nav-card">
+            <div class="nav-card-img">
+                &nbsp;
+            </div>
+            <div class="nav-card-info">
+                <h5 class="nav-title"><strong>Wrapped</strong></h5>
+                <h5 class="nav-author">K&auml;lin, Paeper, and Wittmann</h5>
+                <div class="nav-card-media">
+                    <img src="UI/UI_Video.svg" height="20px" width="auto">
+                    <h6>4 MIN</h6>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
@@ -91,7 +200,7 @@
                 <div class="row">
                     <div class="ten columns">
                         <div class="beach-ball bb"> </div>
-                        <p class="white-text" id="jq-test">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae tristique ipsum. Curabitur venenatis vestibulum dui, vitae porta elit tincidunt id. Sed vel porttitor ipsum. Vivamus semper tellus tristique purus placerat posuere. Vivamus egestas congue magna tempor maximus. Donec vehicula orci sit amet erat feugiat efficitur. Quisque ligula augue, tincidunt eu interdum vitae, vulputate non sapien. Aliquam hendrerit vulputate erat eu sagittis. Nam interdum, dolor eu venenatis luctus, justo orci aliquam mi, id accumsan ligula odio at elit. Nulla scelerisque dui metus. Mauris nisl velit, laoreet tincidunt tellus ut, iaculis lacinia urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sollicitudin nibh id nibh feugiat, eget condimentum magna interdum.
+                        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae tristique ipsum. Curabitur venenatis vestibulum dui, vitae porta elit tincidunt id. Sed vel porttitor ipsum. Vivamus semper tellus tristique purus placerat posuere. Vivamus egestas congue magna tempor maximus. Donec vehicula orci sit amet erat feugiat efficitur. Quisque ligula augue, tincidunt eu interdum vitae, vulputate non sapien. Aliquam hendrerit vulputate erat eu sagittis. Nam interdum, dolor eu venenatis luctus, justo orci aliquam mi, id accumsan ligula odio at elit. Nulla scelerisque dui metus. Mauris nisl velit, laoreet tincidunt tellus ut, iaculis lacinia urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sollicitudin nibh id nibh feugiat, eget condimentum magna interdum.
                         <br/><br/>
 
                         Nam vehicula dapibus tellus, eget pulvinar ipsum consequat a. Mauris convallis augue egestas, dapibus lacus non, facilisis neque. Suspendisse non felis fermentum, viverra dui at, rhoncus purus. Cras finibus mauris eu lectus iaculis sodales. Fusce et ullamcorper eros. Vivamus nisl diam, lobortis sit amet rhoncus nec, convallis quis tortor. Vivamus consectetur viverra ornare. Morbi aliquet commodo justo vitae hendrerit. Fusce eu nisl quis diam sagittis varius. Cras ut ante quam. Nunc placerat accumsan erat, ut iaculis lorem venenatis et. Quisque lectus mi, ullamcorper quis posuere eu, consectetur ut turpis.
@@ -105,6 +214,173 @@
                 </div>
             </div>
         </div>
+
+        <div class="toc">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h2>In this issue</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <a href="#nyc">
+                            <div id="toc-1" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">NYC '93</h4>
+                                    <h5 class="white-text">Mat, TechMoan</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">5 MIN</h6>
+                                    <img src="UI/UI_Video-w.svg" height="30px" width="auto">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="six columns">
+                        <a href="#dec">
+                            <div id="toc-2" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">A Declaration of the Independence of&nbsp;Cyberspace</h4>
+                                    <h5 class="white-text">John P. Barlow</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">4 MIN</h6>
+                                    <img src="UI/UI_Text-w.svg" height="30px" width="auto">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="twelve columns">
+                        <a href="#swatch">
+                            <div id="toc-3" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">Keeping Time to the Same Beat</h4>
+                                    <h5 class="white-text">Michael Stroh</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">5 MIN</h6>
+                                    <img src="UI/UI_Text-w.svg" height="30px" width="auto">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="six columns">
+                        <a href="#big-ben">
+                            <div id="toc-4" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">The Fundamental Truth</h4>
+                                    <h5 class="white-text">Satya Nadella</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">2 MIN</h6>
+                                    <img src="UI/UI_Twitter-w.svg" height="30px" width="auto">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="six columns">
+                        <a href="#danielle">
+                            <div id="toc-5" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">Danielle</h4>
+                                    <h5 class="white-text">Anthony Cerniello</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">5 MIN</h6>
+                                    <img src="UI/UI_Video-w.svg" height="30px" width="auto">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="twelve columns">
+                        <a href="#god">
+                            <div id="toc-6" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">God in the Machine</h4>
+                                    <h5 class="white-text">Meghan O'Gieblyn</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">14 MIN</h6>
+                                    <img src="UI/UI_Text-w.svg" height="30px" width="auto">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="twelve columns">
+                        <a href="#landscapes">
+                            <div id="toc-7" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">Virtual Landscapes</h4>
+                                    <h5 class="white-text">Ana Mar&Iacute;a Guerra</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <img src="UI/UI_Image-w.svg" height="30px" width="auto">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="twelve columns">
+                        <a href="#alww">
+                            <div id="toc-8" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">A Life Well Wasted</h4>
+                                    <h5 class="white-text">Robert Ashley</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <img src="UI/UI_Audio-w.svg" height="30px" width="auto">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="six columns">
+                        <a href="#end">
+                            <div id="toc-9" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">What I'll Be Thinking About When the World&nbsp;Ends</h4>
+                                    <h5 class="white-text">Tom Mitchell</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">4 MIN</h6>
+                                    <img src="UI/UI_Text-w.svg" height="30px" width="auto">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="six columns">
+                        <a href="#wrapped">
+                            <div id="toc-10" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">Wrapped</h4>
+                                    <h5 class="white-text">K&auml;lin, Paeper, and Wittmann</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">4 MIN</h6>
+                                    <img src="UI/UI_Video-w.svg" height="30px" width="auto">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 
     </main>
     <footer>

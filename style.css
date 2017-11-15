@@ -155,10 +155,20 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
+h2{
+    text-transform: uppercase;
+}
 .white-text{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #ffffff;
+}
+.hide{
+    display: none;
+    transition: all .2s ease-in-out;
+}
+.space-tp{
+    margin-top: 4%;
 }
 
 .index-link{
@@ -209,20 +219,58 @@ body{
     min-width: 400px;
     height: 120px;
     background-color: #ffffff;
-    position: fixed;
     left: 70px;
-    top: 70px;
     z-index: 1;
     display: none;
+    position: absolute;
     align-items: center;
     -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5);
     box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5);
 }
 .nav-card-img{
-    min-height: 120px;
-    min-width: 120px;
-    background: url(images/BeachBall.png) 50% 50% no-repeat;;
+    height: 120px;
+    width: 120px;
+}
+#nav-card-1 .nav-card-img{
+    background: url(images/nav/nyc93-nav.jpg);
+    background-size: cover;
+}
+#nav-card-2 .nav-card-img{
+    background: url(images/nav/dec-nav.jpg);
+    background-size: cover;
+}
+#nav-card-3 .nav-card-img{
+    background: url(images/nav/time-nav.jpg);
+    background-size: cover;
+}
+#nav-card-4 .nav-card-img{
+    background: url(images/nav/bigben-nav.jpg);
+    background-size: cover;
+}
+#nav-card-5 .nav-card-img{
+    background: url(images/nav/danielle-nav.jpg);
+    background-size: cover;
+}
+#nav-card-6 .nav-card-img{
+    background: url(images/nav/god-nav.png);
+    background-size: cover;
+}
+#nav-card-7 .nav-card-img{
+    background: url(images/nav/landscapes-nav.jpg);
+    background-size: cover;
+}
+#nav-card-8 .nav-card-img{
+    background: url(images/nav/alww-nav.jpg);
+    background-size: cover;
+}
+#nav-card-9 .nav-card-img{
+    background: url(images/nav/worldends-nav.jpg);
+    background-size: cover;
+}
+#nav-card-10 .nav-card-img{
+    background: url(images/nav/wrapped-nav.jpg);
+    background-size: cover;
 }
 .nav-card-info{
     margin: 20px;
@@ -230,11 +278,11 @@ body{
 .nav-card-info h5{
     margin-bottom: 3px;
 }
-.nav-card-info img, .nav-card-info h6{
+.nav-card-media img, .nav-card-media h6{
     display: inline;
     vertical-align: middle;
 }
-.nav-card-info img{
+.nav-card-media img{
     margin-right: 5px;
 }
 .nav-card-media h6{
@@ -322,7 +370,7 @@ body{
     z-index: 2;
 }
 .beach-ball{
-    background-image: url(images/BeachBall.png);
+    background-image: url(images/001_beachball.png);
     background-size: 200px;
     height: 200px;
     width: 200px;
@@ -545,4 +593,201 @@ body{
 }
 .letter p{
     padding: 10em 0;
+}
+.toc{
+    background-color: #ffffff;
+    padding: 10em 0;
+}
+.toc h2{
+    padding-top: 10px;
+    border-top: 5px solid #000000;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+.toc a:visited{
+    color: #ffffff;
+}
+.toc-tile{
+    width: 100%;
+    padding-bottom: 41.6666%;
+    position: relative;
+}
+.toc-tile-info, .toc-tile-media{
+    opacity: 0;
+    transition: opacity .2s;
+}
+.toc-tile-info{
+    position: absolute;
+    left: 1.2em;
+    bottom: 1.2em;
+}
+.toc-tile-info h4{
+    font-weight: bold;
+    font-size: 1.8em;
+    line-height: 1.25;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.toc-tile-info h5{
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.toc-tile-media{
+    position: absolute;
+    right: 1.2em;
+    top: 1.2em;
+}
+.toc-tile-media img, .toc-tile-media h6{
+    display: inline;
+    vertical-align: middle;
+}
+.toc-tile-info h6{
+    font-size: 1.4em;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#toc-1{
+    background: url(images/table-of-contents/nyc-toc.png);
+    background-size: cover;
+}
+#toc-1:hover{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(images/table-of-contents/nyc-toc.png);
+    background-size: cover;
+}
+#toc-1:hover div{
+    opacity: 1;
+}
+#toc-2{
+    background: url(images/table-of-contents/dec-toc.jpg);
+    background-size: cover;
+}
+#toc-2:hover{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(images/table-of-contents/dec-toc.jpg);
+    background-size: cover;
+}
+#toc-2:hover div{
+    opacity: 1;
+}
+#toc-3{
+    background: url(images/table-of-contents/time-toc.gif);
+    background-size: cover;
+}
+#toc-3:hover{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(images/table-of-contents/time-toc.gif);
+    background-size: cover;
+}
+#toc-3:hover div{
+    opacity: 1;
+}
+#toc-4{
+    background: url(images/table-of-contents/truth-toc.png);
+    background-size: cover;
+}
+#toc-4:hover{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(images/table-of-contents/truth-toc.png);
+    background-size: cover;
+}
+#toc-4:hover div{
+    opacity: 1;
+}
+#toc-5{
+    background: url(images/table-of-contents/danielle-toc.gif);
+    background-size: cover;
+}
+#toc-5:hover{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(images/table-of-contents/danielle-toc.gif);
+    background-size: cover;
+}
+#toc-5:hover div{
+    opacity: 1;
+}
+#toc-6{
+    background: url(images/table-of-contents/god-toc.png);
+    background-size: cover;
+}
+#toc-6:hover{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(images/table-of-contents/god-toc.png);
+    background-size: cover;
+}
+#toc-6:hover div{
+    opacity: 1;
+}
+
+
+#toc-7{
+    background: url(images/table-of-contents/landscapes-toc.jpg);
+    background-size: cover;
+}
+#toc-7:hover{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(images/table-of-contents/landscapes-toc.jpg);
+    background-size: cover;
+}
+#toc-7:hover div{
+    opacity: 1;
+}
+#toc-8{
+    background: url(images/table-of-contents/alww-toc.jpg);
+    background-size: cover;
+}
+#toc-8:hover{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(images/table-of-contents/alww-toc.jpg);
+    background-size: cover;
+}
+#toc-8:hover div{
+    opacity: 1;
+}
+#toc-9{
+    background: url(images/table-of-contents/worldends-toc.jpg);
+    background-size: cover;
+}
+#toc-9:hover{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(images/table-of-contents/worldends-toc.jpg);
+    background-size: cover;
+}
+#toc-9:hover div{
+    opacity: 1;
+}
+#toc-10{
+    background: url(images/table-of-contents/wrapped-toc.jpg);
+    background-size: cover;
+}
+#toc-10:hover{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(images/table-of-contents/wrapped-toc.jpg);
+    background-size: cover;
+}
+#toc-10:hover div{
+    opacity: 1;
 }
