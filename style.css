@@ -801,7 +801,7 @@ h2{
 }
 
 .credits{
-    border-top: 2px solid #8B8B8B;
+    border-top: 2px solid #000000;
     padding: 1em 0;
     color: #000000;
     font-size: .8em;
@@ -908,6 +908,17 @@ h2{
 .dec-bottom p{
     line-height: 1.8;
     margin-bottom: 3em;
+}
+.dec-bottom span{
+    background-color: #51FEDD;
+}
+.dec-bottom a{
+    border-bottom: 2px dotted #3229FF;
+    color: #000000;
+    text-decoration: none;
+}
+.dec-bottom a:visited{
+    color: #000000;
 }
 .dec-bottom .seven{
     margin-left: 0;
