@@ -1,5 +1,30 @@
 $(document).ready(function() {
 
+    // Falling time animation, inspired by Captain Anonymous https://codepen.io/anon/pen/jaYmrj
+    // Number of words created for home page hero
+    var wordCount = 500;
+    // Random number range function
+    function randRange( minNum, maxNum) {
+      return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+    }
+    // Function to generate words
+    function createTime() {
+    	for( i=1;i<wordCount;i++) {
+    	var wordLeft = randRange(0,920);
+    	var wordTop = randRange(-1000,500);
+        var fontSize = randRange(10,22);
+    	$('.drop-container').append('<div class="time-drop" id="time'+i+'">TIME</div>');
+    	$('#time'+i).css('left',wordLeft);
+    	$('#time'+i).css('top',wordTop);
+        $('#time'+i).css('font-size',fontSize+'px');
+    	}
+    }
+    // Make it rain
+    createTime();
+
+
+
+    //Get mouse position
     var mouseX;
     var mouseY;
     $(document).mousemove( function(e) {
@@ -68,16 +93,18 @@ $(document).ready(function() {
         $('#nav-card-10').fadeOut();
     });
 
+
+    //Measure box height, set following box to same height
     function matchQuoteHeights(box1, box2) {
     var box1Height = $(box1).outerHeight();
     console.log(box1Height);
         $(box2).height(box1Height);
     }
 
-
-$(document).ready(function() {
-    matchQuoteHeights('#dec-quote', '#dec-checkerboard');
-});
+    //Match checkboard box to height of quote
+    $(document).ready(function() {
+        matchQuoteHeights('#dec-quote', '#dec-checkerboard');
+    });
 
 
 });

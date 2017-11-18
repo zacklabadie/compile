@@ -181,6 +181,151 @@ h2{
     display: flex;
 }
 
+
+#homepage{
+    background: #000000;
+}
+.homepage-bg{
+    min-height: 100vh;
+    background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/00_old-cables.jpg);
+    background-size:cover;
+}
+.homepage-bg img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.homepage-blurb{
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+    padding: 1.8em 0 3.6em 0;
+    font-weight: bold;
+}
+.homepage-blurb h6{
+    display: inline;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: .85em;
+}
+.homepage-blurb span{
+    display: inline;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #CBFF00;
+    padding: 0 7px;
+    font-size: .85em;
+}
+.homepage-cta{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+.homepage-cta .button{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 1em 1.5em;
+    background-color: #1044FF;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    -webkit-box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.3);
+}
+.homehero{
+    background: #CBFF00;
+    overflow: hidden !important;
+    height: 600px;
+    width: 100vw;
+    position: relative;
+}
+.drop-container{
+    overflow:hidden;
+    height: 540px;
+    min-width: 100%;
+}
+.issue-lockup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.issue-lockup img{
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding-bottom: 2em;
+}
+.issue-lockup .button{
+    padding: 1em 3em;
+}
+.issue-teaser{
+    width: 100vw;
+    padding-top: 4em;
+    background: #CBFF00;
+}
+.issue-teaser .row{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 2em;
+}
+.issue-teaser img{
+    text-align: left;
+}
+.issue-teaser h4{
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-left: 10%;
+}
+.issue-teaser h4, .issue-teaser img{
+    align-self: flex-start;
+}
+.drop-container{
+    position: relative;
+    overflow: hidden;
+}
+.time-drop {
+	position: absolute;
+	bottom:200px;
+	-webkit-animation: fall 5s linear infinite;
+    -moz-animation: fall 5s linear infinite;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #ACD900;
+    z-index: 1;
+}
+/* Animate the words*/
+@-webkit-keyframes fall {
+	to {margin-top:600px;}
+}
+@-moz-keyframes fall {
+	to {margin-top:600px;}
+}
+.homepage-foot{
+    padding: 4em 2em;
+    background-color: #000000;
+    text-align: center;
+}
+.homepage-foot h4{
+    display: inline-block;
+    padding: 2em 1em;
+    font-weight: bold;
+}
+.homepage-foot a{
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .2;
+}
+.homepage-foot a:hover{
+    opacity: 1;
+}
 .index-link{
     position: fixed;
     top: 20px;
@@ -199,7 +344,7 @@ h2{
     text-align: center;
     z-index: 99;
 }
-.side-nav{
+#side-nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,70 +446,7 @@ h2{
 }
 
 
-.homepage-bg{
-    min-height: 100vh;
-    background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/00_old-cables.jpg);
-    background-size:cover;
-}
-.homepage-bg img{
-    display: block;
-    margin: 0 auto;
-    padding-top: 10%;
-}
-.homepage-blurb{
-    margin: 0 auto;
-    max-width: 90%;
-    text-align: center;
-    padding: 1.8em 0 3.6em 0;
-    font-weight: bold;
-}
-.homepage-blurb h6{
-    display: inline;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: .85em;
-}
-.homepage-blurb span{
-    display: inline;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #CBFF00;
-    padding: 0 7px;
-    font-size: .85em;
-}
-.homepage-cta{
-    text-align: center;
-    margin: auto;
-}
-.homepage-cta .button{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    font-size: .9em;
-    font-weight: bold;
-    padding: 1em 1.5em;
-    background-color: #1044FF;
-    border-radius: 3px;
-    letter-spacing: 2px;
-    -webkit-box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.4);
-    -moz-box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.4);
-    box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.4);
-}
-.homepage-foot{
-    padding: 4em 2em;
-    background-color: #CBFF00;
-    -webkit-box-shadow: inset 0px 5px 10px -2px rgba(0,0,0,0.5);
-    -moz-box-shadow: inset 0px 5px 10px -2px rgba(0,0,0,0.5);
-    box-shadow: inset 0px 5px 10px -2px rgba(0,0,0,0.5);
-    text-align: center;
-}
-.homepage-foot h4{
-    display: inline-block;
-    padding: 2em 1em;
-    font-weight: bold;
-}
+
 .top-splash{
     min-height: 100vh;
     width: 100vw;
