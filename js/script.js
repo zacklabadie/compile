@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    // Skrollr for smooth scrolling and parallax effects
+    var s = skrollr.init();
+    skrollr.menu.init(s);
+
     // Falling time animation, inspired by Captain Anonymous https://codepen.io/anon/pen/jaYmrj
     // Number of words created for home page hero
     var wordCount = 500;
@@ -18,10 +22,28 @@ $(document).ready(function() {
     	$('#time'+i).css('top',wordTop);
         $('#time'+i).css('font-size',fontSize+'px');
     	}
-    }
+    };
     // Make it rain
     createTime();
 
+    // // Lazy Load
+    $(function() {
+        $('.lazy').Lazy({
+            delay: 5000
+        });
+    });
+
+    var largestHeight = 0;
+    // Loop through elements children to find & set the biggest height
+    $(".relative-container *").each(function(){
+     // If this elements height is bigger than the biggestHeight
+     if ($(this).height() > largestHeight ) {
+       // Set the biggestHeight to this Height
+       largestHeight = $(this).height();
+     }
+    });
+    // Set the container height
+    $(".relative-container").height(largestHeight);
 
 
     //Get mouse position

@@ -7,8 +7,11 @@
     <meta name="description" content="A digital quarterly highlighting humanity, technology, and modern oddities" />
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
 
-    <script src="jquery-3.2.1.js"></script>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.menu.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicons_001/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons_001/favicon-32x32.png">
@@ -21,6 +24,7 @@
 </head>
 
 <body>
+    <!-- <div class="compile-loading"></div> -->
     <nav>
         <a href="index.html" class="index-link">
             <img src="UI/UI_Compile.svg" height="30px" width="auto">
@@ -381,7 +385,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="twelve columns full-height">
-                            <img src="images/001a_nyc/001a_nyc-title.png" alt="NYC 93" width="35%" height="auto">
+                            <img src="images/001a_nyc/001a_nyc-title.png" alt="NYC 93" width="35%" height="auto" class="lazy">
                         </div>
                     </div>
                 </div>
@@ -390,13 +394,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="twelve columns">
-                            <img src="images/001a_nyc/001a_nyc-camera.svg" alt="Sony HDC-500" width="50%" height="auto" class="nyc-cam">
+                            <img src="images/001a_nyc/001a_nyc-camera.svg" alt="Sony HDC-500" width="50%" height="auto" class="nyc-cam lazy">
                         </div>
                     </div>
                     <div class="row flex">
                         <div class="nine columns">
                             <div class="video-wrapper">
-                                <iframe width="1120" height="630" src="https://www.youtube.com/embed/fT4lDU-QLUY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
+                                <iframe data-loader="iframe" class="lazy" width="1120" height="630" src="https://www.youtube.com/embed/fT4lDU-QLUY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
                                 </iframe>
                             </div>
                         </div>
@@ -427,7 +431,7 @@
         </div>
 
         <div id="dec">
-            <div class="dec-top full-bleed">
+            <div class="dec-top full-bleed lazy" data-src="images/001b_dec/001b_dec-title.svg, images/001b_dec/001b_dec-hero-front.png, images/001b_dec/001b_dec-hero-back.png">
             </div>
             <div class="dec-bottom full-bleed">
                 <div class="container">
@@ -445,7 +449,7 @@
                     </div>
                     <div class="row">
                         <div class="three columns offset-by-two">
-                            <img src="images/001b_dec/001b_dec-jefferson.png" alt="Thomas Jefferson" width="80%" height="auto">
+                            <img src="images/001b_dec/001b_dec-jefferson.png" alt="Thomas Jefferson" width="80%" height="auto" data-100p-top="transform:scale(.5);" data-30p-top="transform:scale(1);">
                         </div>
                         <div class="seven columns">
                             <div class="dec-quote-wrapper">
@@ -454,7 +458,7 @@
                                     <h6>Thomas Jefferson</h6>
                                     <h6>Notes on Virgina</h6>
                                 </div>
-                                <img src="images/001b_dec/001b_dec-quote.svg" alt="Quotation mark" width="50px" height="auto">
+                                <img src="images/001b_dec/001b_dec-quote.svg" alt="Quotation mark" width="50px" height="auto" class="lazy">
                                 <div id="dec-checkerboard">
                                 </div>
                             </div>
@@ -514,7 +518,7 @@
                     </div>
                     <div class="six columns">
                         <div class="weather">
-                            <img src="images/001c_swatch/001c_time-sun.gif" alt="Beautiful Baltimore sunrise" width="120px" height="auto">
+                            <img src="images/001c_swatch/001c_time-sun.gif" alt="Beautiful Baltimore sunrise" width="120px" height="auto" class="lazy">
                             <a href="https://www.wunderground.com/history/airport/KBWI/1999/4/8/DailyHistory.html?req_city=&req_state=&req_statename=&reqdb.zip=&reqdb.magic=&reqdb.wmo=" target="_blank">Temp: 62&deg;</a>
                         </div>
                     </div>
@@ -534,88 +538,88 @@
                         </form>
                         <ul class="sunspot-sidenav">
                         <li>
-                            <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                            <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                             <a href="https://web.archive.org/web/19990202103459/http://www.sunspot.net:80/news/" target="_blank">NEWS</a>
 
                                 <ul>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990508022024/http://www.sunspot.net:80/news/nationworld/sun/" target="_blank">Nation/World</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/maryland/sun/" target="_blank">Maryland</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/business/sun/" target="_blank">Business</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/classified/realestate/" target="_blank">Real Estate</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/pluggedin/" target="_blank">Plugged In</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/opinion/sun/" target="_blank">Opinion</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/obituaries/sun/" target="_blank">Obituaries</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/weather/" target="_blank">Weather</a>
                                 </li>
                                 </ul>
                         </li>
 
                         <li>
-                            <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                            <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                             <a href="https://web.archive.org/web/19990508075259/http://www.sunspot.net:80/sports/" target="_blank">
                             SPORTS</a>
                                 <ul>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/orioles/" target="_blank">Baseball</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/ravens/" target="_blank">Football</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/basketball/" target="_blank">Basketball</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/hockey/" target="_blank">Hockey</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/soccer/" target="_blank">Soccer</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/horseracing/" target="_blank">Horse Racing</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/tennis/" target="_blank">Tennis</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/golf/" target="_blank">Golf</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/college/" target="_blank">College</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/highschool/" target="_blank">High School</a>
                                 </li>
                                 </ul>
@@ -629,7 +633,7 @@
                         </div>
                         <p>April 08, 1999<br/><strong>by Michael Stroh</strong></p>
                         <article>
-                            <img src="images/001c_swatch/001c_time-michelangelo.jpg" alt="Web designer Michelangelo Capraro" width="30%" height="auto" class="swatch-portrait">
+                            <img src="images/001c_swatch/001c_time-michelangelo.jpg" alt="Web designer Michelangelo Capraro" width="30%" height="auto" class="swatch-portrait lazy">
                             <p>Got a sec?<br/><br/>
 
                             Michelangelo Capraro doesn't-- not anymore. These days the 24-year-old Web designer from Santa Monica, Calif., is living on Internet&nbsp;time.<br/><br/>
@@ -651,10 +655,10 @@
                             Just so happens the company has created a new line of funky $70 watches called Swatch Beat. Aimed squarely at the DotCom generation, the six garishly colored digital timepieces have cyber-savvy names such as "Download," "Netsurfer," "Webmaster" and "Provider." They tick off time in both old-fashioned hours and Swatch beats. And for those who wallow in millennium angst, they even automatically count down the days until&nbsp;Y2K.
                             </p>
                             <div class="swatches">
-                                <img src="images/001c_swatch/001c_time-watch1.jpg" alt="Safari Swatch Beat" width="150px" height="auto">
-                                <img src="images/001c_swatch/001c_time-watch2.jpg" alt="Light blue Swatch Beat" width="150px" height="auto">
-                                <img src="images/001c_swatch/001c_time-watch3.jpg" alt="Royal blue Swatch Beat" width="150px" height="auto">
-                                <img src="images/001c_swatch/001c_time-watch4.jpg" alt="Silver Swatch Beat" width="150px" height="auto">
+                                <img src="images/001c_swatch/001c_time-watch1.jpg" alt="Safari Swatch Beat" width="150px" height="auto" class="lazy">
+                                <img src="images/001c_swatch/001c_time-watch2.jpg" alt="Light blue Swatch Beat" width="150px" height="auto" class="lazy">
+                                <img src="images/001c_swatch/001c_time-watch3.jpg" alt="Royal blue Swatch Beat" width="150px" height="auto" class="lazy">
+                                <img src="images/001c_swatch/001c_time-watch4.jpg" alt="Silver Swatch Beat" width="150px" height="auto" class="lazy">
                             </div>
                             <p>
                                 Despite its blatant commercialism, Internet time is catching on. Nicholas Negroponte, director of the Massachusetts Institute of Technology's famed <a href="https://www.media.mit.edu/about/mission-history/" target="_blank">Media Lab</a> and author of the influential book "Being Digital," has lent his support to the Internet time&nbsp;movement.<br/><br/>
@@ -682,7 +686,7 @@
 
                                 It was a flop. The telegraph clicked in Promontory at 12: 45 p.m. But Virginia City marked it at 12: 30. San Francisco heard it at "precisely" 11: 46 or 11: 44, depending on which paper one consulted. Washington, D.C., recorded it for history as 2: 47.<br/><br/>
 
-                                <img src="images/001c_swatch/001c_time-bookcover.gif" alt="Cover of Keeping Pace: A History of American Time" width="120px" height="auto" class="swatch-book">
+                                <img src="images/001c_swatch/001c_time-bookcover.gif" alt="Cover of Keeping Pace: A History of American Time" width="120px" height="auto" class="swatch-book lazy">
 
                                 Pressure from railroad companies and the scientific community led in 1883 to the adoption of four standard time zones in the U.S. The next year, the International Meridian Conference formally sliced the globe into 24 time zones, making Greenwich, England, the site of the prime&nbsp;meridian.<br/><br/>
 
@@ -706,7 +710,6 @@
                 </div>
             </div>
         </div>
-
         <div class="swatch-credits">
             <div class="container">
                 <div class="row">
@@ -717,6 +720,77 @@
                                 Published by the <a href="http://www.baltimoresun.com/" target="_blank">Baltimore Sun</a> on April 8, 1999
                             </p>
                             <a href="http://articles.baltimoresun.com/1999-04-08/news/9904080326_1_swatch-internet-time-keeping-time/2" target="_blank" class="source-credit white-text">
+                                Source material
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="big-ben">
+            <div class="container">
+                <div class="row">
+                    <div class="six columns offset-by-three">
+                        <div class="circle" data-anchor-target="#big-ben" data--100-top="transform:scale(1);margin-top: 150px;" data--700-top="transform:scale(0);margin-top:700px;">
+                            <div class="inner-circle">
+                                <div class="circle-content-wrapper">
+                                    <div class="circle-content">
+                                        <h4 class="white-text">“The fundamental truth for developers is they will build if there are users.”</h4>
+                                        <h6 class="white-text">Satya Nadella</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-ben-tweets">
+                            <a class="twitter-timeline" data-height="400" data-link-color="#797DE7" href="https://twitter.com/big_ben_clock?ref_src=twsrc%5Etfw">Tweets by big_ben_clock</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="danielle">
+            <div class="container">
+                <div class="row">
+                    <div class="six columns offset-by-three">
+                        <div class="danielle-title-wrap relative-container">
+                            <svg width="277px" height="42px" viewBox="0 0 277 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-anchor-target="#danielle" data-60-top="left: -200%;" data--120-top="left:50%;" >
+                                <title>Danielle - green</title>
+                                <defs></defs>
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g transform="translate(-205.000000, -132.000000)" fill="#AEC777">
+                                        <path d="M205,173.25 L205,132 L220.51,132 C231.84,132.055 241.08,141.295 241.08,152.625 C241.08,164.01 231.84,173.25 220.455,173.25 L205,173.25 Z M239.925,152.625 C239.925,141.79 231.18,133.1 220.345,133.1 L206.1,133.1 L206.1,172.15 L220.345,172.15 C231.18,172.15 239.925,163.46 239.925,152.625 Z M246.305,173.25 L245.095,173.25 L264.345,132 L265.555,132 L284.805,173.25 L283.595,173.25 L277.435,159.995 L252.465,159.995 L246.305,173.25 Z M264.95,133.265 L253.015,158.895 L276.885,158.895 L264.95,133.265 Z M324.35,173.25 L326.055,173.25 L326.055,132 L324.955,132 L324.955,172.15 L293.11,132 L291.295,132 L291.295,173.25 L292.395,173.25 L292.395,133.1 L324.35,173.25 Z M338.1,173.25 L338.1,132 L337.055,132 L337.055,173.25 L338.1,173.25 Z M351.245,173.25 L376.93,173.25 L376.93,172.15 L352.29,172.15 L352.29,152.68 L375.225,152.68 L375.225,151.58 L352.29,151.58 L352.29,133.1 L376.93,133.1 L376.93,132 L351.245,132 L351.245,173.25 Z M387.16,132 L386.115,132 L386.115,173.25 L411.855,173.25 L411.855,172.205 L387.16,172.205 L387.16,132 Z M422.085,132 L421.04,132 L421.04,173.25 L446.78,173.25 L446.78,172.205 L422.085,172.205 L422.085,132 Z M455.965,173.25 L481.65,173.25 L481.65,172.15 L457.01,172.15 L457.01,152.68 L479.945,152.68 L479.945,151.58 L457.01,151.58 L457.01,133.1 L481.65,133.1 L481.65,132 L455.965,132 L455.965,173.25 Z" id="Danielle-Copy-2" style="mix-blend-mode: multiply;"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg width="278px" height="42px" viewBox="0 0 278 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-anchor-target="#danielle" data-60-top="left: 300%;" data--120-top="left:50%;">
+                                <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+                                <title>Danielle</title>
+                                <desc>Danielle - Pink</desc>
+                                <defs></defs>
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g transform="translate(-204.000000, -42.000000)" fill="#FF8E8E">
+                                        <path d="M204.813763,84 L204.813763,42.75 L220.323763,42.75 C231.653763,42.805 240.893763,52.045 240.893763,63.375 C240.893763,74.76 231.653763,84 220.268763,84 L204.813763,84 Z M239.738763,63.375 C239.738763,52.54 230.993763,43.85 220.158763,43.85 L205.913763,43.85 L205.913763,82.9 L220.158763,82.9 C230.993763,82.9 239.738763,74.21 239.738763,63.375 Z M246.118763,84 L244.908763,84 L264.158763,42.75 L265.368763,42.75 L284.618763,84 L283.408763,84 L277.248763,70.745 L252.278763,70.745 L246.118763,84 Z M264.763763,44.015 L252.828763,69.645 L276.698763,69.645 L264.763763,44.015 Z M324.163763,84 L325.868763,84 L325.868763,42.75 L324.768763,42.75 L324.768763,82.9 L292.923763,42.75 L291.108763,42.75 L291.108763,84 L292.208763,84 L292.208763,43.85 L324.163763,84 Z M337.913763,84 L337.913763,42.75 L336.868763,42.75 L336.868763,84 L337.913763,84 Z M351.058763,84 L376.743763,84 L376.743763,82.9 L352.103763,82.9 L352.103763,63.43 L375.038763,63.43 L375.038763,62.33 L352.103763,62.33 L352.103763,43.85 L376.743763,43.85 L376.743763,42.75 L351.058763,42.75 L351.058763,84 Z M386.973763,42.75 L385.928763,42.75 L385.928763,84 L411.668763,84 L411.668763,82.955 L386.973763,82.955 L386.973763,42.75 Z M421.898763,42.75 L420.853763,42.75 L420.853763,84 L446.593763,84 L446.593763,82.955 L421.898763,82.955 L421.898763,42.75 Z M455.778763,84 L481.463763,84 L481.463763,82.9 L456.823763,82.9 L456.823763,63.43 L479.758763,63.43 L479.758763,62.33 L456.823763,62.33 L456.823763,43.85 L481.463763,43.85 L481.463763,42.75 L455.778763,42.75 L455.778763,84 Z" id="Danielle" style="mix-blend-mode: multiply;"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="ten columns offset-by-one">
+                        <div class="danielle-video video-wrapper">
+                            <iframe src="https://player.vimeo.com/video/74033442?color=DF8683&title=0&byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <div class="credits">
+                            <p>
+                                Video by Anthony Cerniello et al
+                            </p>
+                            <a href="https://vimeo.com/74033442" target="_blank" class="source-credit">
                                 Source material
                             </a>
                         </div>
