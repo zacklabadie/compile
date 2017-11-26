@@ -463,9 +463,10 @@ a.button:visited{
 .top-link span, .index-link span{
     color: #000000;
     font-size: 36px;
+    opacity: .5;
 }
 .top-link span:hover, .index-link span:hover{
-
+    opacity: 1;
 }
 #side-nav{
     display: flex;
@@ -817,9 +818,15 @@ a.button:visited{
     width: 100vw;
     min-height: 100vh;
     background-color: #3B34ED;
+    padding-bottom: 6em;
 }
 .letter p{
-    padding: 10em 0;
+    margin-top: 1.5em;
+}
+.letter h5{
+    padding-top: 3em;
+    font-weight: bold;
+    font-size: 2.2em;
 }
 
 /* ________ ISSUE 001 TABLE OF CONTENTS ________ */
@@ -1456,7 +1463,7 @@ a.button:visited{
 }
 .god-author h3{
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     color: #ffffff;
     -webkit-font-smoothing: antialiased;
@@ -1469,15 +1476,34 @@ a.button:visited{
     padding: 10em 0 6em 0;
 }
 #god-body p{
-    line-height: 1.7;
+    line-height: 1.8;
+    margin-bottom: 2.5em;
 }
 #god-body p span.drop-cap{
-  color: #FF6027;
-  float: left;
-  font-family: serif;
-  font-size: 85px;
-  line-height: 60px;
-  padding-top: 5px;
-  padding-right: 15px;
-  padding-left: 3px;
+    color: #FF6027;
+    float: left;
+    font-family: serif;
+    font-size: 90px;
+    line-height: 60px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 3px;
+}
+#god-body p a{
+    font-weight: bold;
+    color: #FF6027;
+}
+#god-body h2{
+    font-weight: bold;
+    color: #847FC4;
+    text-align: left;
+    text-transform: none;
+    font-size: 2em;
+    hanging-punctuation: first;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.pull-quote{
+    height: fit-content;
+    margin-bottom: 2.5em;
 }

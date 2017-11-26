@@ -33,12 +33,13 @@ $(document).ready(function() {
         });
     });
 
+
     var largestHeight = 0;
-    // Loop through elements children to find & set the biggest height
+    // Loop through elements children to find & set the largest height
     $(".relative-container *").each(function(){
-     // If this elements height is bigger than the biggestHeight
+     // If this elements height is larger than the largestHeight
      if ($(this).height() > largestHeight ) {
-       // Set the biggestHeight to this Height
+       // Set the largestHeight to this Height
        largestHeight = $(this).height();
      }
     });
@@ -46,7 +47,7 @@ $(document).ready(function() {
     $(".relative-container").height(largestHeight);
 
 
-    //Get mouse position
+    //Get mouse position for nav cards
     var mouseX;
     var mouseY;
     $(document).mousemove( function(e) {
