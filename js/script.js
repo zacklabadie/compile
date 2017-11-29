@@ -56,69 +56,69 @@ $(document).ready(function() {
     });
 
     $('#btn-1').hover(function(){
-      $('#nav-card-1').css({'top':mouseY-60, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-1').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
     });
     $('#btn-1').mouseout(function(){
         $('#nav-card-1').fadeOut();
     });
     $('#btn-2').hover(function(){
-      $('#nav-card-2').css({'top':mouseY-60, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-2').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
     });
     $('#btn-2').mouseout(function(){
         $('#nav-card-2').fadeOut();
     });
     $('#btn-3').hover(function(){
-      $('#nav-card-3').css({'top':mouseY-60, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-3').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
     });
     $('#btn-3').mouseout(function(){
         $('#nav-card-3').fadeOut();
     });
     $('#btn-4').hover(function(){
-      $('#nav-card-4').css({'top':mouseY-60, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-4').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
     });
     $('#btn-4').mouseout(function(){
         $('#nav-card-4').fadeOut();
     });
     $('#btn-5').hover(function(){
-      $('#nav-card-5').css({'top':mouseY-60, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-5').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
     });
     $('#btn-5').mouseout(function(){
         $('#nav-card-5').fadeOut();
     });
     $('#btn-6').hover(function(){
-      $('#nav-card-6').css({'top':mouseY-60, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-6').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
     });
     $('#btn-6').mouseout(function(){
         $('#nav-card-6').fadeOut();
     });
     $('#btn-7').hover(function(){
-      $('#nav-card-7').css({'top':mouseY-60, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-7').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
     });
     $('#btn-7').mouseout(function(){
         $('#nav-card-7').fadeOut();
     });
     $('#btn-8').hover(function(){
-      $('#nav-card-8').css({'top':mouseY-60, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-8').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
     });
     $('#btn-8').mouseout(function(){
         $('#nav-card-8').fadeOut();
     });
     $('#btn-9').hover(function(){
-      $('#nav-card-9').css({'top':mouseY-60, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-9').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
     });
     $('#btn-9').mouseout(function(){
         $('#nav-card-9').fadeOut();
     });
     $('#btn-10').hover(function(){
-      $('#nav-card-10').css({'top':mouseY-60, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-10').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
     });
     $('#btn-10').mouseout(function(){
         $('#nav-card-10').fadeOut();
     });
 
 
-    //Measure box height, set following box to same height
-    function matchQuoteHeights(box1, box2) {
+    //Measure box1 height, set box2 to same height
+    function matchHeights(box1, box2) {
     var box1Height = $(box1).outerHeight();
     console.log(box1Height);
         $(box2).height(box1Height);
@@ -126,7 +126,10 @@ $(document).ready(function() {
 
     //Match checkboard box to height of quote
     $(document).ready(function() {
-        matchQuoteHeights('#dec-quote', '#dec-checkerboard');
+        matchHeights('#dec-quote', '#dec-checkerboard');
+    });
+    $(document).ready(function() {
+        matchHeights('.nyc-text', '.nyc-cam');
     });
 
 

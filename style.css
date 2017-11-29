@@ -1,3 +1,85 @@
+/* ________ ICONS & FONTS ________ */
+@font-face {
+    font-family:'compile';
+    src:  url('fonts/compile.eot?8xo6j9');
+    src:  url('fonts/compile.eot?8xo6j9#iefix') format('embedded-opentype'),
+        url('fonts/compile.ttf?8xo6j9') format('truetype'),
+        url('fonts/compile.woff?8xo6j9') format('woff'),
+        url('fonts/compile.svg?8xo6j9#compile') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'marvin_visions';
+    src: url('fonts/marvinvisions-bold-webfont.woff2') format('woff2'),
+         url('fonts/marvinvisions-bold-webfont.woff') format('woff'),url(),
+         url('fonts/marvinvisions-bold-webfont.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family:'century_gothic_regular';
+    src: url('fonts/centygothic-webfont.woff2') format('woff2'),
+         url('fonts/centygothic-webfont.woff') format('woff'),
+         url('fonts/webfont.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'century_gothic_bold';
+    src: url('fonts/centygothic-bold-webfont.woff2') format('woff2'),
+         url('fonts/centygothic-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'century_gothic_bold_italic';
+    src: url('fonts/centygothic-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/centygothic-bolditalic-webfont.woff') format('woff'),
+         url('fonts/webfont.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'compile' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-UI_Twitter:before {
+  content: "\e906";
+}
+.icon-UI_Audio:before {
+  content: "\e900";
+}
+.icon-UI_Compile:before {
+  content: "\e901";
+}
+.icon-UI_Image:before {
+  content: "\e902";
+}
+.icon-UI_Text:before {
+  content: "\e903";
+}
+.icon-UI_Top:before {
+  content: "\e904";
+}
+.icon-UI_Video:before {
+  content: "\e905";
+}
+
+
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -153,54 +235,7 @@ __________________________________________________
 _______________________________________________ */
 
 
-/* ________ ICON FONT ________ */
-@font-face {
-    font-family: 'compile';
-    src:  url('fonts/compile.eot?8xo6j9');
-    src:  url('fonts/compile.eot?8xo6j9#iefix') format('embedded-opentype'),
-        url('fonts/compile.ttf?8xo6j9') format('truetype'),
-        url('fonts/compile.woff?8xo6j9') format('woff'),
-        url('fonts/compile.svg?8xo6j9#compile') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'compile' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-UI_Twitter:before {
-  content: "\e906";
-}
-.icon-UI_Audio:before {
-  content: "\e900";
-}
-.icon-UI_Compile:before {
-  content: "\e901";
-}
-.icon-UI_Image:before {
-  content: "\e902";
-}
-.icon-UI_Text:before {
-  content: "\e903";
-}
-.icon-UI_Top:before {
-  content: "\e904";
-}
-.icon-UI_Video:before {
-  content: "\e905";
-}
 
 /* ________ ANIMATIONS ________ */
 /* ________ ANIMATIONS ________ */
@@ -242,6 +277,7 @@ a{
     background: #ffffff url('images/00_compile-loading.gif') center center no-repeat 300px 300px;
 }
 .credits{
+    font-family: "t26-carbon", monospace;
     border-top: 2px solid #000000;
     padding: 1em 0;
     color: #000000;
@@ -253,12 +289,6 @@ a{
     color: #000000;
     text-decoration: none;
     font-weight: bold;
-}
-.credits p{
-    opacity: .5;
-}
-.credits a:hover{
-    opacity: 1;
 }
 .source-credit{
     position: absolute;
@@ -503,9 +533,9 @@ a.button:visited{
     display: none;
     position: absolute;
     align-items: center;
-    -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.38);
+    -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.38);
+    box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.38);
 }
 .nav-card .icon{
     color: #000000;
@@ -561,21 +591,28 @@ a.button:visited{
 .nav-card-info{
     margin: 10px 20px 10px 15px;
 }
-.nav-card-info h5{
+.nav-card-info h5, .nav-card-info h4{
+    font-family: "t26-carbon", monospace;
     font-size: .9em;
     line-height: 1;
     margin-bottom: 5px;
 }
-.nav-card-media{
+.nav-card-info h4{
+    font-weight: bold;
+}
+.nav-card-info div{
     margin-top: 15px;
 }
-.nav-card-media img, .nav-card-media h6{
+.nav-card-info div span, .nav-card-info div h6{
     display: inline;
     vertical-align: middle;
 }
-.nav-card-media h6{
+.nav-card-info div span{
     opacity: .5;
-    letter-spacing: 1px;
+}
+.nav-card-info div h6{
+    font-family: "t26-carbon", monospace;
+    opacity: .5;
     line-height: 1;
     font-size: .8em;
 }
@@ -822,11 +859,14 @@ a.button:visited{
 }
 .letter p{
     margin-top: 1.5em;
+    font-family: "t26-carbon", monospace;
 }
 .letter h5{
     padding-top: 3em;
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 2.2em;
+    letter-spacing: 1px;
 }
 
 /* ________ ISSUE 001 TABLE OF CONTENTS ________ */
@@ -838,7 +878,9 @@ a.button:visited{
     padding-top: 10px;
     border-top: 5px solid #000000;
     margin-bottom: 1em;
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
     font-weight: bold;
+    font-size: 4em;
 }
 .toc a:visited{
     color: #ffffff;
@@ -853,26 +895,53 @@ a.button:visited{
     transition: opacity .2s;
 }
 .toc-tile-info{
+    width: 85%;
+}
+.six .toc-tile-info{
     position: absolute;
-    left: 1.2em;
+    left: 1.4em;
     bottom: 1.2em;
 }
+.twelve .toc-tile-info{
+    position: absolute;
+    left: 2.5em;
+    bottom: 2em;
+}
 .toc-tile-info h4{
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
     font-weight: bold;
-    font-size: 1.8em;
     line-height: 1.2;
+    letter-spacing: 1px;
     color: #ffffff;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.six .toc-tile-info h4{
+    font-size: 1.4em;
+}
+.twelve .toc-tile-info h4{
+    font-size: 1.7em;
 }
 .toc-tile-info h5{
-    font-size: 1.2em;
+    font-family: "t26-carbon", monospace;
     color: #ffffff;
     margin-bottom: 0;
 }
-.toc-tile-media{
+.six .toc-tile-info h5{
+    font-size: 1.3em;
+}
+.twelve .toc-tile-info h5{
+    font-size: 1.6em;
+}
+.six .toc-tile-media{
     position: absolute;
-    right: 1.2em;
+    right: 1.4em;
     top: 1.2em;
+}
+.twelve .toc-tile-media{
+    position: absolute;
+    right: 2.5em;
+    top: 2em;
 }
 .toc-tile-media span, .toc-tile-media h6{
     display: inline;
@@ -882,11 +951,12 @@ a.button:visited{
     color: #ffffff;
     font-size: 1.7em;
 }
-.toc-tile-info h6{
-    font-size: 1.5em;
+.toc-tile-media h6{
+    font-family: "t26-carbon", monospace;
+    font-size: 1.1em;
     color: #ffffff;
-    font-weight: bold;
     text-decoration: none;
+    margin-right: 5px;
 }
 #toc-1{
     background: url(images/table-of-contents/nyc-toc.png);
@@ -1033,7 +1103,7 @@ a.button:visited{
 
 /* ________ NYC '94 ________ */
 #nyc{
-    background: #8554AC;
+    background: #2a2a28;
     padding-bottom: 6em;
 }
 .nyc-top{
@@ -1060,15 +1130,18 @@ a.button:visited{
 }
 .nyc-cam{
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
-    margin-top: -17em;
+    margin-top: -9em;
+    overflow: visible;
+}
+.nyc-cam img{
+    /*opacity: .5;*/
 }
 .nyc-bottom{
     width: 100vw;
     min-height: 100vh;
-    padding-top: 6em;
-    background: #8554AC;
+    background: #2a2a28;
     position: relative;
 }
 .video-wrapper{
@@ -1085,16 +1158,22 @@ a.button:visited{
 	height: 100%;
 }
 .nyc-text{
-    padding: 2em;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0.75)
-    );
-    margin-left: 0 !important;
-    width: 26% !important;
+    padding: 1.5em 1em 2em 0;
 }
 .nyc-text p{
-    font-size: .85em;
+    font-family: "lores-22-serif",sans-serif;
+    font-size: 1.4em;
+    color: #fff928;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#nyc .credits p, #nyc .credits a{
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#nyc .credits{
+    border-top: 2px solid #ffffff;
 }
 
 /* ________ A DECLARATION OF THE INDEPENDENCE OF CYBERSPACE ________ */
@@ -1109,26 +1188,35 @@ a.button:visited{
     background-repeat: no-repeat;
     height: 300vh;
 }
-.dec-bottom{
+.dec-body{
     padding-top: 8em;
 }
-.dec-bottom p{
+.dec-body p{
+    font-family: "source-code-pro",monospace;
     line-height: 1.8;
     margin-bottom: 3em;
 }
-.dec-bottom span{
+.dec-body span{
     background-color: #51FEDD;
 }
-.dec-links a{
+.dec-body p a{
     border-bottom: 4px dotted #3229FF;
     color: #000000;
     text-decoration: none;
+    transition: all 150ms ease-in-out;
 }
-.dec-links a:visited{
+.dec-body a:visited{
     color: #000000;
 }
-.dec-bottom .seven{
+.dec-body p a:hover{
+    background-color: #3229FF;
+    color: #ffffff;
+}
+.dec-body .seven{
     margin-left: 0;
+}
+.dec-quote-sec{
+    margin: 3em 0;
 }
 .dec-quote-wrapper{
     min-width: 100%;
@@ -1152,13 +1240,16 @@ a.button:visited{
     z-index: 2;
 }
 #dec-quote h5{
+    font-family: "bebas-neue",sans-serif;
     font-size: 1.4em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 #dec-quote h6{
+    font-family: "source-code-pro",monospace;
     text-transform: uppercase;
     text-align: right;
-    font-size: .7em;
+    font-size: .9em;
+    line-height: 1.2;
     margin: 0;
 }
 #dec-checkerboard{
@@ -1438,10 +1529,11 @@ a.button:visited{
 .god-title{
     position: absolute;
     width: 100%;
-    top: 400px;
+    top: 300px;
     left: 0;
 }
 .god-hero h1{
+    font-family: 'marvin_visions', sans-serif;
     text-align: center;
     font-size: 5em;
     font-weight: bold;
@@ -1450,6 +1542,7 @@ a.button:visited{
     -moz-osx-font-smoothing: grayscale;
 }
 .god-hero h4{
+    font-family: 'century_gothic_regular', sans-serif;
     text-align: center;
     font-size: 2em;
     color: #F6E600;
