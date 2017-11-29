@@ -1555,38 +1555,50 @@ a.button:visited{
     margin-bottom: 60px;
 }
 .god-author h3{
+    font-family: 'marvin_visions', sans-serif;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
     color: #ffffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 1px;
 }
-#god-body{
+.god-body{
     width: 100vw;
     min-height: 100vh;
     background-color: #FFF7ED;
-    padding: 10em 0 6em 0;
+    padding: 6em 0;
 }
-#god-body p{
+.god-body:first-of-type{
+    padding-top: 10em;
+}
+.god-body p{
+    font-size: 1.2em;
     line-height: 1.8;
     margin-bottom: 2.5em;
+    font-family: 'adobe-garamond-pro', serif;
 }
-#god-body p span.drop-cap{
+.god-body p span.drop-cap{
+    font-family: 'adobe-garamond-pro', serif;
     color: #FF6027;
     float: left;
-    font-family: serif;
-    font-size: 90px;
-    line-height: 60px;
-    padding-top: 10px;
+    font-size: 105px;
+    line-height: 68px;
+    padding-top: 20px;
     padding-right: 15px;
     padding-left: 3px;
 }
-#god-body p a{
+.god-body p a{
+    font-family: 'adobe-garamond-pro', serif;
     font-weight: bold;
     color: #FF6027;
 }
-#god-body h2{
+.god-body p:last-child{
+    margin-bottom: 4em;
+}
+.god-body h2{
+    font-family: 'century_gothic_bold_italic', sans-serif;
     font-weight: bold;
     color: #847FC4;
     text-align: left;
@@ -1599,4 +1611,17 @@ a.button:visited{
 .pull-quote{
     height: fit-content;
     margin-bottom: 2.5em;
+    opacity: 0;
+}
+.god-feature-ilo{
+    background-color: #201C30;
+}
+.god-feature-ilo img{
+    max-width: 92%;
+    vertical-align: bottom;
+    text-align: center;
+}
+.god-hands{
+    margin-top: 8em;
+    margin-left: 4%;
 }
