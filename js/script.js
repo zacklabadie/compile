@@ -131,6 +131,9 @@ $(document).ready(function() {
     $(document).ready(function() {
         matchHeights('.nyc-text', '.nyc-cam');
     });
+    $(document).ready(function() {
+        matchHeights('.full-landscape', '.landscapes-hero');
+    });
 
 
 });

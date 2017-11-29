@@ -277,16 +277,13 @@ a{
     background: #ffffff url('images/00_compile-loading.gif') center center no-repeat 300px 300px;
 }
 .credits{
-    font-family: "t26-carbon", monospace;
-    border-top: 2px solid #000000;
+    border-top: 2px solid;
     padding: 1em 0;
-    color: #000000;
     font-size: .8em;
     margin-top: 5em;
     position: relative;
 }
 .credits a, .credits a:visited{
-    color: #000000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -1167,14 +1164,18 @@ a.button:visited{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-#nyc .credits p, #nyc .credits a{
+#nyc .credits{
+    border-top: 2px solid #ffffff;
+    font-family: "lores-22-serif",sans-serif;
     color: #ffffff;
+    font-size: 1.35em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-#nyc .credits{
-    border-top: 2px solid #ffffff;
+#nyc .credits a, #nyc .credits a:visited{
+    color: #ffffff;
 }
+
 
 /* ________ A DECLARATION OF THE INDEPENDENCE OF CYBERSPACE ________ */
 #dec{
@@ -1262,6 +1263,14 @@ a.button:visited{
 }
 .dec-text-bottom{
     margin-top: 8em;
+}
+#dec .dec-body .credits p, #dec .dec-body .credits a{
+    font-family: "bebas-neue",sans-serif;
+    color: #000000;
+    font-size: 1.2em;
+}
+#dec .credits a, #dec .credits a:visited{
+    color: #000000;
 }
 
 /* ________ KEEPING TIME TO THE SAME BEAT ________ */
@@ -1410,7 +1419,6 @@ a.button:visited{
     width: 100vw;
     background: #336633;
     height:auto;
-    padding-bottom:
 }
 .swatch-credits .credits{
     margin: 3em 0 4em 0;
@@ -1418,6 +1426,9 @@ a.button:visited{
 .swatch-body article a{
     color: #292999;
     text-decoration: underline;
+}
+.swatch-credits .source-credit{
+    color: #000000;
 }
 
 
@@ -1465,14 +1476,16 @@ a.button:visited{
     vertical-align: middle;
 }
 #big-ben h4{
+    font-family: "ltc-bodoni-175",serif;
     font-weight: bold;
     color: #ffffff;
-    font-size: 1.8em;
-    line-height: 1.2;
+    font-size: 2.2em;
+    line-height: 1.25;
 }
 #big-ben h6{
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .big-ben-tweets{
     position: absolute;
@@ -1506,7 +1519,19 @@ a.button:visited{
     left: 90%;
 }
 .danielle-video{
+    margin-bottom: 1.5em;
+}
+#danielle .credits{
+    border-top: 2px solid #DF8683;
+    font-family: "t26-carbon", monospace;
+    color: #DF8683;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 2em;
     margin-bottom: 3em;
+}
+#danielle .credits a, #danielle .credits a:visited{
+    color: #DF8683;
 }
 
 /* ________ GOD IN THE MACHINE ________ */
@@ -1610,7 +1635,8 @@ a.button:visited{
 }
 .pull-quote{
     height: fit-content;
-    margin-bottom: 2.5em;
+    margin-bottom: 2.75em;
+    margin-top: -1.75em;
     opacity: 0;
 }
 .god-feature-ilo{
@@ -1620,8 +1646,66 @@ a.button:visited{
     max-width: 92%;
     vertical-align: bottom;
     text-align: center;
-}
-.god-hands{
     margin-top: 8em;
     margin-left: 4%;
+}
+.god-body .god-space-bt{
+    margin-bottom: 5.5em;
+}
+#god .credits p{
+    color: #000000;
+    font-family: 'adobe-garamond-pro', serif;
+}
+#god .credits a.source-credit, #god .credits a.source-credit:visited{
+    color: #000000;
+    font-family: 'adobe-garamond-pro', serif;
+    font-weight: bold;
+}
+
+/* ________ VIRTUAL LANDSCAPES ________ */
+.full-landscape, .landscapes-hero{
+    min-width: 100vw;
+}
+.landscapes-hero{
+    background-color: #ffffff;
+    background-image: url(images/001g_landscapes/001g_landcsapes1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.landscapes-title{
+    background-color: #ffffff;
+    margin-top: 6em;
+    padding: 4em 6em 4em 4em;
+    -webkit-box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.45);
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.45);
+    overflow: hidden;
+    transition: transform 300ms ease-in;
+    transform-origin: center left;
+    transform:scaleX(1);
+}
+.landscapes-title h1{
+    font-family: "ambroise-std", serif;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 4em;
+    margin-left: -3px;
+    margin-bottom: 0;
+}
+.landscapes-title h5{
+    font-family: "ambroise-std", serif;
+    color: #000000;
+    font-size: 1.4em;
+    line-height: 1.8;
+}
+.landscapes-title p{
+    font-family: "pragmatica",sans-serif;
+    color: #000000;
+    font-size: .85em;
+    padding-left: 15px;
+    border-left: 2px solid #C781FA;
+    margin-top: 3em;
+    margin-bottom: 0;
+    padding-right: 3em;
+    line-height: 1.6em;
 }
