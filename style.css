@@ -1,11 +1,11 @@
 /* ________ ICONS & FONTS ________ */
 @font-face {
-    font-family:'compile';
-    src:  url('fonts/compile.eot?8xo6j9');
-    src:  url('fonts/compile.eot?8xo6j9#iefix') format('embedded-opentype'),
-        url('fonts/compile.ttf?8xo6j9') format('truetype'),
-        url('fonts/compile.woff?8xo6j9') format('woff'),
-        url('fonts/compile.svg?8xo6j9#compile') format('svg');
+    font-family: 'compile';
+    src:  url('fonts/compile.eot?b4u51u');
+    src:  url('fonts/compile.eot?b4u51u#iefix') format('embedded-opentype'),
+    url('fonts/compile.ttf?b4u51u') format('truetype'),
+    url('fonts/compile.woff?b4u51u') format('woff'),
+    url('fonts/compile.svg?b4u51u#compile') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -57,9 +57,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-UI_Twitter:before {
-  content: "\e906";
-}
 .icon-UI_Audio:before {
   content: "\e900";
 }
@@ -77,6 +74,12 @@
 }
 .icon-UI_Video:before {
   content: "\e905";
+}
+.icon-UI_Twitter:before {
+  content: "\e906";
+}
+.icon-UI_Facebook:before {
+  content: "\e907";
 }
 
 
@@ -326,49 +329,95 @@ a{
 }
 .homepage-bg{
     min-height: 100vh;
+    min-width: 100vw;
     background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/00_old-cables.jpg);
     background-size:cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
 }
-.homepage-bg img{
+#homepage-2019 .homepage-bg{
+    min-height: 100vh;
+    min-width: 100vw;
+    background:url(images/004_broken-phone.jpg);
+    background-size:cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+}
+#lost-issue .homepage-bg{
+    min-height: 100vh;
+    min-width: 100vw;
+    background:#ffffff;
+    background-size:cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+}
+.homepage-splash-wrap{
+    width: 80%;
+    height: 100%;
+    resize: both;
+}
+.homepage-splash-wrap img{
     display: block;
     margin: 0 auto;
-    padding-top: 10%;
+    width: 45%;
 }
 .homepage-blurb{
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
     text-align: center;
-    padding: 1.8em 0 3.6em 0;
+    padding: 1em 0 3.5em 0;
     font-weight: bold;
 }
 .homepage-blurb h6{
     display: inline;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
     font-weight: bold;
+    color: #ffffff;
     letter-spacing: 1px;
-    font-size: .85em;
+    font-size: 1em;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#homepage-2019 .homepage-blurb h6{
+    color: #333333;
 }
 .homepage-blurb span{
     display: inline;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
     color: #CBFF00;
     padding: 0 7px;
     font-size: .85em;
 }
+#homepage-2019 .homepage-blurb span{
+    color: #F5E3A3;
+}
 .homepage-cta{
     text-align: center;
     margin: auto;
     display: block;
 }
+#homepage-2019 .homepage-cta{
+    margin-top: 3em;
+}
 .homepage-cta .button{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "t26-carbon", monospace;
     text-align: center;
     text-decoration: none;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: bold;
-    padding: 1em 1.5em;
+    padding: 1.25em 2em;
     background-color: #1044FF;
     border-radius: 3px;
     letter-spacing: 2px;
@@ -376,15 +425,25 @@ a{
     -moz-box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.3);
     box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.3);
 }
+#homepage-2019 .homepage-cta .button{
+    background-color: #2CC9F7;
+    color: #333333;
+}
 a.button:visited{
     color: #ffffff;
 }
-.homehero{
+#homepage-2019 a.button:visited{
+    color: #333333;
+}
+.home-hero{
     background: #CBFF00;
     overflow: hidden !important;
-    height: 600px;
+    min-height: 600px;
     width: 100vw;
     position: relative;
+}
+#homepage-2019 .home-hero{
+    background: #F4E095;
 }
 .drop-container{
     overflow:hidden;
@@ -412,18 +471,28 @@ a.button:visited{
     padding-top: 4em;
     background: #CBFF00;
 }
+#homepage-2019 .issue-teaser{
+    background: #F4E095;
+}
 .issue-teaser .row{
-    border-bottom: 1px solid #000000;
     padding-bottom: 2em;
+}
+#homepage .issue-teaser .row{
+    border-bottom: 1px solid #000000;
 }
 .issue-teaser img{
     text-align: left;
 }
 .issue-teaser h4{
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
     text-align: right;
     font-weight: bold;
-    font-size: 1.5em;
-    padding-left: 10%;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-left: 20%;
+    letter-spacing: 1px;
+    color: #000000;
+    vertical-align: bottom;
 }
 .issue-teaser h4, .issue-teaser img{
     align-self: flex-start;
@@ -437,7 +506,7 @@ a.button:visited{
 	bottom:200px;
 	-webkit-animation: fall 5s linear infinite;
     -moz-animation: fall 5s linear infinite;
-    font-family: sans-serif;
+    font-family: "t26-carbon", monospace;
     font-weight: bold;
     text-align: center;
     color: #ACD900;
@@ -449,24 +518,232 @@ a.button:visited{
 @-moz-keyframes fall {
 	to {margin-top:600px;}
 }
-.homepage-foot{
-    padding: 4em 2em;
-    background-color: #000000;
+.time-travel{
+    padding: 1em 0;
+    font-family: "t26-carbon", monospace;
     text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ACD900;
+    background-color: #CBFF00;
+    margin-bottom: 1em;
 }
-.homepage-foot h4{
-    display: inline-block;
-    padding: 2em 1em;
+.issue-feature{
+    min-height: 100vh;
+    min-width: 100vw;
+    background:#F4E095 url(images/004/004_maze.svg);
+    background-size:cover;
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+}
+.issue-feature img{
+    width: 40%;
+}
+.home-about{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #000000;
+    padding: 6em 0;
+}
+.home-about h1{
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
+    color: #CBFF00;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 1px;
+}
+.home-about p{
+    font-family: "t26-carbon", monospace;
+    color: #ffffff;
+    font-size: 1.25em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+}
+.home-about p a{
+    color: #CBFF00;
+    font-weight: bold;
+    text-decoration: none;
+}
+.homepage-foot{
+    padding: 1.75em 2em;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: baseline;
+}
+.homepage-foot h5{
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1px;
+    text-align: left;
+}
+.homepage-foot h6{
+    font-family: "t26-carbon", monospace;
+    color: #000000;
+    font-size: 1em;
+    margin-bottom: 0;
+    text-align: left;
+}
+.foot-icons a span{
+    display: inline;
+    color: #1044FF;
+    font-size: 2em;
+    text-align: right;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.foot-icons a:last-child span{
+    background: #1044FF;
+    color: #fff;
+    border-radius: 2px;
+}
+.foot-icons{
+    vertical-align: middle;
+    text-align: right;
+    margin-top: 7px;
+}
+.homepage-foot h6 a{
+    text-decoration: none;
+    color: #1044FF;
+    opacity: 1;
     font-weight: bold;
 }
-.homepage-foot a{
-    text-decoration: none;
-    color: #ffffff;
-    opacity: .2;
+
+#homepage-2019 .home-about{
+    background-color: #F4E095;
 }
-.homepage-foot a:hover{
+#homepage-2019 .home-about h1{
+    color: #F33F3F;
+}
+#homepage-2019 .home-about p{
+    color: #333333;
+}
+#homepage-2019 .home-about p a{
+    color: #F33F3F;
+}
+#homepage-2019 .homepage-foot{
+    background-color: #333333;
+}
+.homepage-foot h5{
+    color: #ffffff;
+}
+.homepage-foot h6{
+    color: #ffffff;
+}
+.foot-icons a span{
+    color: #2CC9F7;
+}
+.foot-icons a:last-child span{
+    background: #2CC9F7;
+    color: #333333;
+    border-radius: 2px;
+}
+.homepage-foot h6 a{
+    color: #2CC9F7;
+}
+.home-archive{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #ffffff;
+    padding: 10em 0 8em 0;
+}
+.home-archive h1{
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+}
+.home-archive .row{
+    margin-bottom: 2em;
+}
+.home-archive .columns{
+    position: relative;
+}
+.home-archive .future-issue{
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75));
+}
+.home-archive h3{
+    text-align: center;
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 4em;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.home-archive h5{
+    text-align: center;
+    font-family: "t26-carbon", monospace;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.future-issue{
+    display: none;
+}
+.home-archive #future-hero-003:hover #future-issue-003,
+.home-archive #future-hero-002:hover #future-issue-002,
+.home-archive #future-hero-001:hover #future-issue-001{
+    display: block;
+}
+.future-issue div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.back-in-time{
+    text-align: center;
+    font-family: "t26-carbon", monospace;
+    color: #000000;
+    width: 100%;
+}
+.back-in-time a{
+    opacity: .4;
+}
+.back-in-time a:hover{
     opacity: 1;
 }
+#lost-issue h1{
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+#lost-issue h4{
+    text-align: center;
+    font-family: "t26-carbon", monospace;
+    color: #000000;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+#lost-issue .back-in-time{
+    font-family: "t26-carbon", monospace;
+    color: #000000;
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+
+
+
 
 /* ________ ISSUE 001 UI ________ */
 .index-link{
