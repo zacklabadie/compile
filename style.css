@@ -1998,6 +1998,9 @@ a.button:visited{
 }
 
 /* ________ VIRTUAL LANDSCAPES ________ */
+#alww{
+    background-color: #3D9083;
+}
 .alww-hero{
     min-width: 100vw;
     background-image: url('images/001h_alww/001h_alww-stanford.jpg');
@@ -2033,7 +2036,7 @@ a.button:visited{
 }
 .alww-media{
     min-width: 100vw;
-    padding: 1.25em 0 1.5em 0;
+    padding: 1.5em 0 1em 0;
     background-color: #333333;
 }
 .alww-content{
@@ -2061,10 +2064,31 @@ a.button:visited{
     line-height: 1.6em;
 }
 .alww-content .row{
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 .alww-content p a{
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-decoration-color: #FBF59F;
+}
+.alww-content img{
+    mix-blend-mode: multiply;
+}
+.alww-pixels{
+    margin-top: 6em;
+}
+.alww-titanic{
+    min-width: 100vw;
+    padding: 8em 0 2em 0;
+    background-color: #000000;
+    margin-top: -10px;
+}
+.alww-titanic .credits{
+    margin-top: 10em;
+    border-top: 2px solid #FBF59F;;
+}
+.alww-titanic .credits p, .alww-titanic .credits a{
+    color: #FBF59F;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
