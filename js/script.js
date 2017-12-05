@@ -136,4 +136,47 @@ $(document).ready(function() {
     });
 
 
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+document.getElementById("end-prev").onclick = function() {plusSlides(-1)};
+document.getElementById("end-next").onclick = function() {plusSlides(1)};
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("end-text");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+}
+
+// function changeBg(n) {
+//     if (n = 1) {
+//         document.getElementById("end-gallery").style.background-image = "url('images/001i_end/001i_end-joggers.jpg')"
+//     } else if (n = 2) {
+//         document.getElementById("end-gallery").style.background-image = "url('images/001i_end/001i_end-tennis.jpg')"
+//     } else if (n = 3) {
+//         document.getElementById("end-gallery").style.background-image = "url('images/001i_end/001i_end-beer.jpg')"
+//     } else () {
+//         document.getElementById("end-gallery").style.background-image = "url('images/001i_end/001i_end-nuke.jpg')"
+//     }
+// }
+
+
+
+
+
 });

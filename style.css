@@ -1997,7 +1997,7 @@ a.button:visited{
     font-weight: bold;
 }
 
-/* ________ VIRTUAL LANDSCAPES ________ */
+/* ________ A LIFE WELL WASTED ________ */
 #alww{
     background-color: #3D9083;
 }
@@ -2091,4 +2091,95 @@ a.button:visited{
     color: #FBF59F;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ________ ... WHEN THE WORLD ENDS ________ */
+.end-hero{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/001i_end/001i_end-nuke.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.end-hero h1{
+    text-align: center;
+    font-family: "azo-sans-uber",sans-serif;
+    color: #F1FF00;
+    font-size: 3.5em;
+    margin-top: 20%;
+}
+.end-hero h3{
+    margin-top: 1em;
+    text-align: center;
+    font-family: "azo-sans-uber",sans-serif;
+    color: #ffffff;
+    font-size: 1.75em;
+}
+#end-gallery{
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    overflow: auto;
+    background: url('images/001i_end/001i_end-joggers.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#end-gallery .end-text-box{
+    background-color: #000000;
+    min-height: 75vh;
+    max-height: 85vh;
+    width: 75%;
+    max-width: 85%;
+    padding: 5em 5em 1em 5em;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.end-text{
+    font-family: "museo-slab",serif;
+    font-weight: 700;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 20%;
+    padding-bottom: 3em;
+    overflow: scroll;
+}
+.end-text-box .end-buttons{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.end-text-box .end-buttons a{
+    font-family: "museo-slab",serif;
+    font-size: 1.5em;
+    color: #000000;
+    background-color: #828200;
+    padding: 5px 20px;
+    line-height: 1;
+    margin: 0 5px;
+    font-weight: 900;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.end-text-box .end-buttons a:hover{
+    background-color: #ffff00;
+}
+.end-text{
+    display: none;
 }
