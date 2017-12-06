@@ -154,26 +154,129 @@ function currentSlide(n) {
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("end-text");
+    var bg = document.getElementsByClassName("end-image");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
+    for (i = 0; i < slides.length; i++) {
+      bg[i].style.display = "none";
+    }
 
     slides[slideIndex-1].style.display = "block";
+    bg[slideIndex-1].style.display = "block";
 }
 
-// function changeBg(n) {
-//     if (n = 1) {
-//         document.getElementById("end-gallery").style.background-image = "url('images/001i_end/001i_end-joggers.jpg')"
-//     } else if (n = 2) {
-//         document.getElementById("end-gallery").style.background-image = "url('images/001i_end/001i_end-tennis.jpg')"
-//     } else if (n = 3) {
-//         document.getElementById("end-gallery").style.background-image = "url('images/001i_end/001i_end-beer.jpg')"
-//     } else () {
-//         document.getElementById("end-gallery").style.background-image = "url('images/001i_end/001i_end-nuke.jpg')"
-//     }
-// }
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#7dbb24"
+    },
+    "shape": {
+      "type": "polygon",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 6
+      },
+    },
+    "opacity": {
+      "value": 0.4,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": .5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 4,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#7dbb24",
+      "opacity": 0.2,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 5,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
 
 
 

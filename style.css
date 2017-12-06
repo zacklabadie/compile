@@ -282,6 +282,7 @@ a{
 .credits{
     border-top: 2px solid;
     padding: 1em 0;
+    font-family: "t26-carbon", monospace;
     font-size: .8em;
     margin-top: 5em;
     position: relative;
@@ -803,7 +804,7 @@ a.button:visited{
     height: 100px;
     background-color: #ffffff;
     left: 70px;
-    z-index: 1;
+    z-index: 99;
     display: none;
     position: absolute;
     align-items: center;
@@ -1443,9 +1444,7 @@ a.button:visited{
 }
 #nyc .credits{
     border-top: 2px solid #ffffff;
-    font-family: "lores-22-serif",sans-serif;
     color: #ffffff;
-    font-size: 1.35em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -1542,9 +1541,7 @@ a.button:visited{
     margin-top: 8em;
 }
 #dec .dec-body .credits p, #dec .dec-body .credits a{
-    font-family: "bebas-neue",sans-serif;
     color: #000000;
-    font-size: 1.2em;
 }
 #dec .credits a, #dec .credits a:visited{
     color: #000000;
@@ -1800,7 +1797,6 @@ a.button:visited{
 }
 #danielle .credits{
     border-top: 2px solid #DF8683;
-    font-family: "t26-carbon", monospace;
     color: #DF8683;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1931,12 +1927,9 @@ a.button:visited{
 }
 #god .credits p{
     color: #000000;
-    font-family: 'adobe-garamond-pro', serif;
 }
 #god .credits a.source-credit, #god .credits a.source-credit:visited{
     color: #000000;
-    font-family: 'adobe-garamond-pro', serif;
-    font-weight: bold;
 }
 
 /* ________ VIRTUAL LANDSCAPES ________ */
@@ -1987,14 +1980,11 @@ a.button:visited{
     line-height: 1.6em;
 }
 #landscapes .credits{
-    margin-top: 2em;
-    margin-bottom: 2em;
-    font-family: "pragmatica", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 2em 0;
     color: #000000;
-    font-size: .85em;
 }
 #landscapes .credits a.source-credit, #landscapes .credits p a{
-    font-weight: bold;
+
 }
 
 /* ________ A LIFE WELL WASTED ________ */
@@ -2085,10 +2075,10 @@ a.button:visited{
 }
 .alww-titanic .credits{
     margin-top: 10em;
-    border-top: 2px solid #FBF59F;;
+    border-top: 2px solid #ffffff;
 }
 .alww-titanic .credits p, .alww-titanic .credits a{
-    color: #FBF59F;
+    color: #ffffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -2109,19 +2099,19 @@ a.button:visited{
     text-align: center;
     font-family: "azo-sans-uber",sans-serif;
     color: #F1FF00;
-    font-size: 3.5em;
+    font-size: 3.7em;
     margin-top: 20%;
+    line-height: 1.1;
 }
 .end-hero h3{
     margin-top: 1em;
     text-align: center;
     font-family: "azo-sans-uber",sans-serif;
     color: #ffffff;
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 #end-gallery{
-    min-height: 100vh;
-    max-height: 100vh;
+    height: 100vh;
     width: 100vw;
     margin: 0 auto;
     display: flex;
@@ -2129,11 +2119,110 @@ a.button:visited{
     align-items: center;
     resize: both;
     overflow: auto;
-    background: url('images/001i_end/001i_end-joggers.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: red;
+    position: relative;
 }
+.end-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+#end-img-1{
+    background: url('images/001i_end/001i_end-joggers.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-2{
+    background: url('images/001i_end/001i_end-tennis.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-3{
+    background: url('images/001i_end/001i_end-beer.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-4{
+    background: url('images/001i_end/001i_end-smiling1.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-5{
+    background: url('images/001i_end/001i_end-office.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-6{
+    background: url('images/001i_end/001i_end-gym.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-7{
+    background: url('images/001i_end/001i_end-couple.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-8{
+    background: url('images/001i_end/001i_end-dairy.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-9{
+    background: url('images/001i_end/001i_end-burgers.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-10{
+    background: url('images/001i_end/001i_end-portugal.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-11{
+    background: url('images/001i_end/001i_end-bathroom.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-12{
+    background: url('images/001i_end/001i_end-nirvana.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#end-img-13{
+    background: url('https://media.giphy.com/media/rSxGPn046lZGE/giphy.gif') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #end-gallery .end-text-box{
     background-color: #000000;
     min-height: 75vh;
@@ -2146,6 +2235,7 @@ a.button:visited{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    z-index: 2;
 }
 .end-text{
     font-family: "museo-slab",serif;
@@ -2156,6 +2246,16 @@ a.button:visited{
     padding-right: 20%;
     padding-bottom: 3em;
     overflow: scroll;
+}
+.end-last-slide{
+    padding-right: 0;
+}
+.end-text h4{
+    text-align: center;
+    font-family: "azo-sans-uber",sans-serif;
+    color: #ffffff;
+    font-size: 3em;
+    opacity: .2;
 }
 .end-text-box .end-buttons{
     position: absolute;
@@ -2182,4 +2282,54 @@ a.button:visited{
 }
 .end-text{
     display: none;
+}
+
+
+
+/*WRAPPED*/
+#wrapped{
+    width: 100vw;
+    min-height: 100vh;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background: -webkit-linear-gradient(#082204, #000000);
+    background: -o-linear-gradient(#082204, #000000);
+    background: -moz-linear-gradient(#082204, #000000);
+    background: linear-gradient(#082204, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+}
+.wrapped-top{
+    height: 600px;
+    width: 100vw;
+    position: relative;
+    background: -webkit-linear-gradient(#082204, #000000);
+    background: -o-linear-gradient(#082204, #000000);
+    background: -moz-linear-gradient(#082204, #000000);
+    background: linear-gradient(#082204, #000000);
+}
+.wrapped-top h1{
+    font-family: "program",sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.7em;
+    letter-spacing: 10px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 280px;
+    text-align: center;
+    z-index: 2;
+}
+.wrapped-bottom{
+    background-color: #000000;
+    padding: 3em 0;
+    min-height: 100vh;
 }
