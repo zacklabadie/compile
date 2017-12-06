@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function() {
 
     // Skrollr for smooth scrolling and parallax effects

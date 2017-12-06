@@ -490,7 +490,7 @@ a.button:visited{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1em;
-    padding-left: 20%;
+    padding-left: 25%;
     letter-spacing: 1px;
     color: #000000;
     vertical-align: bottom;
@@ -632,8 +632,11 @@ a.button:visited{
     opacity: 1;
     font-weight: bold;
 }
-.homepage-foot h6 a, .issue-foot h6 a{
+.homepage-foot h6 a{
     color: #1044FF;
+}
+.issue-foot h6 a{
+    color: #ffffff;
 }
 
 #homepage-2019 .home-about{
@@ -762,6 +765,17 @@ a.button:visited{
 
 
 /* ________ ISSUE 001 UI ________ */
+.compile-loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/00_compile-loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: 1;
+}
+
 .index-link{
     position: fixed;
     top: 20px;
@@ -924,15 +938,16 @@ a.button:visited{
 }
 .beach-ball{
     background-image: url(images/001_beachball.png);
-    background-size: 200px;
+    background-color: none;
+    background-size: cover;
     height: 200px;
     width: 200px;
     margin: 0;
     padding: 0;
     border-radius: 100%;
-    -webkit-box-shadow: 5px 5px 38px -5px rgba(0,0,0,0.4);
+    /*-webkit-box-shadow: 5px 5px 38px -5px rgba(0,0,0,0.4);
     -moz-box-shadow: 5px 5px 38px -5px rgba(0,0,0,0.4);
-    box-shadow: 5px 5px 38px -5px rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 38px -5px rgba(0,0,0,0.4);*/
     position: absolute;
     -webkit-animation: rotation 1s infinite linear;
     z-index: 1;
@@ -1190,7 +1205,7 @@ a.button:visited{
 .six .toc-tile-info{
     position: absolute;
     left: 1.4em;
-    bottom: 1.2em;
+    bottom: 1.1em;
 }
 .twelve .toc-tile-info{
     position: absolute;
@@ -1226,7 +1241,7 @@ a.button:visited{
 .six .toc-tile-media{
     position: absolute;
     right: 1.4em;
-    top: 1.2em;
+    top: 1.1em;
 }
 .twelve .toc-tile-media{
     position: absolute;
@@ -1413,6 +1428,9 @@ a.button:visited{
     width: 500px;
     height: 230px;
     margin-top: -115px;
+    transform: scale(1) rotate(0);
+    -webkit-transition: transform 300ms ease-out;
+    transition: transform 300ms ease-out;
     margin-left: -250px;
 }
 .nyc-bottom .columns{
@@ -1479,6 +1497,7 @@ a.button:visited{
     background-size: 50%, 100%, 100%;
     background-repeat: no-repeat;
     height: 300vh;
+    background-color: #121212;
 }
 .dec-body{
     padding-top: 8em;
@@ -1567,7 +1586,7 @@ a.button:visited{
     background: #336633 url('images/001c_swatch/001c_time-pattern.png') repeat;
     background-size: 75px 75px;
     width: 100vw;
-    padding: 6em 0;
+    padding: 6em 0 8em 0;
 }
 #swatch .container{
     background: #ffffff;
@@ -1825,25 +1844,27 @@ a.button:visited{
 /* ________ GOD IN THE MACHINE ________ */
 
 #god{
-    background-image: linear-gradient(-180deg, #FF5F00 0%, #AC2121 100%);
     width: 100vw;
 }
 .god-hero{
-    min-height: 2200px;
+    min-height: 1600px;
     width: 100vw;
-    background: url('images/001f_god/001f_god-hero-human.svg') center 70% no-repeat,
+    background:
+        url('images/001f_god/001f_god-hero-human.svg') center 60% no-repeat,
         url('images/001f_god/001f_god-hills1.svg') bottom center no-repeat,
         url('images/001f_god/001f_god-hills2.svg') bottom center no-repeat,
         url('images/001f_god/001f_god-hills3.svg') bottom center no-repeat,
-        url('images/001f_god/001f_god-sun.svg') bottom center no-repeat;
-    background-size: 140px, 100%, 100%, 100%, 100%;
+        url('images/001f_god/001f_god-sun.svg') bottom center no-repeat,
+        linear-gradient(#ff5900 0%,#a8181f 90%) no-repeat;
+    background-size: 120px, 100%, 100%, 100%, 100%, cover;
     position: relative;
 }
 .god-title{
     position: absolute;
     width: 100%;
-    top: 300px;
+    top: 200px;
     left: 0;
+    margin-top: 0;
 }
 .god-hero h1{
     font-family: 'marvin_visions', sans-serif;
@@ -1853,6 +1874,7 @@ a.button:visited{
     color: #ffffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 10px;
 }
 .god-hero h4{
     font-family: 'century_gothic_regular', sans-serif;
@@ -1926,6 +1948,8 @@ a.button:visited{
     margin-bottom: 2.75em;
     margin-top: -1.75em;
     opacity: 0;
+    position: relative;
+    transition: transform 1s ease, opacity 1s ease;
 }
 .god-feature-ilo{
     background-color: #201C30;
@@ -2314,7 +2338,7 @@ a.button:visited{
 #particles-js {
     position: absolute;
     width: 100%;
-    height: 600px;
+    height: 750px;
     background: -webkit-linear-gradient(#082204, #000000);
     background: -o-linear-gradient(#082204, #000000);
     background: -moz-linear-gradient(#082204, #000000);
@@ -2325,7 +2349,7 @@ a.button:visited{
     z-index: 1;
 }
 .wrapped-top{
-    height: 600px;
+    height: 750px;
     width: 100vw;
     position: relative;
     background: -webkit-linear-gradient(#082204, #000000);

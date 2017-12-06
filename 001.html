@@ -9,11 +9,29 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
 
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="js/jquery. .min.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script type="text/javascript" src="js/skrollr.menu.min.js"></script>
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+    $(window).on('load', function () {
+        $(".compile-loading").fadeOut("slow");
+});
+    </script>
+
+    <style>
+.compile-loading
+{
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background: url('images/00_compile-loading.gif') 50% 50% no-repeat rgb(255,255,255);
+}
+</style>
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicons_001/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons_001/favicon-32x32.png">
@@ -31,7 +49,7 @@
 </head>
 
 <body>
-    <!-- <div class="compile-loading"></div> -->
+    <div class="compile-loading"></div>
     <nav>
         <a href="index.html" target="_blank" class="index-link">
             <span class="icon-UI_Compile icon"></span>
@@ -392,7 +410,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="twelve columns full-height">
-                            <img src="images/001a_nyc/001a_nyc-title.png" alt="NYC 93" width="35%" height="auto" class="lazy">
+                            <img src="images/001a_nyc/001a_nyc-title.png" alt="NYC 93" width="35%" height="auto" data-anchor-target=".nyc-top" data-top="transform: scale(1) rotate(0);" data-200-top="transform: scale(.01) rotate(720deg);">
                         </div>
                     </div>
                 </div>
@@ -406,13 +424,13 @@
                             </p>
                         </div>
                         <div class="six columns nyc-cam">
-                            <img src="images/001a_nyc/001a_nyc-camera.svg" alt="Sony HDC-500" width="100%" height="auto" class="lazy">
+                            <img src="images/001a_nyc/001a_nyc-camera.svg" alt="Sony HDC-500" width="100%" height="auto" class=" ">
                         </div>
                     </div>
                     <div class="row flex">
                         <div class="twelve columns">
                             <div class="video-wrapper">
-                                <iframe data-loader="iframe" class="lazy" width="1120" height="630" src="https://www.youtube.com/embed/fT4lDU-QLUY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
+                                <iframe data-loader="iframe" class=" " width="1120" height="630" src="https://www.youtube.com/embed/fT4lDU-QLUY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
                                 </iframe>
                             </div>
                         </div>
@@ -435,7 +453,7 @@
         </div>
 
         <div id="dec">
-            <div class="dec-top full-bleed lazy" data-src="images/001b_dec/001b_dec-title.svg, images/001b_dec/001b_dec-hero-front.png, images/001b_dec/001b_dec-hero-back.png">
+            <div class="dec-top full-bleed  " data-src="images/001b_dec/001b_dec-title.svg, images/001b_dec/001b_dec-hero-front.png, images/001b_dec/001b_dec-hero-back.png" data-anchor-target="#dec" data-top="background-size: 50%, 100%, 100%;" data-bottom-bottom="background-size: 50%, 100%, auto 180%;">
             </div>
             <div class="dec-body full-bleed">
                 <div class="container">
@@ -459,7 +477,7 @@
                                     <h5> It is error alone which needs the support of government. Truth can stand by itself. </h5>
                                     <h6>Thomas Jefferson<br/>Notes on Virgina</h6>
                                 </div>
-                                <img src="images/001b_dec/001b_dec-quote.svg" alt="Quotation mark" width="50px" height="auto" data-70p-top="margin-left: 200%;" data-25p-top="margin-left: 0;" class="lazy">
+                                <img src="images/001b_dec/001b_dec-quote.svg" alt="Quotation mark" width="50px" height="auto" data-70p-top="margin-left: 200%;" data-25p-top="margin-left: 0;" class=" ">
                                 <div id="dec-checkerboard">
                                 </div>
                             </div>
@@ -519,7 +537,7 @@
                     </div>
                     <div class="six columns">
                         <div class="weather">
-                            <img src="images/001c_swatch/001c_time-sun.gif" alt="Beautiful Baltimore sunrise" width="120px" height="auto" class="lazy">
+                            <img src="images/001c_swatch/001c_time-sun.gif" alt="Beautiful Baltimore sunrise" width="120px" height="auto" class=" ">
                             <a href="https://www.wunderground.com/history/airport/KBWI/1999/4/8/DailyHistory.html?req_city=&req_state=&req_statename=&reqdb.zip=&reqdb.magic=&reqdb.wmo=" target="_blank">Temp: 62&deg;</a>
                         </div>
                     </div>
@@ -539,88 +557,88 @@
                         </form>
                         <ul class="sunspot-sidenav">
                         <li>
-                            <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                            <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                             <a href="https://web.archive.org/web/19990202103459/http://www.sunspot.net:80/news/" target="_blank">NEWS</a>
 
                                 <ul>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990508022024/http://www.sunspot.net:80/news/nationworld/sun/" target="_blank">Nation/World</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/maryland/sun/" target="_blank">Maryland</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/business/sun/" target="_blank">Business</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/classified/realestate/" target="_blank">Real Estate</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/pluggedin/" target="_blank">Plugged In</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/opinion/sun/" target="_blank">Opinion</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/obituaries/sun/" target="_blank">Obituaries</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/weather/" target="_blank">Weather</a>
                                 </li>
                                 </ul>
                         </li>
 
                         <li>
-                            <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                            <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                             <a href="https://web.archive.org/web/19990508075259/http://www.sunspot.net:80/sports/" target="_blank">
                             SPORTS</a>
                                 <ul>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/orioles/" target="_blank">Baseball</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/ravens/" target="_blank">Football</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/basketball/" target="_blank">Basketball</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/hockey/" target="_blank">Hockey</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/soccer/" target="_blank">Soccer</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/horseracing/" target="_blank">Horse Racing</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/tennis/" target="_blank">Tennis</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/golf/" target="_blank">Golf</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/college/" target="_blank">College</a>
                                 </li>
                                 <li>|—
-                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class=" ">
                                     <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/highschool/" target="_blank">High School</a>
                                 </li>
                                 </ul>
@@ -634,7 +652,7 @@
                         </div>
                         <p>April 08, 1999<br/><strong>by Michael Stroh</strong></p>
                         <article>
-                            <img src="images/001c_swatch/001c_time-michelangelo.jpg" alt="Web designer Michelangelo Capraro" width="30%" height="auto" class="swatch-portrait lazy">
+                            <img src="images/001c_swatch/001c_time-michelangelo.jpg" alt="Web designer Michelangelo Capraro" width="30%" height="auto" class="swatch-portrait  ">
                             <p>Got a sec?<br/><br/>
 
                             Michelangelo Capraro doesn't-- not anymore. These days the 24-year-old Web designer from Santa Monica, Calif., is living on Internet&nbsp;time.<br/><br/>
@@ -656,10 +674,10 @@
                             Just so happens the company has created a new line of funky $70 watches called Swatch Beat. Aimed squarely at the DotCom generation, the six garishly colored digital timepieces have cyber-savvy names such as "Download," "Netsurfer," "Webmaster" and "Provider." They tick off time in both old-fashioned hours and Swatch beats. And for those who wallow in millennium angst, they even automatically count down the days until&nbsp;Y2K.
                             </p>
                             <div class="swatches">
-                                <img src="images/001c_swatch/001c_time-watch1.jpg" alt="Safari Swatch Beat" width="150px" height="auto" class="lazy">
-                                <img src="images/001c_swatch/001c_time-watch2.jpg" alt="Light blue Swatch Beat" width="150px" height="auto" class="lazy">
-                                <img src="images/001c_swatch/001c_time-watch3.jpg" alt="Royal blue Swatch Beat" width="150px" height="auto" class="lazy">
-                                <img src="images/001c_swatch/001c_time-watch4.jpg" alt="Silver Swatch Beat" width="150px" height="auto" class="lazy">
+                                <img src="images/001c_swatch/001c_time-watch1.jpg" alt="Safari Swatch Beat" width="150px" height="auto" class=" ">
+                                <img src="images/001c_swatch/001c_time-watch2.jpg" alt="Light blue Swatch Beat" width="150px" height="auto" class=" ">
+                                <img src="images/001c_swatch/001c_time-watch3.jpg" alt="Royal blue Swatch Beat" width="150px" height="auto" class=" ">
+                                <img src="images/001c_swatch/001c_time-watch4.jpg" alt="Silver Swatch Beat" width="150px" height="auto" class=" ">
                             </div>
                             <p>
                                 Despite its blatant commercialism, Internet time is catching on. Nicholas Negroponte, director of the Massachusetts Institute of Technology's famed <a href="https://www.media.mit.edu/about/mission-history/" target="_blank">Media Lab</a> and author of the influential book "Being Digital," has lent his support to the Internet time&nbsp;movement.<br/><br/>
@@ -687,7 +705,7 @@
 
                                 It was a flop. The telegraph clicked in Promontory at 12: 45 p.m. But Virginia City marked it at 12: 30. San Francisco heard it at "precisely" 11: 46 or 11: 44, depending on which paper one consulted. Washington, D.C., recorded it for history as 2: 47.<br/><br/>
 
-                                <img src="images/001c_swatch/001c_time-bookcover.gif" alt="Cover of Keeping Pace: A History of American Time" width="120px" height="auto" class="swatch-book lazy">
+                                <img src="images/001c_swatch/001c_time-bookcover.gif" alt="Cover of Keeping Pace: A History of American Time" width="120px" height="auto" class="swatch-book  ">
 
                                 Pressure from railroad companies and the scientific community led in 1883 to the adoption of four standard time zones in the U.S. The next year, the International Meridian Conference formally sliced the globe into 24 time zones, making Greenwich, England, the site of the prime&nbsp;meridian.<br/><br/>
 
@@ -800,7 +818,7 @@
             </div>
         </div>
         <div id="god">
-            <div class="god-hero">
+            <div class="god-hero" data--200-bottom-bottom="">
                 <div class="god-title">
                     <h1>God in the Machine</h1>
                     <h4>My strange journey into transhumanism</h4>
@@ -821,8 +839,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="seven columns pull-quote" data-30-bottom-top="opacity: 0;" data--10p-top-top="opacity: 1;">
-                        <h2>“Days seemed to unravel and circle back on themselves”</h2>
+                    <div class="seven columns pull-quote" data--90-bottom-bottom="opacity: 0; transform: skew(-30deg);" data-center-center="opacity: 1; transform: skew(0);">
+                        <h2>"Days seemed to unravel and circle back on themselves”</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -870,7 +888,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="seven columns offset-by-two pull-quote" data-30-bottom-top="opacity: 0;" data--10p-top-top="opacity: 1;">
+                    <div class="seven columns offset-by-two pull-quote" data--90-bottom-bottom="opacity: 0; transform: skew(-30deg);" data-center-center="opacity: 1; transform: skew(0);">
                         <h2>“These patterns are currently running on physical hardware – the body – that will one day give&nbsp;out.”</h2>
                     </div>
                 </div>
@@ -884,7 +902,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="seven columns pull-quote" data-30-bottom-top="opacity: 0;" data--10p-top-top="opacity: 1;">
+                    <div class="seven columns pull-quote" data--90-bottom-bottom="opacity: 0; transform: skew(-30deg);" data-center-center="opacity: 1; transform: skew(0);">
                         <h2>“Transhumanism offered a vision of redemption without the thorny problems of divine&nbsp;justice.”</h2>
                     </div>
                 </div>
@@ -926,7 +944,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="seven columns offset-by-two pull-quote" data-30-bottom-top="opacity: 0;" data--10p-top-top="opacity: 1;">
+                    <div class="seven columns offset-by-two pull-quote" data--90-bottom-bottom="opacity: 0; transform: skew(-30deg);" data-center-center="opacity: 1; transform: skew(0);">
                         <h2>“Was it possible that technology would be the avenue by which humanity achieved the resurrection and&nbsp;immortality?”</h2>
                     </div>
                 </div>
@@ -1198,7 +1216,7 @@
     </div>
     <div id="wrapped">
         <div class="wrapped-top">
-            <!-- <div id="particles-js"></div> -->
+            <div id="particles-js"></div>
             <h1>Wrapped</h1>
         </div>
         <div class="wrapped-bottom">
