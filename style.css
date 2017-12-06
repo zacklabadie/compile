@@ -572,38 +572,54 @@ a.button:visited{
     font-weight: bold;
     text-decoration: none;
 }
-.homepage-foot{
-    padding: 1.75em 2em;
-    background-color: #ffffff;
+.homepage-foot, .issue-foot{
+    padding: 1.25em 0 1em 0;
     text-align: center;
     vertical-align: baseline;
 }
-.homepage-foot h5{
+.homepage-foot{
+    background-color: #CBFF00;
+}
+.issue-foot{
+    background-color: #ff0000;
+}
+.homepage-foot h5, .issue-foot h5{
     font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
-    color: #000000;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1px;
     text-align: left;
 }
-.homepage-foot h6{
-    font-family: "t26-carbon", monospace;
+.homepage-foot h5, .homepage-foot h6, .issue-foot h5, .issue-foot h6{
     color: #000000;
+}
+.homepage-foot h6, .issue-foot h6{
+    font-family: "t26-carbon", monospace;
     font-size: 1em;
     margin-bottom: 0;
     text-align: left;
 }
 .foot-icons a span{
     display: inline;
-    color: #1044FF;
     font-size: 2em;
     text-align: right;
     vertical-align: middle;
     margin-left: 5px;
 }
-.foot-icons a:last-child span{
-    background: #1044FF;
+.homepage-foot .foot-icons a span{
+    color: #1044FF;
+}
+.issue-foot .foot-icons a span{
     color: #fff;
+}
+.homepage-foot .foot-icons a:last-child span{
+    background: #1044FF;
+    color: #CBFF00;
+    border-radius: 2px;
+}
+.issue-foot .foot-icons a:last-child span{
+    background: #fff;
+    color: #ff0000;
     border-radius: 2px;
 }
 .foot-icons{
@@ -611,11 +627,13 @@ a.button:visited{
     text-align: right;
     margin-top: 7px;
 }
-.homepage-foot h6 a{
+.homepage-foot h6 a, .issue-foot h6 a{
     text-decoration: none;
-    color: #1044FF;
     opacity: 1;
     font-weight: bold;
+}
+.homepage-foot h6 a, .issue-foot h6 a{
+    color: #1044FF;
 }
 
 #homepage-2019 .home-about{
@@ -633,21 +651,18 @@ a.button:visited{
 #homepage-2019 .homepage-foot{
     background-color: #333333;
 }
-.homepage-foot h5{
+#homepage-2019 .homepage-foot h5, #homepage-2019 .homepage-foot h6{
     color: #ffffff;
 }
-.homepage-foot h6{
-    color: #ffffff;
-}
-.foot-icons a span{
+#homepage-2019 .foot-icons a span{
     color: #2CC9F7;
 }
-.foot-icons a:last-child span{
+#homepage-2019 .foot-icons a:last-child span{
     background: #2CC9F7;
     color: #333333;
     border-radius: 2px;
 }
-.homepage-foot h6 a{
+#homepage-2019 .homepage-foot h6 a{
     color: #2CC9F7;
 }
 .home-archive{
@@ -1990,6 +2005,7 @@ a.button:visited{
 /* ________ A LIFE WELL WASTED ________ */
 #alww{
     background-color: #3D9083;
+    border-bottom: 3px solid #1d1d1d;
 }
 .alww-hero{
     min-width: 100vw;
@@ -2065,22 +2081,13 @@ a.button:visited{
     mix-blend-mode: multiply;
 }
 .alww-pixels{
-    margin-top: 6em;
+    margin-top: 3em;
 }
 .alww-titanic{
     min-width: 100vw;
-    padding: 8em 0 2em 0;
+    padding: 6em 0 6em 0;
     background-color: #000000;
     margin-top: -10px;
-}
-.alww-titanic .credits{
-    margin-top: 10em;
-    border-top: 2px solid #ffffff;
-}
-.alww-titanic .credits p, .alww-titanic .credits a{
-    color: #ffffff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -2225,9 +2232,9 @@ a.button:visited{
 
 #end-gallery .end-text-box{
     background-color: #000000;
-    min-height: 75vh;
+    min-height: 70vh;
     max-height: 85vh;
-    width: 75%;
+    width: 70%;
     max-width: 85%;
     padding: 5em 5em 1em 5em;
     box-sizing: border-box;
@@ -2244,8 +2251,9 @@ a.button:visited{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding-right: 20%;
-    padding-bottom: 3em;
+    margin-bottom: 6em;
     overflow: scroll;
+    font-size: .9em;
 }
 .end-last-slide{
     padding-right: 0;
@@ -2259,15 +2267,15 @@ a.button:visited{
 }
 .end-text-box .end-buttons{
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    width: 100%;
+    bottom: 2em;
+    left: 0;
 }
 .end-text-box .end-buttons a{
     font-family: "museo-slab",serif;
     font-size: 1.5em;
     color: #000000;
-    background-color: #828200;
-    padding: 5px 20px;
+    padding: 5px 30px;
     line-height: 1;
     margin: 0 5px;
     font-weight: 900;
@@ -2276,8 +2284,20 @@ a.button:visited{
     -moz-osx-font-smoothing: grayscale;
     cursor: pointer;
     transition: 0.3s ease;
+    box-sizing: border-box;
 }
-.end-text-box .end-buttons a:hover{
+#end-prev{
+    position: absolute;
+    left: 2em;
+    bottom: 0;
+    margin-left: 30px;
+    background-color: #333333;
+}
+#end-next{
+    position: absolute;
+    right: 2em;
+    bottom: 0;
+    margin-right: 30px;
     background-color: #ffff00;
 }
 .end-text{
@@ -2286,7 +2306,7 @@ a.button:visited{
 
 
 
-/*WRAPPED*/
+/* ________ WRAPPED ________ */
 #wrapped{
     width: 100vw;
     min-height: 100vh;
@@ -2332,4 +2352,50 @@ a.button:visited{
     background-color: #000000;
     padding: 3em 0;
     min-height: 100vh;
+}
+
+/* ________ END OF ISSUE ________ */
+#back-matter{
+    min-width: 100vw;
+}
+.hourglasses{
+    background: #3B34ED url('images/001_hourglass-pattern.png');
+    background-repeat: repeat;
+    background-size: 90px;
+    width: 100%;
+    padding: 8em 0;
+}
+.hourglasses h1{
+    font-family: "fatfrank", Roboto, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-size: 6.5em;
+    line-height: 1;
+}
+.hourglasses p{
+    font-family: "t26-carbon", monospace;
+    color: #000000;
+    padding: 5px;
+    background-color: #CBFF00;
+    text-align: left;
+    margin-bottom: 10px;
+    display: inline-block;
+    clear: both;
+    float: left;
+}
+.last-wordmark{
+    background: #3B34ED;
+    padding: 100px 0 30px 0;
+}
+.last-wordmark .four{
+    text-align: left;
+}
+.last-wordmark .eight{
+    text-align: right;
 }
