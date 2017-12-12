@@ -2423,3 +2423,23 @@ a.button:visited{
 .last-wordmark .eight{
     text-align: right;
 }
+
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 768px) {
+
+
+
+    /*.homepage-splash-wrap img{
+        width: 55%;
+    }
+    .issue-teaser h4{
+        padding-left: 0;
+    }
+    .issue-teaser img{
+        width: 50%
+    }*/
+}
