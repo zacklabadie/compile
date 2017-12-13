@@ -1,0 +1,1294 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Compile // 001</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gno8hhy.css">
+    <meta name="description" content="A digital quarterly highlighting humanity, technology, and modern oddities" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
+
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.menu.min.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111087843-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111087843-1');
+    </script>
+
+    <!-- Loading animation -->
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $(".compile-loading").fadeOut("slow");
+        });
+    </script>
+    <style>
+        .compile-loading{
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('images/00_compile-loading.gif') 50% 50% no-repeat rgb(255,255,255);
+        }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons_001/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons_001/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons_001/favicon-16x16.png">
+    <link rel="manifest" href="favicons_001/manifest.json">
+    <link rel="mask-icon" href="favicons_001/safari-pinned-tab.svg" color="#1044ff">
+    <link rel="shortcut icon" href="favicons_001/favicon.ico">
+    <meta name="msapplication-config" content="favicons_001/browserconfig.xml">
+    <meta name="theme-color" content="#cbff00">
+
+    <meta property="og:url" content="http://wtfiscompile.xyz/001"/>
+    <meta property="og:title" content="COMPILE 001: Time"/>
+    <meta property="og:description" content="In this issue: Digital nationstates, robot prayers, and the end of the world."/>
+    <meta property="og:image" content="https://i.imgur.com/bs3HFa4.jpg"/>
+</head>
+
+<body>
+    <div class="compile-loading"></div>
+    <div id="mobile-warning">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <h2>🏄‍</h2>
+                    <div class="mobile-message">
+                        <h1>You're in uncharted waters</h1>
+                        <p>Compile is meant to be viewed on a big screen (with a cold beer) and mobile optimization is currently a work in progress. Proceed at your own&nbsp;risk!
+                        <a id="close-mobile-warning">COOL, GOT IT</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html" target="_blank" class="index-link">
+            <span class="icon-UI_Compile icon"></span>
+        </a>
+        <a href="#top" class="top-link">
+            <span class="icon-UI_Top icon"></span>
+        </a>
+        <div id="side-nav">
+            <a href="#nyc" id="btn-1" class="nav-btn"></a>
+            <a href="#dec" id="btn-2" class="nav-btn"></a>
+            <a href="#swatch" id="btn-3" class="nav-btn"></a>
+            <a href="#big-ben" id="btn-4" class="nav-btn"></a>
+            <a href="#danielle" id="btn-5" class="nav-btn"></a>
+            <a href="#god" id="btn-6" class="nav-btn"></a>
+            <a href="#landscapes" id="btn-7" class="nav-btn"></a>
+            <a href="#alww" id="btn-8" class="nav-btn"></a>
+            <a href="#end" id="btn-9" class="nav-btn"></a>
+            <a href="#wrapped" id="btn-10" class="nav-btn"></a>
+        </div>
+
+        <div id="nav-card-1" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h4>NYC '93</strong></h4>
+                <h5>Mat, TechMoan</h5>
+                <div>
+                    <span class="icon-UI_Video icon"></span><h6>5 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-2" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h4>A Declaration of the Independence of Cyberspace</h4>
+                <h5>John P. Barlow</h5>
+                <div>
+                    <span class="icon-UI_Text icon"></span><h6>4 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-3" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h4>Keeping Time to the Same Beat</h4>
+                <h5>Michael Stroh</h5>
+                <div>
+                    <span class="icon-UI_Text icon"></span><h6>5 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-4" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h4>The Fundamental Truth</h4>
+                <h5>Satya Nadella</h5>
+                <div>
+                    <span class="icon-UI_Twitter icon"></span><h6>2 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-5" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h4>Danielle</h4>
+                <h5>Anthony Cerniello</h5>
+                <div>
+                    <span class="icon-UI_Video icon"></span><h6>5 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-6" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h4>God in the Machine</h4>
+                <h5>Meghan O'Gieblyn</h5>
+                <div>
+                    <span class="icon-UI_Text icon"></span><h6>14 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-7" class="nav-card">
+            <div class="nav-card-img">
+            </div>
+            <div class="nav-card-info">
+                <h4>Virtual Landscapes</h4>
+                <h5>Ana Mar&iacute;a Guerra</h5>
+                <div>
+                    <span class="icon-UI_Image icon"></span><h6>7 IMAGES</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-8" class="nav-card">
+            <div class="nav-card-img">
+                &nbsp;
+            </div>
+            <div class="nav-card-info">
+                <h4>A Life Well Wasted</h4>
+                <h5>Robert Ashley</h5>
+                <div>
+                    <span class="icon-UI_Text icon"></span><span class="icon-UI_Audio icon"></span><h6>5 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-9" class="nav-card">
+            <div class="nav-card-img">
+                &nbsp;
+            </div>
+            <div class="nav-card-info">
+                <h4>What I'll Be Thinking About When the World Ends</h4>
+                <h5>Tom Mitchell</h5>
+                <div>
+                    <span class="icon-UI_Text icon"></span><h6>4 MIN</h6>
+                </div>
+            </div>
+        </div>
+        <div id="nav-card-10" class="nav-card">
+            <div class="nav-card-img">
+                &nbsp;
+            </div>
+            <div class="nav-card-info">
+                <h4>Wrapped</h4>
+                <h5>K&auml;lin, Paeper, and Wittmann</h5>
+                <div>
+                    <span class="icon-UI_Video icon"></span><h6>4 MIN</h6>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="top" class="top-splash">
+            <img src="images/001_compile-blue.svg" height="130" width="auto">
+            <div class="beach-ball a"> </div>
+            <div class="beach-ball b"> </div>
+            <div class="beach-ball c"> </div>
+            <div class="beach-ball d"> </div>
+            <div class="beach-ball e"> </div>
+            <div class="beach-ball f"> </div>
+            <div class="beach-ball gg"> </div>
+            <div class="beach-ball h"> </div>
+            <div class="beach-ball i"> </div>
+            <div class="beach-ball j"> </div>
+            <div class="beach-ball k"> </div>
+            <div class="beach-ball l"> </div>
+            <div class="beach-ball m"> </div>
+            <div class="beach-ball n"> </div>
+            <div class="beach-ball o"> </div>
+            <div class="beach-ball p"> </div>
+            <div class="beach-ball q"> </div>
+            <div class="beach-ball r"> </div>
+            <div class="beach-ball s"> </div>
+            <div class="beach-ball t"> </div>
+            <div class="beach-ball u"> </div>
+            <div class="beach-ball v"> </div>
+            <div class="beach-ball w"> </div>
+            <div class="beach-ball x"> </div>
+            <div class="beach-ball y"> </div>
+            <div class="beach-ball z"> </div>
+            <div class="beach-ball aa"> </div>
+        </div>
+        <div class="letter">
+            <div class="container">
+                <div class="row">
+                    <div class="eight columns offset-by-one">
+                        <div class="beach-ball bb"> </div>
+                        <h5 class="white-text">HEY THERE,</h5>
+                        <p class="white-text">My name’s Zack. Whoever, wherever you are, welcome to the first issue of&nbsp;Compile.<br/><br/>
+
+                        You can think of this project as a digital magazine of sorts. Or a journal. Or a quarterly, even. Basically, call it anything but a blog. In short, Compile is my one-man-band attempt at bringing the craft and creativity of independent magazines to the web through curation, design and development. It’s a spotlight on the intersection of technology, humanity and culture, but at its core, it’s about recognizing and embracing the utter absurdity that&nbsp;ensues.<br/><br/>
+
+                        User experience should be a chief concern for all digital (and physical) creations, but there's an important difference between usability and utilitarianism. When simplicity, squircles and sans-serifs become the de facto language of billion-dollar Silicon Valley software corporations, the only ethical response is to get weird. The internet is overflowing with digital news outlets and lifestyle brands churning out fresh articles on the hour, each one wrangled into an almost identical cookie-cutter template. There are, of course, logical and economic explanations for this convention and there’s certainly a vast market for the Buzzfeeds and Vox Media outlets of the world. I, however, am not here to maximize SEO, draft a relatable list of GIF-based sitcom references, or review the latest $200 wireless earbuds. I made Compile because I believe that truly interesting content deserves a home outside of blogs and opaque algorithmically-generated newsfeeds. I believe that there is expressive intent in the act of curation. I believe there’s value in thoughtful and authentic DIY web design, and I figured I’d give it a shot. <br/><br/>
+
+                        What you’re about to read, watch, listen to, and scroll through is a collection of modern oddities I’ve sought out, reorganized, and redesigned. No two layouts are the same; each article has its own voice and identity. The content itself is in no way mine, but the presentation absolutely is&mdash; think of it as a visual mixtape from me to you. The only connective tissue between these ten articles is the underlying theme of <b>time</b>. At the risk of rambling on or further embarrassing myself, I’ll try not to wax poetic on the concept time and let this issue speak for&nbsp;itself.<br/><br/>
+
+                        Things have always been weird and I can only hope that they’ll just keep getting weirder. Life’s too short for the&nbsp;mundane.<br/><br/>
+
+                        Thanks for reading, I sincerely hope you&nbsp;enjoy.<br/><br/>
+
+                        Cheers,<br/>Zack Labadie<br/><br/>
+                    </p>
+                    <img src="images/00_signature.svg" alt="Zack Labadie" width="200px" height="auto" class="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toc">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h2>In this issue</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <a href="#nyc">
+                            <div id="toc-1" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">NYC '93</h4>
+                                    <h5 class="white-text">Mat, TechMoan</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">5 MIN</h6>
+                                    <span class="icon-UI_Video icon"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="six columns">
+                        <a href="#dec">
+                            <div id="toc-2" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">A Declaration of the Independence of&nbsp;Cyberspace</h4>
+                                    <h5 class="white-text">John P. Barlow</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">4 MIN</h6>
+                                    <span class="icon-UI_Text icon"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="twelve columns">
+                        <a href="#swatch">
+                            <div id="toc-3" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">Keeping Time to the Same Beat</h4>
+                                    <h5 class="white-text">Michael Stroh</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">5 MIN</h6>
+                                    <span class="icon-UI_Text icon"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="six columns">
+                        <a href="#big-ben">
+                            <div id="toc-4" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">The Fundamental Truth</h4>
+                                    <h5 class="white-text">Satya Nadella</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">2 MIN</h6>
+                                    <span class="icon-UI_Twitter icon"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="six columns">
+                        <a href="#danielle">
+                            <div id="toc-5" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">Danielle</h4>
+                                    <h5 class="white-text">Anthony Cerniello</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">5 MIN</h6>
+                                    <span class="icon-UI_Video icon"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="twelve columns">
+                        <a href="#god">
+                            <div id="toc-6" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">God in the Machine</h4>
+                                    <h5 class="white-text">Meghan O'Gieblyn</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">14 MIN</h6>
+                                    <span class="icon-UI_Text icon"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="twelve columns">
+                        <a href="#landscapes">
+                            <div id="toc-7" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">Virtual Landscapes</h4>
+                                    <h5 class="white-text">Ana Mar&iacute;a Guerra</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">7 IMAGES</h6>
+                                    <span class="icon-UI_Image icon"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="twelve columns">
+                        <a href="#alww">
+                            <div id="toc-8" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">Preserving Virtual Worlds</h4>
+                                    <h5 class="white-text">Robert Ashley</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">12 MIN</h6>
+                                    <span class="icon-UI_Text icon"></span>
+                                    <span class="icon-UI_Audio icon"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row space-tp">
+                    <div class="six columns">
+                        <a href="#end">
+                            <div id="toc-9" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">What I'll Be Thinking About When the World&nbsp;Ends</h4>
+                                    <h5 class="white-text">Tom Mitchell</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">4 MIN</h6>
+                                    <span class="icon-UI_Text icon"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="six columns">
+                        <a href="#wrapped">
+                            <div id="toc-10" class="toc-tile">
+                                <div class="toc-tile-info">
+                                    <h4 class="white-text">Wrapped</h4>
+                                    <h5 class="white-text">K&auml;lin, Paeper, and Wittmann</h5>
+                                </div>
+                                <div class="toc-tile-media">
+                                    <h6 class="white-text">4 MIN</h6>
+                                    <span class="icon-UI_Video icon"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="nyc">
+            <div class="nyc-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="twelve columns full-height">
+                            <a href="https://www.youtube.com/watch?v=fT4lDU-QLUY" target="_blank">
+                                <img src="images/001a_nyc/001a_nyc-title.png" alt="NYC 93" width="35%" height="auto" data-anchor-target=".nyc-top" data-top="transform: scale(1) rotate(0);" data-200-top="transform: scale(.01) rotate(720deg);" class="lazy">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nyc-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="six columns nyc-text">
+                            <p>
+                                Filmed on a Sony HDC-500, this recording is an extremely rare example of amateur high-definition video from the early 1990s. The camera weighed a whopping 10 pounds, and recorded 60 frames-per-second video at a resolution of 1920x1036.
+                            </p>
+                        </div>
+                        <div class="six columns nyc-cam">
+                            <img src="images/001a_nyc/001a_nyc-camera.svg" alt="Sony HDC-500" width="100%" height="auto" class="lazy">
+                        </div>
+                    </div>
+                    <div class="row flex">
+                        <div class="twelve columns">
+                            <div class="video-wrapper">
+                                <iframe data-loader="iframe" class=" " width="1120" height="630" src="https://www.youtube.com/embed/fT4lDU-QLUY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="twelve columns">
+                            <div class="credits">
+                                <p>
+                                    Footage from Mat of <a href="http://www.techmoan.com/" target="_blank">TechMoan</a><br/>
+                                    Background information from Chris Plante of <a href="https://www.theverge.com/2016/4/25/11503816/new-york-city-hd-footage-manhattan" target="_blank">The Verge</a>
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=fT4lDU-QLUY" target="_blank" class="source-credit">
+                                    Source material
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="dec">
+            <div class="dec-top full-bleed " data-src="images/001b_dec/001b_dec-title.svg, images/001b_dec/001b_dec-hero-front.png, images/001b_dec/001b_dec-hero-back.png" data-anchor-target="#dec" data-top="background-size: 50%, 100%, 100%;" data-bottom-bottom="background-size: 50%, 100%, auto 180%;">
+            </div>
+            <div class="dec-body full-bleed">
+                <div class="container">
+                    <div class="row">
+                        <div class="nine columns">
+                            <p>Yesterday, that great invertebrate in the White House signed into the law the <a href="https://en.wikipedia.org/wiki/Telecommunications_Act_of_1996" target="_blank">Telecom “Reform” Act of 1996</a>, while Tipper Gore took digital photographs of the proceedings to be included in a book called <a href="https://en.wikipedia.org/wiki/24_Hours_in_Cyberspace" target="_blank">“24 Hours in&nbsp;Cyberspace.”</a></p>
+                            <p>I had also been asked to participate in the creation of this book by writing something appropriate to the moment. Given the atrocity that this legislation would seek to inflict on the Net, I decided it was as good a time as any to dump some tea in the virtual&nbsp;harbor.</p>
+                            <p>After all, the Telecom “Reform” Act, passed in the Senate with only 5 dissenting votes, makes it unlawful, and <span>punishable by a $250,000 to say “shit” online.</span> Or, for that matter, to say any of the other 7 dirty words prohibited in broadcast media. Or to discuss abortion openly. Or to talk about any bodily function in any but the most clinical&nbsp;terms.</p>
+                            <p>It attempts to place more restrictive constraints on the conversation in Cyberspace than presently exist in the Senate cafeteria, where I have dined and heard colorful indecencies spoken by United States senators on every occasion I did. This bill was enacted upon us by people who haven’t the slightest idea who we are or where our conversation is being conducted. It is, as my good friend and Wired Editor <a href="https://en.wikipedia.org/wiki/Louis_Rossetto" target="_blank">Louis Rossetto</a> put it, as though “the illiterate could tell you what to&nbsp;read.”</p>
+                            <p><span>Well, fuck them.</span></p>
+                            <p>Or, more to the point, let us now take our leave of them. They have declared war on Cyberspace. Let us show them how cunning, baffling, and powerful we can be in our own defense. I have written something (with characteristic grandiosity) that I hope will become one of many means to this end. If you find it useful, I hope you will pass it on as widely as possible. You can leave my name off it if you like, because I don’t care about the credit. I really don’t. But I do hope this cry will echo across Cyberspace, changing and growing and self-replicating, until it becomes a great shout equal to the idiocy they have just inflicted upon us. I give you... <span>A Declaration of the Independence of&nbsp;Cyberspace.</span></p>
+                        </div>
+                    </div>
+                    <div class="row dec-quote-sec">
+                        <div class="three columns offset-by-two">
+                            <img src="images/001b_dec/001b_dec-jefferson.png" alt="Thomas Jefferson" width="85%" height="auto" data-50-bottom="transform:scale(0) rotate(70deg);" data-center="transform:scale(1) rotate(-5deg);" class="lazy">
+                        </div>
+                        <div class="seven columns">
+                            <div class="dec-quote-wrapper">
+                                <div id="dec-quote">
+                                    <h5> It is error alone which needs the support of government. Truth can stand by itself. </h5>
+                                    <h6>Thomas Jefferson<br/>Notes on Virgina</h6>
+                                </div>
+                                <img src="images/001b_dec/001b_dec-quote.svg" alt="Quotation mark" width="50px" height="auto" data-50-bottom="margin-left: 200%;" data-center="margin-left: 0;" class="lazy">
+                                <div id="dec-checkerboard">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="nine columns dec-text-bottom dec-links">
+                            <p>Governments of the Industrial World, you weary giants of flesh and steel, I come from Cyberspace, the new home of Mind. On behalf of the future, I ask you of the past to leave us alone. <span>You are not welcome among us.</span> You have no sovereignty where we gather. We have no elected government, nor are we likely to have one, so I address you with no greater authority than that with which liberty itself always speaks. I declare the global social space we are building to be naturally independent of the tyrannies you seek to impose on us. You have no moral right to rule us nor do you possess any methods of enforcement we have true reason to&nbsp;fear.</p>
+                            <p>Governments derive their just powers from the consent of the governed. You have neither solicited nor received ours. We did not invite you. You do not know us, nor do you know our world. <span>Cyberspace does not lie within your borders.</span> Do not think that you can build it, as though it were a public construction project. You cannot. It is an act of nature and it grows itself through our collective actions. You have not engaged in our great and gathering conversation, nor did you create the wealth of our marketplaces. You do not know our culture, our ethics, or the unwritten codes that already provide our society more order than could be obtained by any of your&nbsp;impositions.</p>
+                            <p>You claim there are problems among us that you need to solve. You use this claim as an excuse to invade our precincts. Many of these problems don’t exist. Where there are real conflicts, where there are wrongs, we will identify them and address them by our means. We are forming our own <a href="https://en.wikipedia.org/wiki/Social_contract" target="_blank">Social Contract</a>. This governance will arise according to the conditions of our world, not yours. <span>Our world is different.</span> Cyberspace consists of transactions, relationships, and thought itself, arrayed like a standing wave in the web of our communications. Ours is a world that is both everywhere and nowhere, but it is not where bodies&nbsp;live.</p>
+                            <p>We are creating a world that all may enter without privilege or prejudice accorded by race, economic power, military force, or station of birth. We are creating a world where anyone, anywhere may express his or her beliefs, no matter how singular, without fear of being coerced into silence or conformity. Your legal concepts of property, expression, identity, movement, and context do not apply to us. They are based on matter. There is no matter here. Our identities have no bodies, so, unlike you, we cannot obtain order by physical coercion. We believe that from ethics, enlightened self-interest, and the commonweal, our governance will&nbsp;emerge.</p>
+                            <p>Our identities may be distributed across many of your jurisdictions. The only law that all our constituent cultures would generally recognize is the Golden Rule. We hope we will be able to build our particular solutions on that basis. But we cannot accept the solutions you are attempting to&nbsp;impose.</p>
+                            <p>In the United States, you have today created a law, the Telecommunications Reform Act, which repudiates your own Constitution and insults the dreams of Jefferson, Washington, Mill, Madison, DeToqueville, and Brandeis. These dreams must now be born anew in us. <span>You are terrified of your own children</span>, since they are natives in a world where you will always be immigrants. Because you fear them, you entrust your bureaucracies with the parental responsibilities you are too cowardly to confront yourselves. In our world, all the sentiments and expressions of humanity, from the debasing to the angelic, are parts of a seamless whole, the global conversation of bits. <span>We cannot separate the air that chokes from the air upon which wings&nbsp;beat.</span></p>
+                            <p>In China, Germany, France, Russia, Singapore, Italy and the United States, you are trying to ward off the virus of liberty by erecting guard posts at the frontiers of Cyberspace. These may keep out the contagion for a small time, but they will not work in a world that will soon be blanketed in bit-bearing media. Your increasingly obsolete information industries would perpetuate themselves by proposing laws, in America and elsewhere, that claim to own speech itself throughout the world. These laws would declare ideas to be another industrial product, no more noble than pig iron. In our world, whatever the human mind may create can be reproduced and distributed infinitely at no cost. <span>The global conveyance of thought no longer requires your factories to&nbsp;accomplish.</span></p>
+                            <p>These increasingly hostile and colonial measures place us in the same position as those previous lovers of freedom and self-determination who had to reject the authorities of distant, uninformed powers. We must declare our virtual selves immune to your sovereignty, even as we continue to consent to your rule over our bodies. We will spread ourselves across the Planet so that no one can arrest our&nbsp;thoughts.</p>
+                            <p>We will create a civilization of the Mind in Cyberspace.</p>
+                            <p>May it be more humane and fair than the world your governments have made&nbsp;before.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <div class="credits">
+                                <p>
+                                    Written by John P. Barlow<br/>
+                                    Published February 8, 1996
+                                </p>
+                                <a href="http://editions-hache.com/essais/pdf/barlow1.pdf" target="_blank" class="source-credit">
+                                    Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="swatch">
+            <div class="container">
+                <div class="row">
+                    <div class="four columns sunspot-top-nav">
+                        <ul>
+                            <li>
+                                <a href="https://web.archive.org/web/19990225143101/http://www.sunspot.net:80/index/" target="_blank" class="white-text">INDEX</a>
+                            </li>
+                            <li>
+                                <a href="https://web.archive.org/web/19990902221754/http://sunspot.net:80/help/" target="_blank" class="white-text">HELP</a>
+                            </li>
+                            <li>
+                                <a href="https://web.archive.org/web/19990902062921/http://sunspot.net:80/aboutus/" target="_blank" class="white-text">ABOUT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row sunspot-banner">
+                    <div class="six columns sunspot-logo">
+                        <a href="https://web.archive.org/web/19990429075844/http://www.baltimoresun.com" target="_blank">
+                        <img src="images/001c_swatch/001c_time-sunspot.svg" alt="SunSpot" width="70%" height="auto" class="lazy">
+                        </a>
+                    </div>
+                    <div class="six columns">
+                        <div class="weather">
+                            <img src="images/001c_swatch/001c_time-sun.gif" alt="Beautiful Baltimore sunrise" width="120px" height="auto" class="lazy">
+                            <a href="https://www.wunderground.com/history/airport/KBWI/1999/4/8/DailyHistory.html?req_city=&req_state=&req_statename=&reqdb.zip=&reqdb.magic=&reqdb.wmo=" target="_blank">Temp: 62&deg;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row sunspot-tagline">
+                    <div class="twelve columns">
+                        <span>A SERVICE OF THE BALTIMORE SUN</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="three columns sunspot-sidebar">
+                        <form>
+                            <div class="sunspot-search">
+                                <label for="search"><strong>SEARCH</strong> Type search term(s), then hit return</label>
+                                <input type="text" id="search-term" name="user_search">
+                            </div>
+                        </form>
+                        <ul class="sunspot-sidenav">
+                        <li>
+                            <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                            <a href="https://web.archive.org/web/19990202103459/http://www.sunspot.net:80/news/" target="_blank">NEWS</a>
+
+                                <ul>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990508022024/http://www.sunspot.net:80/news/nationworld/sun/" target="_blank">Nation/World</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/maryland/sun/" target="_blank">Maryland</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/business/sun/" target="_blank">Business</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/classified/realestate/" target="_blank">Real Estate</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/pluggedin/" target="_blank">Plugged In</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/opinion/sun/" target="_blank">Opinion</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/news/obituaries/sun/" target="_blank">Obituaries</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/weather/" target="_blank">Weather</a>
+                                </li>
+                                </ul>
+                        </li>
+
+                        <li>
+                            <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                            <a href="https://web.archive.org/web/19990508075259/http://www.sunspot.net:80/sports/" target="_blank">
+                            SPORTS</a>
+                                <ul>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/orioles/" target="_blank">Baseball</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/ravens/" target="_blank">Football</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/basketball/" target="_blank">Basketball</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/hockey/" target="_blank">Hockey</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/soccer/" target="_blank">Soccer</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/horseracing/" target="_blank">Horse Racing</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/tennis/" target="_blank">Tennis</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/golf/" target="_blank">Golf</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/college/" target="_blank">College</a>
+                                </li>
+                                <li>|—
+                                    <img src="images/001c_swatch/001c_time-folder.svg" alt="Folder" width="18px" height="auto" class="lazy">
+                                    <a href="https://web.archive.org/web/19990421051432/http://www.sunspot.net:80/sports/highschool/" target="_blank">High School</a>
+                                </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nine columns swatch-body">
+                        <a href="http://articles.baltimoresun.com/1999-04-08/news/9904080326_1_swatch-internet-time-keeping-time" target="_blank"><h1>Keeping time to the same ‘beat’</h1></a>
+                        <div class="sunspot-callout white-text">
+                            Watchmaker: To address the timekeeping problems of a global online community, Swatch has created a system that does away with time zones, and devotees believe it could become the standard.
+                        </div>
+                        <p>April 08, 1999<br/><strong>by Michael Stroh</strong></p>
+                        <article>
+                            <img src="images/001c_swatch/001c_time-michelangelo.jpg" alt="Web designer Michelangelo Capraro" width="30%" height="auto" class="swatch-portrait  lazy">
+                            <p>Got a sec?<br/><br/>
+
+                            Michelangelo Capraro doesn't-- not anymore. These days the 24-year-old Web designer from Santa Monica, Calif., is living on Internet&nbsp;time.<br/><br/>
+
+                            On a typical workday he rises at 700 beats. By 750 beats, he's in the office checking e-mail. At 900 beats, he faxes a lunch order to the Italian deli around the corner, which, he says, takes about half an hour to prepare. "Oops, I mean 20 beats," he corrects himself. At 170 beats, he logs off his PC and heads&nbsp;home.<br/><br/>
+
+                            The "beats" that govern Capraro's life are the brainchild of <a href="https://www.swatch.com/en_us/" target="_blank">Swatch</a>, the cheeky Swiss watchmaker that is to the staid business of horology what Dennis Rodman is to basketball. No longer satisfied with keeping time, Swatch wants to reinvent it. The reason: In the Internet Age, conventional clocks don't cut&nbsp;it.<br/><br/>
+
+                            Say you're cruising the Net in Baltimore and want to chat online with Web buddies, or clients, who live in Hong Kong, Buenos Aires, Seattle and Johannesburg. How do you decide what time to convene? If you suggest 10 p.m., is that 10 p.m. Eastern time? Or 10 p.m. Buenos Aires time? If so, what time is that in your time and everybody's&nbsp;else's?</p>
+                            <div class="swatch-globe">
+                            </div>
+                            <p>
+                            <a href="https://www.swatch.com/en_us/internet-time/" target="_blank">Swatch's solution</a>: Do away with time zones altogether, and create one uniform time around the globe. "For centuries one big measuring stick has been the sun," says Yann Gamard, president of Swatch Group USA. "We've created another measuring&nbsp;stick."<br/><br/>
+
+                            The company divided the day into 1,000 "beats," each equal to 86.4 seconds. It also moved the prime meridian from Greenwich, England, to Swatch headquarters in Biel, Switzerland. Thus, the global Internet day starts at midnight "Biel Mean Time," or simply "@ 000" in catchy Internet time&nbsp;notation.<br/><br/>
+
+                            The ultimate marketing gimmick? You bet! says&nbsp;Gamard.<br/><br/>
+
+                            Just so happens the company has created a new line of funky $70 watches called Swatch Beat. Aimed squarely at the DotCom generation, the six garishly colored digital timepieces have cyber-savvy names such as "Download," "Netsurfer," "Webmaster" and "Provider." They tick off time in both old-fashioned hours and Swatch beats. And for those who wallow in millennium angst, they even automatically count down the days until&nbsp;Y2K.
+                            </p>
+                            <div class="swatches">
+                                <img src="images/001c_swatch/001c_time-watch1.jpg" alt="Safari Swatch Beat" width="150px" height="auto" class="lazy">
+                                <img src="images/001c_swatch/001c_time-watch2.jpg" alt="Light blue Swatch Beat" width="150px" height="auto" class="lazy">
+                                <img src="images/001c_swatch/001c_time-watch3.jpg" alt="Royal blue Swatch Beat" width="150px" height="auto" class="lazy">
+                                <img src="images/001c_swatch/001c_time-watch4.jpg" alt="Silver Swatch Beat" width="150px" height="auto" class="lazy">
+                            </div>
+                            <p>
+                                Despite its blatant commercialism, Internet time is catching on. Nicholas Negroponte, director of the Massachusetts Institute of Technology's famed <a href="https://www.media.mit.edu/about/mission-history/" target="_blank">Media Lab</a> and author of the influential book "Being Digital," has lent his support to the Internet time&nbsp;movement.<br/><br/>
+
+                                "Cyberspace has no seasons and no night and day," he proclaimed last fall at Swatch's unveiling. "In the future, for many people, real time will be Internet&nbsp;time."<br/><br/>
+
+                                CNN, the 24-hour news network, now displays both standard and Internet time on its highly trafficked Web site (<a href="http://www.cnn.com/" target="_blank">www.cnn.com)</a>. Dozens of other sites have followed its&nbsp;lead.<br/><br/>
+
+                                To encourage them, Swatch is offering free Internet time clock software for PCs on its own Web site (<a href="https://www.swatch.com/en_us/" target="_blank">www.swatch.com</a>). By the end of February, when Swatch last counted, almost 130,000 people had downloaded it. Other software publishers have created Internet time clock software for Macintosh computers, Palm Pilots and other digital&nbsp;devices.<br/><br/>
+
+                                Martina Overby, a 29-year-old network administrator at Pioneer Electronics Service Inc. in Palm Beach, Calif., installed the Internet time clock on more than 30 computers around her building. "Everybody loves it," she says. The company handles repairs for its Japanese parent, consumer electronics giant Pioneer, and so employees are often in touch with colleagues and clients in Asia. Internet time makes it easier to schedule meetings, Overby&nbsp;says.<br/><br/>
+
+                                Ryan Thiessen, a third-year student at the University of British Columbia in Vancouver, created a Web site devoted to Internet time (http://ryan.thiessen.com/swatch). "It takes a while to get used to," says Thiessen, but "once you have the Swatch watch and use it, it starts to make&nbsp;sense."<br/><br/>
+
+                                Some historians say the new clock isn't as cuckoo as it may seem. In fact, as times change, so does time.<br/><br/>
+
+                                "As communities get more interconnected, they tend to adopt more standardized forms of time," says Michael O'Malley, associate professor of American history at George Mason University. "And that's entirely a function of&nbsp;technology."<br/><br/>
+
+                                In his book, <a href="https://www.amazon.com/Keeping-Watch-History-American-Time/dp/1560986727" target="_blank">"Keeping Pace: A History of American Time,"</a> O'Malley points out that for centuries the only time that mattered was "local time," which varied significantly from place to place. When it was noon in New York, it might be 11: 52 a.m. in Philadelphia and 12: 34 p.m. in&nbsp;Boston.<br/><br/>
+
+                                The growth of technologies such as the steam engine and the telegraph changed that. Suddenly, it was possible to send a message across the country in a matter of seconds, and travel hundreds of miles in a day. As these 19th-century innovations brought the world closer, the shortcomings of local time grew more&nbsp;apparent.
+                            </p>
+                            <p>
+                                As the transcontinental railroad was nearing completion in 1869, organizers planned to commemorate the event by driving a golden spike through the line in Promontory, Utah. Railroad officials, wanting it to be a nationwide media event, hired a telegrapher to tap his key when the spike entered the ground.<br/><br/>
+
+                                It was a flop. The telegraph clicked in Promontory at 12: 45 p.m. But Virginia City marked it at 12: 30. San Francisco heard it at "precisely" 11: 46 or 11: 44, depending on which paper one consulted. Washington, D.C., recorded it for history as 2: 47.<br/><br/>
+
+                                <img src="images/001c_swatch/001c_time-bookcover.gif" alt="Cover of Keeping Pace: A History of American Time" width="120px" height="auto" class="swatch-book lazy">
+
+                                Pressure from railroad companies and the scientific community led in 1883 to the adoption of four standard time zones in the U.S. The next year, the International Meridian Conference formally sliced the globe into 24 time zones, making Greenwich, England, the site of the prime&nbsp;meridian.<br/><br/>
+
+                                For Internet time to become official, Swatch would need the blessing of the <a href="https://www.bipm.org/en/about-us/" target="_blank">Bureau International des Poids et Mesures</a>. The international body of standards makers based outside Paris is responsible for all matters of weights and&nbsp;measures.<br/><br/>
+
+                                But Swatch officials say they have no intention of doing so. "We don't lobby people, it wouldn't be our style," says Swatch's Gamard. "If the public likes it, they take&nbsp;it."<br/><br/>
+
+                                Critics say it's unlikely standards makers would consider a proposal that history has already snubbed&nbsp;anyway.<br/><br/>
+
+                                In 1792 French revolutionaries tried something called <a href="http://www.metricclock.com/" target="_blank">metric time</a>. Days were divided into 10 hours. Each hour had 100 minutes and each minute 100 seconds. Do the math and it turns out the Swatch beat is nothing but the old metric minute: 86.4&nbsp;seconds.<br/><br/>
+
+                                New watches and clocks were made, some of which survive today. But le peuple panned the idea. By 1806, Napoleon decided enough was enough and reverted to traditional&nbsp;timekeeping.<br/><br/>
+
+                                Critics of Internet time also point out that a perfectly good solution to the time-zone dilemma already exists. Ham-radio operators and the military have for years used Greenwich Mean Time-- or what the military calls "zulu" time -- to solve the problem of coordinating activities in different time zones. So an Army radio operator stationed in Japan listening to Russian radio transmissions might mark his reports to the Pentagon not in Japan time, Russian time or Eastern time, but in whatever the time was at the Greenwich&nbsp;meridian.<br/><br/>
+
+                                Devotees of Internet time are&nbsp;undeterred.<br/><br/>
+
+                                "Right now people still look at you a little bit funny when you use it," says Thiessen. "In five to 10 years, this is going to be common&nbsp;sense."
+                        </article>
+                        <div class="swatch-credits">
+                            <ul>
+                                <li>
+                                    <a href="http://articles.baltimoresun.com/1999-04-08/news/9904080326_1_swatch-internet-time-keeping-time" target="_blank">Source material</a>
+                                </li>
+                                <li>
+                                    <a href="https://web.archive.org/web/19990429075844/http://www.baltimoresun.com" target="_blank">Baltimore Sun's SunSpot, 1999</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="big-ben">
+            <div class="container">
+                <div class="row">
+                    <div class="six columns offset-by-three">
+                        <div class="circle" data-anchor-target="#big-ben" data--100-top="transform:scale(1);margin-top: 150px;" data--700-top="transform:scale(0);margin-top:700px;">
+                            <div class="inner-circle">
+                                <div class="circle-content-wrapper">
+                                    <div class="circle-content">
+                                    <a href="http://www.businessinsider.com/microsoft-ceo-satya-nadella-windows-phone-universal-apps-2015-7" target="_blank">
+                                        <h4 class="white-text"><i>“The fundamental truth for developers is they will build if there are users.”</i></h4>
+                                        <h6 class="white-text">Satya Nadella</h6>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-ben-tweets">
+                            <a class="twitter-timeline" data-height="400" data-link-color="#797DE7" href="https://twitter.com/big_ben_clock?ref_src=twsrc%5Etfw">Tweets by big_ben_clock</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="danielle">
+            <div class="container">
+                <div class="row">
+                    <div class="six columns offset-by-three">
+                        <div class="danielle-title-wrap relative-container">
+                            <svg width="277px" height="42px" viewBox="0 0 277 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-bottom-top="left: -200%;" data-center="left:50%;" >
+                                <title>Danielle - green</title>
+                                <defs><style>.g{mix-blend-mode: multiply;}</style></defs>
+
+                                <g stroke="#AEC777" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g transform="translate(-205.000000, -132.000000)" fill="#AEC777">
+
+                                        <path d="M205,173.25 L205,132 L220.51,132 C231.84,132.055 241.08,141.295 241.08,152.625 C241.08,164.01 231.84,173.25 220.455,173.25 L205,173.25 Z M239.925,152.625 C239.925,141.79 231.18,133.1 220.345,133.1 L206.1,133.1 L206.1,172.15 L220.345,172.15 C231.18,172.15 239.925,163.46 239.925,152.625 Z M246.305,173.25 L245.095,173.25 L264.345,132 L265.555,132 L284.805,173.25 L283.595,173.25 L277.435,159.995 L252.465,159.995 L246.305,173.25 Z M264.95,133.265 L253.015,158.895 L276.885,158.895 L264.95,133.265 Z M324.35,173.25 L326.055,173.25 L326.055,132 L324.955,132 L324.955,172.15 L293.11,132 L291.295,132 L291.295,173.25 L292.395,173.25 L292.395,133.1 L324.35,173.25 Z M338.1,173.25 L338.1,132 L337.055,132 L337.055,173.25 L338.1,173.25 Z M351.245,173.25 L376.93,173.25 L376.93,172.15 L352.29,172.15 L352.29,152.68 L375.225,152.68 L375.225,151.58 L352.29,151.58 L352.29,133.1 L376.93,133.1 L376.93,132 L351.245,132 L351.245,173.25 Z M387.16,132 L386.115,132 L386.115,173.25 L411.855,173.25 L411.855,172.205 L387.16,172.205 L387.16,132 Z M422.085,132 L421.04,132 L421.04,173.25 L446.78,173.25 L446.78,172.205 L422.085,172.205 L422.085,132 Z M455.965,173.25 L481.65,173.25 L481.65,172.15 L457.01,172.15 L457.01,152.68 L479.945,152.68 L479.945,151.58 L457.01,151.58 L457.01,133.1 L481.65,133.1 L481.65,132 L455.965,132 L455.965,173.25 Z" id="Danielle-Copy-2"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <svg width="278px" height="42px" viewBox="0 0 278 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-bottom-top="left: 300%;" data-center="left:50%;">
+                                <title>Danielle</title>
+                                <desc>Danielle - Pink</desc>
+                                <defs><style>.g{mix-blend-mode: multiply;}</style></defs>
+                                <g stroke="#FF8E8E" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g transform="translate(-205.000000, -42.000000)" fill="#FF8E8E">
+                                        <path d="M204.813763,84 L204.813763,42.75 L220.323763,42.75 C231.653763,42.805 240.893763,52.045 240.893763,63.375 C240.893763,74.76 231.653763,84 220.268763,84 L204.813763,84 Z M239.738763,63.375 C239.738763,52.54 230.993763,43.85 220.158763,43.85 L205.913763,43.85 L205.913763,82.9 L220.158763,82.9 C230.993763,82.9 239.738763,74.21 239.738763,63.375 Z M246.118763,84 L244.908763,84 L264.158763,42.75 L265.368763,42.75 L284.618763,84 L283.408763,84 L277.248763,70.745 L252.278763,70.745 L246.118763,84 Z M264.763763,44.015 L252.828763,69.645 L276.698763,69.645 L264.763763,44.015 Z M324.163763,84 L325.868763,84 L325.868763,42.75 L324.768763,42.75 L324.768763,82.9 L292.923763,42.75 L291.108763,42.75 L291.108763,84 L292.208763,84 L292.208763,43.85 L324.163763,84 Z M337.913763,84 L337.913763,42.75 L336.868763,42.75 L336.868763,84 L337.913763,84 Z M351.058763,84 L376.743763,84 L376.743763,82.9 L352.103763,82.9 L352.103763,63.43 L375.038763,63.43 L375.038763,62.33 L352.103763,62.33 L352.103763,43.85 L376.743763,43.85 L376.743763,42.75 L351.058763,42.75 L351.058763,84 Z M386.973763,42.75 L385.928763,42.75 L385.928763,84 L411.668763,84 L411.668763,82.955 L386.973763,82.955 L386.973763,42.75 Z M421.898763,42.75 L420.853763,42.75 L420.853763,84 L446.593763,84 L446.593763,82.955 L421.898763,82.955 L421.898763,42.75 Z M455.778763,84 L481.463763,84 L481.463763,82.9 L456.823763,82.9 L456.823763,63.43 L479.758763,63.43 L479.758763,62.33 L456.823763,62.33 L456.823763,43.85 L481.463763,43.85 L481.463763,42.75 L455.778763,42.75 L455.778763,84 Z" id="Danielle" style="mix-blend-mode: multiply;"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="ten columns offset-by-one">
+                        <div class="danielle-video video-wrapper">
+                            <iframe src="https://player.vimeo.com/video/74033442?color=DF8683&title=0&byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="ten columns offset-by-one">
+                        <div class="credits">
+                            <a href="https://vimeo.com/74033442" target="_blank">
+                                Video by Anthony Cerniello et al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="god">
+            <div class="god-hero" data--200-bottom-bottom="">
+                <div class="god-title">
+                    <a href="https://nplusonemag.com/issue-28/essays/ghost-in-the-cloud/" target="_blank">
+                        <h1>God in the Machine</h1>
+                        <h4>My strange journey into transhumanism</h4>
+                    </a>
+                </div>
+                <div class="god-author">
+                    <h3>Meghan O'Gieblyn</h3>
+                </div>
+            </div>
+        <div class="god-body">
+            <div class="container">
+                <div class="row">
+                    <div class="nine columns offset-by-one">
+                        <p><span class="drop-cap">I</span>first read Ray Kurzweil’s book, <a href="https://en.wikipedia.org/wiki/The_Age_of_Spiritual_Machines" target="_blank"><i>The Age of Spiritual Machines</i></a>, in 2006, a few years after I dropped out of Bible school and stopped believing in God. I was living alone in Chicago’s southern industrial sector and working nights as a cocktail waitress. I was not well. Beyond the people I worked with, I spoke to almost no one. I clocked out at three each morning, went to after-hours bars, and came home on the first train of the morning, my head pressed against the window so as to avoid the spectre of my reflection appearing and disappearing in the blackened&nbsp;glass.</p>
+                        <p>At Bible school, I had studied a branch of theology that divided all of history into successive stages by which God revealed his truth. We were told we were living in the “Dispensation of Grace”, the penultimate era, which precedes that glorious culmination, the “Millennial Kingdom”, when the clouds part and Christ returns and life is altered beyond comprehension. But I no longer believed in this future. More than the death of God, I was mourning the dissolution of this narrative, which envisioned all of history as an arc bending towards a moment of final redemption. It was a loss that had fractured even my experience of time. My hours had become non-hours. Days seemed to unravel and circle back on&nbsp;themselves.</p>
+                        <p>The Kurzweil book belonged to a bartender at the jazz club where I worked. He lent it to me a couple of weeks after I’d seen him reading it and asked him – more out of boredom than genuine curiosity – what it was about. I read the first pages on the train home from work, in the grey and ghostly hours before&nbsp;dawn.</p>
+                        <p>“The 21<sup>st</sup> century will be different,” Kurzweil wrote. “The human species, along with the computational technology it created, will be able to solve age-old problems … and will be in a position to change the nature of mortality in a postbiological&nbsp;future.”</p>
+                        <p>Like the theologians at my Bible school, Kurzweil, who is now a director of engineering at Google and a leading proponent of a philosophy called <a href="http://humanityplus.org/about/mission/" target="_blank">transhumanism</a>, had his own historical narrative. He divided all of evolution into successive epochs. We were living in the fifth epoch, when human intelligence begins to merge with technology. Soon we would reach the “Singularity”, the point at which we would be transformed into what Kurzweil called “Spiritual Machines”. We would transfer or “resurrect” our minds onto supercomputers, allowing us to live forever. Our bodies would become incorruptible, immune to disease and decay, and we would acquire knowledge by uploading it to our brains. Nanotechnology would allow us to remake Earth into a terrestrial paradise, and then we would migrate to space, terraforming other planets. Our powers, in short, would be&nbsp;limitless.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seven columns pull-quote" data--90-bottom-bottom="opacity: 0; transform: skew(-30deg);" data-center-center="opacity: 1; transform: skew(0);">
+                        <h2>"Days seemed to unravel and circle back on themselves”</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="nine columns offset-by-one">
+                        <p>It’s difficult to account for the totemic power I ascribed to the book. I carried it with me everywhere, tucked in the recesses of my backpack, though I was paranoid about being seen with it in public. It seemed to me a work of alchemy or a secret gospel. It is strange, in retrospect, that I was not more sceptical of these promises. I’d grown up in the kind of millenarian sect of Christianity where pastors were always throwing out new dates for the Rapture. But Kurzweil’s prophecies seemed different because they were bolstered by science. Moore’s law held that computer processing power doubled every two years, meaning that technology was developing at an exponential rate. Thirty years ago, a computer chip contained 3,500 transistors. Today it has more than 1bn. By 2045, Kurzweil predicted, the technology would be inside our bodies. At that moment, the arc of progress would curve into a vertical&nbsp;line.
+                        </p>
+                        <p><span class="drop-cap">M</span>any transhumanists such as Kurzweil contend that they are carrying on the legacy of the Enlightenment – that theirs is a philosophy grounded in reason and empiricism, even if they do lapse occasionally into metaphysical language about “transcendence” and “eternal life”. As I read more about the movement, I learned that most transhumanists are atheists who, if they engage at all with monotheistic faith, defer to the familiar antagonisms between science and religion. “The greatest threat to humanity’s continuing evolution,” writes the transhumanist Simon Young, “is theistic opposition to Superbiology in the name of a belief system based on blind faith in the absence of&nbsp;evidence.”</p>
+                        <p>Yet although few transhumanists would likely admit it, their theories about the future are a secular outgrowth of Christian eschatology. The word transhuman first appeared not in a work of science or technology but in Henry Francis Carey’s 1814 translation of Dante’s <a href="https://g.co/kgs/c9PyHj" target="_blank"><i>Paradiso</i></a>, the final book of the Divine Comedy. Dante has completed his journey through paradise and is ascending into the spheres of heaven when his human flesh is suddenly transformed. He is vague about the nature of his new body. “Words may not tell of that transhuman change,” he&nbsp;writes.
+                        </p>
+                        <p>Dante, in this passage, is dramatising the resurrection, the moment when, according to Christian prophecies, the dead will rise from their graves and the living will be granted immortal flesh. The vast majority of Christians throughout the ages have believed that these prophecies would happen supernaturally – God would bring them about, when the time came. But since the medieval period, there has also persisted a tradition of Christians who believed that humanity could enact the resurrection through science and technology. The first efforts of this sort were taken up by alchemists. Roger Bacon, a 13th-century friar who is often considered the first western scientist, tried to develop an elixir of life that would mimic the effects of the resurrection as described in Paul’s&nbsp;epistles.
+                        </p>
+                        <p>The Enlightenment failed to eradicate projects of this sort. If anything, modern science provided more varied and creative ways for Christians to envision these prophecies. In the late 19th century, a Russian Orthodox ascetic named Nikolai Fedorov was inspired by Darwinism to argue that humans could direct their own evolution to bring about the resurrection. Up to this point, natural selection had been a random phenomenon, but now, thanks to technology, humans could intervene in this process. Calling on biblical prophecies, he wrote: “This day will be divine, awesome, but not miraculous, for resurrection will be a task not of miracle but of knowledge and common&nbsp;labour.”
+                        </p>
+                        <p>This theory was carried into the 20th century by Pierre Teilhard de Chardin, a French Jesuit priest and palaeontologist who, like Fedorov, believed that evolution would lead to the Kingdom of God. In 1949, Teilhard proposed that in the future all machines would be linked to a vast global network that would allow human minds to merge. Over time, this unification of consciousness would lead to an intelligence explosion – the “Omega Point” – enabling humanity to “break through the material framework of Time and Space” and merge seamlessly with the divine. The Omega Point is an obvious precursor to Kurzweil’s Singularity, but in Teilhard’s mind, it was how the biblical resurrection would take place. Christ was guiding evolution toward a state of glorification so that humanity could finally merge with God in eternal&nbsp;perfection.
+                        </p>
+                        <p>Transhumanists have acknowledged Teilhard and Fedorov as forerunners of their movement, but the religious context of their ideas is rarely mentioned. Most histories of the movement attribute the first use of the term transhumanism to <a href="https://g.co/kgs/Bcp3H8" target="_blank">Julian Huxley</a>, the British eugenicist and close friend of Teilhard’s who, in the 1950s, expanded on many of the priest’s ideas in his own writings – with one key exception. Huxley, a secular humanist, believed that Teilhard’s visions need not be grounded in any larger religious narrative. In 1951, he gave a lecture that proposed a non-religious version of the priest’s ideas. “Such a broad philosophy,” he wrote, “might perhaps be called, not Humanism, because that has certain unsatisfactory connotations, but Transhumanism. It is the idea of humanity attempting to overcome its limitations and to arrive at fuller&nbsp;fruition.”
+                        </p>
+                        <p>The contemporary iteration of the movement arose in San Francisco in the late 1980s among a band of tech-industry people with a libertarian streak. They initially called themselves <a href="https://www.wired.com/1994/10/extropians/" target="_blank">Extropians</a> and communicated through newsletters and at annual conferences. Kurzweil was one of the first major thinkers to bring these ideas into the mainstream and legitimise them for a wider audience. His ascent in 2012 to a director of engineering position at Google, heralded, for many, a symbolic merger between transhumanist philosophy and the clout of major technological&nbsp;enterprise.
+                        </p>
+                        <p>Transhumanists today wield enormous power in Silicon Valley – entrepreneurs such as Elon Musk and Peter Thiel identify as believers – where they have founded thinktanks such as the <a href="https://su.org/about/" target="_blank">Singularity University</a> and the <a href="https://www.fhi.ox.ac.uk/about/about-fhi/" target="_blank">Future of Humanity Institute</a>. The ideas proposed by the pioneers of the movement are no longer abstract theoretical musings but are being embedded into emerging technologies at organisations such as Google, Apple, Tesla and&nbsp;SpaceX.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="god-feature-ilo">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <img src="images/001f_god/001f_god-hands.svg" width="100%" height="auto" alt="Hands" class="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="god-body">
+            <div class="container">
+                <div class="row">
+                    <div class="nine columns offset-by-one">
+                        <p><span class="drop-cap">L</span>osing faith in God in the 21<sup>st</sup> century is an anachronistic experience. You end up contending with the kinds of things the west dealt with more than a hundred years ago: materialism, the end of history, the death of the soul. When I think back on that period of my life, what I recall most viscerally is an unnamable sense of dread. There were days I woke in a panic, certain that I’d lost some essential part of myself in the fume of a blackout, and would work my fingers across my nose, my lips, my eyebrows, and my ears until I assured myself that everything was intact. My body had become strange to me; it seemed insubstantial. I went out of my way to avoid subway grates because I believed I could slip through them. One morning, on the train home from work, I became convinced that my flesh was melting into the&nbsp;seat.</p>
+                        <p>At the time, I would have insisted that my rituals of self-abuse – drinking, pills, the impulse to put my body in danger in ways I now know were deliberate – were merely efforts to escape; that I was contending, however clumsily, with the overwhelming despair at the absence of God. But at least one piece of that despair came from the knowledge that my body was no longer a sacred vessel; that it was not a temple of the holy spirit, formed in the image of God and intended to carry me into eternity; that my body was matter, and any harm I did to it was only aiding the unstoppable process of entropy for which it was&nbsp;destined.</p>
+                        <p>To confront this reality after believing otherwise is to experience perhaps the deepest sense of loss we are capable of as humans. It’s not just about coming to terms with the fact that you will die. It has something to do with suspecting that there is no difference between your human flesh and the plastic seat of the train. It has to do with the inability to watch your reflection appear and vanish in a window without coming to believe you are identical to&nbsp;it.</p>
+                        <p>What makes the transhumanist movement so seductive is that it promises to restore, through science, the transcendent hopes that science itself has obliterated. Transhumanists do not believe in the existence of a soul, but they are not strict materialists, either. Kurzweil claims he is a “patternist”, characterising consciousness as the result of biological processes, “a pattern of matter and energy that persists over time”. These patterns, which contain what we tend to think of as our identity, are currently running on physical hardware&mdash;the body&mdash;that will one day give out. But they can, at least in theory, be transferred onto supercomputers, robotic surrogates or human clones. A pattern, transhumanists would insist, is not the same as a soul. But it’s not difficult to see how it satisfies the same longing. At the very least, a pattern suggests that there is some essential core of our being that will survive and perhaps transcend the inevitable degradation of&nbsp;flesh.</p>
+                        <p>Of course, mind uploading has spurred all kinds of philosophical anxieties. If the pattern of your consciousness is transferred onto a computer, is the pattern “you” or a simulation of your mind? One camp of transhumanists have argued that true resurrection can happen only if it is bodily resurrection. They tend to favour <a href="https://g.co/kgs/J771M6" target="_blank">cryonics</a> and <a href="https://g.co/kgs/Xay6Gm" target="_blank">bionics</a>, which promise to resurrect the entire body or else supplement the living form with technologies to indefinitely extend&nbsp;life.</p>
+                        <p>It is perhaps not coincidental that an ideology that grew out of Christian eschatology would come to inherit its philosophical problems. The question of whether the resurrection would be corporeal or merely spiritual was an obsessive point of debate among early Christians. One faction, which included the Gnostic sects, argued that only the soul would survive death; another insisted that the resurrection was not a true resurrection unless it revived the&nbsp;body.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seven columns offset-by-two pull-quote" data--90-bottom-bottom="opacity: 0; transform: skew(-30deg);" data-center-center="opacity: 1; transform: skew(0);">
+                        <h2>“These patterns are currently running on physical hardware – the body – that will one day give&nbsp;out.”</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="nine columns offset-by-one">
+                        <p class="god-space-bt">Transhumanists, in their eagerness to preempt charges of dualism, tend to sound an awful lot like these early church fathers. Eric Steinhart, a “digitalist” philosopher at William Paterson University, is among the transhumanists who insist the resurrection must be physical. “Uploading does not aim to leave the flesh behind,” he writes, “on the contrary, it aims at the intensification of the flesh.” The irony is that transhumanists are arguing these questions as though they were the first to consider them. Their discussions give no indication that these debates belong to a theological tradition that stretches back to the earliest centuries of the Common&nbsp;Era.</p>
+                        <p><span class="drop-cap">W</span>hile the effects of my deconversion were often felt physically, the root causes were mostly cerebral. My doubts began in earnest during my second year at Bible school, after I read The Brothers Karamazov and entertained, for the first time, the problem of how evil could exist in a world created by a benevolent God. In our weekly dormitory prayer groups, my classmates would assure me that all Christians struggled with these questions, but the stakes in my case were higher because I was planning to become a missionary after graduation. I nodded deferentially as my friends supplied the familiar apologetics, but afterward, in the silence of my dorm room, I imagined myself evangelising a citizen of some remote country and crumbling at the moment she pointed out those theological contradictions I myself could not abide or&nbsp;explain.</p>
+                        <p>I knew other people who had left the church, and was amazed at how effortlessly they had seemed to cast off their former beliefs. Perhaps I clung to the faith because, despite my doubts, I found – and still find – the fundamental promises of Christianity beautiful, particularly the notion that human existence ultimately resolves into harmony. What I could not reconcile was the idea that an omnipotent and benevolent God could allow for so much&nbsp;suffering.</p>
+                        <p>Transhumanism offered a vision of redemption without the thorny problems of divine justice. It was an evolutionary approach to eschatology, one in which humanity took it upon itself to bring about the final glorification of the body and could not be blamed if the path to redemption was messy or inefficient. Within months of encountering Kurzweil, I became totally immersed in transhumanist philosophy. By this point, it was early December and the days had grown dark. The city was besieged by a series of early winter storms, and snow piled up on the windowsills, silencing the noise outside. I increasingly spent my afternoons at the public library, researching things like nanotechnology and brain-computer&nbsp;interfaces.</p>
+                        <p>Once, after following link after link, I came across a paper called <a href="https://www.simulation-argument.com/simulation.pdf" target="_blank">“Are You Living in a Computer Simulation?”</a> It was written by the Oxford philosopher and transhumanist Nick Bostrom, who used mathematical probability to argue that it’s “likely” that we currently reside in a Matrix-like simulation of the past created by our posthuman descendants. Most of the paper consisted of esoteric calculations, but I became rapt when Bostrom started talking about the potential for an afterlife. If we are essentially software, he noted, then after we die we might be “resurrected” in another simulation. Or we could be “promoted” by the programmers and brought to life in base reality. The theory was totally naturalistic&mdash;all of it was possible without any appeals to the supernatural&mdash;but it was essentially an argument for intelligent design. “In some ways,” Bostrom conceded, “the posthumans running a simulation are like gods in relation to the people inhabiting the&nbsp;simulation”.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seven columns pull-quote" data--90-bottom-bottom="opacity: 0; transform: skew(-30deg);" data-center-center="opacity: 1; transform: skew(0);">
+                        <h2>“Transhumanism offered a vision of redemption without the thorny problems of divine&nbsp;justice.”</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="nine columns offset-by-one">
+                        <p>One afternoon, deep in the bowels of an online forum, I discovered a link to a cache of “simulation theology” – articles written by fans of Bostrom’s theory. According to the “Argument for Virtuous Engineers”, it was reasonable to assume that our creators were benevolent because the capacity to build sophisticated technologies required “long-term stability” and “rational purposefulness”. These qualities could not be cultivated without social harmony, and social harmony could be achieved only by virtuous beings. The articles were written by software engineers, programmers and the occasional&nbsp;philosopher.</p>
+                        <p>The deeper I got into the articles, the more unhinged my thinking became. One day, it occurred to me: perhaps God was the designer and Christ his digital avatar, and the incarnation his way of entering the simulation to share tips about our collective survival as a species. Or maybe the creation of our world was a competition, a kind of video game in which each participating programmer invented one of the world religions, sent down his own prophet-avatar and received points for every new&nbsp;convert.</p>
+                        <p>By this point I’d passed beyond idle speculation. A new, more pernicious thought had come to dominate my mind: transhumanist ideas were not merely similar to theological concepts but could in fact be the events described in the Bible. It was only a short time before my obsession reached its culmination. I got out my old study Bible and began to scan the prophetic literature for signs of the cybernetic revolution. I began to wonder whether I could pray to beings outside the simulation. I had initially been drawn to transhumanism because it was grounded in science. In the end, I became consumed with the kind of referential mania and blind longing that animates all religious&nbsp;belief.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="god-feature-ilo">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <img src="images/001f_god/001f_god-desk.svg" width="100%" height="auto" alt="Figure looking at computer" class="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="god-body">
+            <div class="container">
+                <div class="row">
+                    <div class="nine columns offset-by-one">
+                        <p><span class="drop-cap">I</span>'ve since had to distance myself from prolonged meditation on these topics. People who once believed, I have been told, are prone to recidivism. Over the past decade, as transhumanism has become the premise of Hollywood blockbusters and a passable topic of small talk among people under 40, I’ve had to excuse myself from conversations, knowing that any mention of simulation theory or the <a href="https://www.wired.com/1995/06/teilhard/" target="_blank">noosphere</a> can send me spiralling down that techno-theological rabbit&nbsp;hole.
+                        </p>
+                        <p>Last spring, a friend of mine from Bible school, a fellow apostate, sent me an email with the title “robot evangelism”. “I seem to recall you being into this stuff,” he said. There was a link to an episode of The Daily Show that had aired a year ago. <a href="http://www.cc.com/video-clips/2iflzu/the-daily-show-with-jon-stewart-future-christ" target="_blank">The video</a> was a satirical report by the correspondent Jordan Klepper called “Future Christ”, in which a Florida pastor, Christopher Benek, argued that in the future, AI could be evangelised just like humans. The interview had been heavily edited, and it wasn’t really clear what Benek believed, except that robots might one day be capable of spiritual life, an idea that failed to strike me as intrinsically&nbsp;absurd.
+                        </p>
+                        <p>I Googled Benek. He had studied to be a pastor at Princeton Theological Seminary, one of the most prestigious in the country. He described himself in his bio as a “techno-theologian, futurist, ethicist, Christian Transhumanist, public speaker and writer”. He also chaired the board of something called the <a href="https://www.christiantranshumanism.org/about" target="_blank">Christian Transhumanism Association</a>. I followed a link to the organisation’s website, which included that peculiar quote from Dante: “Words cannot tell of that transhuman&nbsp;change.”
+                        </p>
+                        <p>All this seemed unlikely. Was it possible there were now Christian Transhumanists? Actual believers who thought the Kingdom of God would come about through the Singularity? I had thought I was alone in drawing these parallels between transhumanism and biblical prophecy, but the convergences seemed to have gained legitimacy from the pulpit. How long would it be before everyone noticed the symmetry of these two ideologies – before Kurzweil began quoting the Gospel of John and Bostrom was read alongside the minor&nbsp;prophets?</p>
+                        <p>A few months later, I met with Benek at a cafe across the street from his church in Fort Lauderdale. In my email to him, I’d presented my curiosity as journalistic, unable to admit – even to myself – what lay behind my desire to&nbsp;meet.</p>
+                        <p>He arrived in the same navy blazer he had worn for The Daily Show interview and appeared nervous. The Daily Show had been a disaster, he told me. He had spoken with them for an hour about the finer points of his theology, but the interview had been cut down to his two-minute spiel on robots – something he insisted he wasn’t even interested in, it was just a thought experiment he had been goaded into. “It’s not like I spend my days speculating on how to evangelise robots,” he&nbsp;said.</p>
+                        <p>I explained that I wanted to know whether transhumanist ideas were compatible with Christian eschatology. Was it possible that technology would be the avenue by which humanity achieved the resurrection and immortality? I worried that the question sounded a little deranged, but Benek appeared suddenly energised. It turned out he was writing a dissertation on precisely this&nbsp;subject.</p>
+                        <p>“Technology has a role in the process of redemption,” he said. Christians today assume the prophecies about bodily perfection and eternal life are going to be realised in heaven. But the disciples understood those prophecies as referring to things that were going to take place here on Earth. Jesus had spoken of the Kingdom of God as a terrestrial domain, albeit one in which the imperfections of earthly existence were done away with. This idea, he assured me, was not unorthodox; it was just&nbsp;old.</p>
+                        <p>I asked Benek about humility. Wasn’t it all about the fallen nature of the flesh and our tragic limitations as&nbsp;humans?</p>
+                        <p>“Sure,” he said. He paused a moment, as though debating whether to say more. Finally, he leaned in and rested his elbows on the table, his demeanour markedly pastoral, and began speaking about the transfiguration and the nature of Christ. Jesus, he reminded me, was both fully human and fully God. What was interesting, he said, was that science had actually verified the potential for matter to have two distinct natures. Superposition, a principle in quantum theory, suggests that an object can be in two places at one time. A photon could be a particle, and it could also be a wave. It could have two natures. “When Jesus tells us that if we have faith nothing will be impossible for us, I think he means that&nbsp;literally.”</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seven columns offset-by-two pull-quote" data--90-bottom-bottom="opacity: 0; transform: skew(-30deg);" data-center-center="opacity: 1; transform: skew(0);">
+                        <h2>“Was it possible that technology would be the avenue by which humanity achieved the resurrection and&nbsp;immortality?”</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="nine columns offset-by-one">
+                        <p>By this point, I had stopped taking notes. It was late afternoon, and the cafe was washed in amber light. Perhaps I was a little dehydrated, but Benek’s ideas began to make perfect sense. This was, after all, the promise implicit in the incarnation: that the body could be both human and divine, that the human form could walk on water. “Very truly I tell you,” Christ had said to his disciples, “whoever believes in me will do the works I have been doing, and they will do even greater things than these.” His earliest followers had taken this promise literally. Perhaps these prophecies had pointed to the future achievements of humanity all along, our ability to harness technology to become transhuman. Christ had spoken mostly in parables&mdash;no doubt for good reason. If a superior being had indeed come to Earth to prophesy the future to 1st-century humans, he would not have wasted time trying to explain modern computing or sketching the trajectory of Moore’s law on a scrap of papyrus. He would have said, “You will have a new body,” and “All things will be changed beyond recognition,” and “On Earth as it is in heaven.” Perhaps only now that technologies were emerging to make such prophecies a reality could we begin to understand what Christ meant about the fate of our&nbsp;species.</p>
+                        <p>I could sense my reason becoming loosened by the lure of these familiar conspiracies. Somewhere, in the pit of my stomach, it was amassing: the fevered, elemental hope that the tumult of the world was authored and intentional, that our profound confusion would one day click into clarity and the broken body would be restored. Part of me was still helpless against the pull of these&nbsp;ideas.</p>
+                        <p>It was late. The cafe had emptied and a barista was sweeping near our table. As we stood to go, I felt that our conversation was unresolved. I suppose I’d been hoping that Benek would hand me some portal back to the faith, one paved by the certitude of modern science. But if anything had become clear to me, it was my own desperation, my willingness to spring at this largely speculative ideology that offered a vestige of that first religious promise. I had disavowed Christianity, and yet I had spent the past 10 years hopelessly trying to re-create its visions by dreaming about our postbiological future – a modern pantomime of redemption. What else could lie behind this impulse but the ghost of that first&nbsp;hope?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="nine columns offset-by-one">
+                        <div class="credits">
+                            <p>
+                                Sourced from <a href="https://www.theguardian.com/technology/2017/apr/18/god-in-the-machine-my-strange-journey-into-transhumanism" target="_blank">The Guardian</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="landscapes">
+        <div class="landscapes-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="nine columns landscapes-title" data-60-top="opacity:1;" data--60-top="opacity:0">
+                        <a href="http://ana-maria-guerra.com/virtual-landscapes/" target="_blank"><h1>Virtual Landscapes</h1></a>
+                        <a href="http://ana-maria-guerra.com/about/" target="_blank"><h5>Ana Mar&iacute;a Guerra</h5></a>
+                        <p>Virtual landscapes are photographs taken without a camera. In the colour darkroom, Ana Maria Guerra captured the melting process of ice cubes using an enlarger and photographic paper. She explores the materiality of photography in its purest form using only light and a photosensitive support. Afterwards, the photographs are scanned and manipulated using 3D software. The final outcome is reminiscent of topographic maps, but they are just traces of ice cubes that no longer&nbsp;exist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="full-landscape">
+            <img src="images/001g_landscapes/001g_landcsapes1.jpg" width="100%" height="auto" alt="Virtual Landscape 1, Ana Mar&iacute;a Guerra" class="lazy">
+        </div>
+        <div class="full-landscape">
+            <img src="images/001g_landscapes/001g_landcsapes2.jpg" width="100%" height="auto" alt="Virtual Landscape 2, Ana Mar&iacute;a Guerra" class="lazy">
+        </div>
+        <div class="full-landscape">
+            <img src="images/001g_landscapes/001g_landcsapes3.jpg" width="100%" height="auto" alt="Virtual Landscape 3, Ana Mar&iacute;a Guerra" class="lazy">
+        </div>
+        <div class="full-landscape">
+            <img src="images/001g_landscapes/001g_landcsapes4.jpg" width="100%" height="auto" alt="Virtual Landscape 4, Ana Mar&iacute;a Guerra" class="lazy">
+        </div>
+        <div class="full-landscape">
+            <img src="images/001g_landscapes/001g_landcsapes5.jpg" width="100%" height="auto" alt="Virtual Landscape 5, Ana Mar&iacute;a Guerra" class="lazy">
+        </div>
+    </div>
+
+    <div id="alww">
+        <div class="alww-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="ten columns">
+                        <h1>Preserving Virtual Worlds</h1>
+                        <hr/>
+                        <h4>An excerpt from Episode 2 of <a href="http://alifewellwasted.com/2009/03/03/episode-two-gotta-catch-em-all/" target="_blank">A Life Well Wasted</a>, a podcast by <a href="https://twitter.com/robertashley" target="_blank">Robert Ashley</a> about video games and the people who love&nbsp;them.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alww-media">
+            <div class="container">
+                <div class="row">
+                    <div class="eight columns">
+                        <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/364621886&amp;color=%234ba798&amp;inverse=true&amp;auto_play=false&amp;show_user=false"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alww-content">
+            <div class="container">
+                <div class="row">
+                    <div class="six columns">
+                        <h6>Robert Ashley</h6>
+                        <p>Ah, the peaceful sounds of a top-tier private education. Stanford University is the weirdest place I’ve ever been to in the Bay Area—and I live in Berkley right next to a gnostic center that holds seminars on out-of-body experiences. I once saw a man ride a skateboard down my street in full chainmail armor.</p>
+                        <p>But what makes Stanford so weird is that the students here don’t lock up their bikes; they just prop them up on kickstands outside their classes and walk away. My guess is that some combination of elite academic atmosphere and brutal security keeps the thieves at bay. Or maybe it’s the huge green spaces that act like moats between the school and the rest of the world. What is truly strange is that within this rarified place, sharp-thinking academic types are working on ways to save video games from the ravages of&nbsp;time.</p>
+                    </div>
+                    <div class="six columns">
+                        <img src="images/001h_alww/001h_alww-bike.png" alt="Bicycle" width="100%" height="auto" class="lazy">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <img src="images/001h_alww/001h_alww-games.png" alt="A stack of Nintendo Entertainment System games" width="100%" height="auto" class="lazy">
+                    </div>
+                    <div class="six columns">
+                        <h6>Henry Lowood</h6>
+                        <p>My name is Henry Lowood, and my title is that I’m the curator for the History of Science and Technology collection at Standford and also for the film and media collections. I had a project called <a href="http://web.stanford.edu/group/htgg/cgi-bin/drupal/" target="_blank">How They Got Game</a>, which focuses on the history of digital games and simulations. We’re also doing a project that the Library of Congress is funding called <a href="https://library.stanford.edu/projects/preserving-virtual-worlds" target="_blank">Preserving Virtual Worlds</a>. In terms of practical projects, there’s basically two things: one is preservation of games. We have, for example, the <a href="https://library.stanford.edu/projects/cabrinety-nist-project" target="_blank">Cabrinety Collection</a> here. We have 2500 games, roughly,  from before the 1990s. Also, a lot of work we’re doing is on how the heck we make sure that people have access to games, and especially the multiplayer-networked games and things that happen in those games, you know, 50, 100, 200 years from now. How are we going to save that history knowing that in other media such as early film, that history was&nbsp;lost.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <h6>Robert Ashley</h6>
+                        <p>The greatest challenge for Lowood and his colleagues is in preserving games meant to be played online. These games are made out of people like soil and green. When they move on to something else, a little piece of the larger game goes with&nbsp;them.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <img src="images/001h_alww/001h_alww-ethernet.png" alt="Ethernet cord" width="100%" height="auto" class="lazy">
+                    </div>
+                    <div class="six columns">
+                        <h6>Henry Lowood</h6>
+                        <p>Thinking about preservation really highlights the difference between single-player games and multiplayer games. Where you might think of a single player game—for the purposes of preservation—a lot more like a book, in a way: in a single-player game, if we can have an executable version of that game 100 years from now, someone can play it i.e. read it, if you want to think of it that way like a book in a library. They can play it themselves, and that experience of playing it themselves is pretty valid. I mean, it is going to be different from somebody 100 years before but at least they have some experience. It’s the same with a book, by the way. If we read a book that was written 100 years ago, our experience of that book is going to different from the person who read it at the end of the 19th century. They’re going to know a lot of references we don’t know, we’re going to know what happened after, which they’re not going to know.</p>
+                        <p>With a multiplayer game, it gets very difficult. Especially if you talk about a massively multiplayer game. Let’s take <a href="https://www.youtube.com/watch?v=Q4TucXl3_cU" target="_blank">EverQuest</a> as a game: We save the software. We save the software perfectly. We break down the authentication that’s necessary, so somebody can log in. We set up a sever 100 years from now. We’ve got everything ready. You fire up your EverQuest 100 years from now, you walk in, it’s completely empty. There’s nothing to do there. You can’t play the game. There’s nothing. Yeah, you could populate it with other people in 100 years, but who would want to do that?</p>
+                        <p>We’re looking at that situation as much more like what a historian or archivist would do when faced with the problem of documenting the real world. We’re thinking in terms of events, video capture, just a lot more to save what people are doing now in those spaces. Historical events are happening in virtual spaces, it’s just beginning. I mean a thing like a political protests. Things that are events just like there are events in the real world. Some of these events have impact on the real world, like political campaigning in virtual worlds. Things like that.</p>
+                        <p>Saving the software alone is kind of a barren exercise. It won’t give you much 100 years from now. You need to document what people are doing in these spaces.</p>
+                        <img src="images/001h_alww/001h_alww-everquest.png" alt="An EverQuest character" width="100%" height="auto" style="margin-left: -110%; margin-top: -150%;" class="lazy">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <h6>Robert Ashley</h6>
+                        <p>And so Lowood and his colleagues created a video site through the Internet Archive that allows players to upload videos of events from their online world for posterity. When <a href="https://g.co/kgs/k8rysD" target="_blank">EA Land</a>, an online virtual world, closed down in August of last year Lowood sent in a student to record its final&nbsp;hours.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <img src="images/001h_alww/001h_alww-titanic.png" alt="Jack and Rose as the Titanic sinks" width="80%" height="auto" class="lazy">
+                    </div>
+                    <div class="six columns">
+                        <h6>Henry Lowood</h6>
+                        <p>What happens when a virtual world closes? What is it like to be there in the last minute, when it shuts down?</p>
+
+                        <p>You can see the video. We put the last 5 minutes up so far, but we have the full 3 hours [recorded]. And yeah, there’s people getting very emotional. There’s kind of a feel, like being on the deck of the Titanic, you know? There’s sort of this end-of-the-world kind of thing. And also, I have to say, the actual ending was not with a bang but with a whimper. It was basically a server disconnection error.</p>
+
+                        <p>And that was it.</p>
+
+                        <p>That was the end of the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alww-pixels">
+        <img src="images/001h_alww/001h_alww-pixels.jpg" alt="Dead pixels" width="100%" height="auto" class="lazy">
+        </div>
+        <div class="alww-titanic">
+            <div class="container">
+                <div class="row flex">
+                    <div class="eight columns offset-by-two">
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/IT5lLTWx0L4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="end">
+        <div class="end-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="ten columns offset-by-one">
+                        <a href="https://startupsventurecapital.com/what-ill-be-thinking-when-the-world-ends-194d5b088e58" target="_blank"><h1>What I'll Be Thinking About When the World&nbsp;Ends</h1></a>
+                        <h3>Tom Mitchell</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="end-gallery">
+            <div id="end-img-1" class="end-image">
+            </div>
+            <div id="end-img-2" class="end-image">
+            </div>
+            <div id="end-img-3" class="end-image">
+            </div>
+            <div id="end-img-4" class="end-image">
+            </div>
+            <div id="end-img-5" class="end-image">
+            </div>
+            <div id="end-img-6" class="end-image">
+            </div>
+            <div id="end-img-7" class="end-image">
+            </div>
+            <div id="end-img-8" class="end-image">
+            </div>
+            <div id="end-img-9" class="end-image">
+            </div>
+            <div id="end-img-10" class="end-image">
+            </div>
+            <div id="end-img-11" class="end-image">
+            </div>
+            <div id="end-img-12" class="end-image">
+            </div>
+            <div id="end-img-13" class="end-image">
+            </div>
+            <div class="end-text-box">
+                <div class="end-text"> <!-- 1 Joggers -->
+                    <p>I shouldn’t have given up&nbsp;smoking.<br/><br/>
+                    But I was right to never fully commit to jogging. Nobody ever looks like they’re having fun when they’re jogging. Their faces contort like they’re simultaneously constipated and terrified. Imagine what they all must be thinking now, the committed&nbsp;joggers.<br/><br/>
+                    All that jogging. And for&nbsp;nothing.<br/><br/>
+                    So&nbsp;very&nbsp;sad.<br/><br/>
+                    I never worked out the best place to put my phone. Everywhere was irritating. It’d bounce out of my&nbsp;pockets.
+                </p>
+                </div>
+                <div class="end-text"><!-- 2 Tennis -->
+                    <p>People smile when they play tennis, I’ve seen it. You get to wear cool clothes when you play tennis. All&nbsp;white.<br/><br/>
+                    Is that&nbsp;racist?<br/><br/>
+                    The nuclear missiles aren’t racist. They’re no misogynists either. They just kill everyone. They are colour and gender blind. Truly, we can learn from the missiles. And, unlike me, there’s no confusion as to their purpose. They’re designed for one thing and they do it awesomely. Beautifully,&nbsp;even.<br/><br/>
+                    That should have been me but with the&nbsp;hugs.
+                </p>
+                </div>
+                <div class="end-text"><!-- 3 Beer -->
+                    <p>No. Smiles. Hugs would be creepy. You can’t be hugging strangers. Even now, with the world about to end in fire and destruction, I’d be unable to cuddle someone unknown to me. Unless I’d been drinking. Which I&nbsp;haven’t.<br/><br/>
+                    (Maybe I’ll have a&nbsp;beer?)<br/><br/>
+                    I should have spent more of life smiling at people. Walking along.&nbsp;Smiling.</p>
+                </div>
+                <div class="end-text"><!-- 4 Smile -->
+                    <p>‘How are you?’ I’d say. ‘What a fine day!’ And I’ll show them my teeth. A big toothy&nbsp;smile.<br/><br/>
+                    But maybe not passing women. I’d asked that one woman on the tube where she’d got her whale t-shirt from that once and she gave me a look that made my everything shrivel. Smiling only made it&nbsp;worse.<br/><br/>
+                    Is grinning at women&nbsp;misogynist?<br/><br/>
+                    No. It’s the misogynists that mean I can’t even smile at women without them thinking I’m a&nbsp;creep.</p>
+                </div>
+                <div class="end-text"><!-- 5 Office -->
+                    <p>Or maybe it’s my face. It’s too round. Round faces make people think of clocks and therefore the CREEP of&nbsp;time.<br/><br/>
+                    If a woman passes in the next few seconds before the earth blows up, I’ll definitely smile at&nbsp;her.<br/><br/>
+                    On second thoughts, I won’t. It’ll look like I’m happy about the end of the world and I’m most certainly not. Although it does get me off work tomorrow. Which is a definite plus&nbsp;point.</p>
+                </div>
+                <div class="end-text"><!-- 6 Gym -->
+                    <p>I wonder if the people whose job it is to launch the missiles are happy? It’d certainly be a novel day for them. It’s good to break office routine every so&nbsp;often.<br/><br/>
+                    ‘How was work?’ their partner might&nbsp;ask.<br/><br/>
+                    ‘Well,’ they’d say, ‘You’re not going to believe this but&nbsp;…’<br/><br/>
+                    I’d always meant to work out. To join a gym. To lose enough weight and get enough muscle definition to return to my appearance when I was 24. That was peak me. I wasn’t worried about nuclear holocaust&nbsp;then.<br/><br/>
+                    And neither were the&nbsp;women.</p>
+                </div>
+                <div class="end-text"><!-- 7 Couple -->
+                    <p>I wonder where Susan is. A bunker? Or, like me, a sofa? We could have been great together. Maybe not great enough to stop all this nuclear stuff but&nbsp;great.<br/><br/>She’d never enjoyed the&nbsp;sofa.<br/><br/>Friends of friends would like social media pictures of us. She had the bluest of blue eyes. Ice pick eyes. We were cute&nbsp;together.<br/><br/>And she left me for a PE&nbsp;teacher.<br/><br/>A PE teacher! He may very well have been strong and sinewy but he’s about to get fried by a nuclear warhead like the rest of us. Yep, all that athletic ability but he can’t kick away the approaching missile, can&nbsp;he?<br/><br/>No, he&nbsp;can’t.</p>
+                </div>
+                <div class="end-text"><!-- 8 Dairy -->
+                    <p>I wish I’d drunk more full fat milk. More cream. More cheese. Should I survive, I resolve to eat more dairy. Even if I’m a zombie or a mutant or I’ve forgotten what dairy is due to the trauma of surviving a nuclear&nbsp;attack.<br/><br/>I should write CHEESE on my arm like Guy Pearce in&nbsp;Memento.<br/><br/>There’ll be bands of roaming cows, no doubt. I can just imagine. Mooing like there’s no tomorrow. Would I possess the necessary skill to create cheese from their milk? Doubtful. I don’t think I’d even be able to milk them. Do you just pull at the udder? And it comes&nbsp;out?</p>
+                </div>
+                <div class="end-text"><!-- 9 Burgers -->
+                    <p>Could I eat them? Bite them on the leg or something. Could I bring myself to do that? I’ve always been more attracted to the thought of being vegan than the actuality of not eating&nbsp;meat.<br/><br/>Burgers are great. Spicy chilli burgers: I love&nbsp;them.<br/><br/>‘He did eat some great burgers,’ they’d say about me, the&nbsp;gods.<br/><br/>It’s skills like milking cows that I should have learnt when I had the chance, before all-out&nbsp;war.</p>
+                </div>
+                <div class="end-text"><!-- 10 Portugal -->
+                    <p>And I never visited Portugal. People say it’s nice. They speak Portuguese,&nbsp;though.<br/><br/>Still, I can balance a pint glass on my elbow and catch it when flipping my arm down. In some other world, such a talent would rank me equal with elite&nbsp;sportsmen.<br/><br/>Sports-people.<br/><br/>God damn, maybe I am misogynist? Maybe I deserve to be&nbsp;annihilated?</p>
+                </div>
+                <div class="end-text"><!-- 11 Bathroom -->
+                    <p>And I haven’t flipped a pint glass off my elbow for like 14&nbsp;years.<br/><br/>I should visit the bathroom before the missiles hit. I’ve often worried about being found after death because of the release of bowels and bladder. As if being dead wasn’t embarrassing enough. It’d be my luck to come back as a ghost but only so long to watch the disgusted reaction of those who find my&nbsp;body.<br/><br/>After that, I’d fade&nbsp;away.</p>
+                </div>
+                <div class="end-text"><!-- 12 Nirvana -->
+                    <p>Never&nbsp;mind.<br/><br/>We’re all fading away now. And, I guess, we always have&nbsp;been.<br/><br/>I never did like Nirvana. Weird&nbsp;that.<br/><br/>Missiles look a lot like penises. I wonder if that’s a&nbsp;coincidence.<br/><br/>I’ll just have one last look at Twitter&nbsp;before&mdash;</p>
+                </div>
+                <div class="end-text end-last-slide"><!-- 13 That's all -->
+                    <h4>FIN.</h4>
+                </div>
+                <div class="end-buttons">
+                    <a id="end-prev">&#10094;</a>&nbsp;&nbsp;
+                    <a id="end-next">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrapped">
+        <div class="wrapped-top">
+            <!-- <div id="particles-js"></div> -->
+            <a href="http://www.wrappedshort.com/" target="_blank"><h1>Wrapped</h1></a>
+        </div>
+        <div class="wrapped-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <div class="video-wrapper">
+                            <iframe src="https://player.vimeo.com/video/161599224?color=DF8683&title=0&byline=0&portrait=0" width="940" height="529" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="back-matter">
+        <div class="hourglasses">
+            <div class="container">
+                <div class="row">
+                    <div class="ten columns">
+                        <h1>That's all<br/>for now</h1>
+                        <p>Thanks for stopping by.</p>
+                        <p>Now go get a little fresh air and give your mom a call.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-wordmark">
+            <div class="container">
+                <div class="row">
+                    <div class="four columns">
+                        <img src="images/001_qr-code.svg" alt="QR code" width="auto" height="90px" class="lazy">
+                    </div>
+                    <div class="eight columns">
+                        <img src="images/00_compile001-kiwi.svg" alt="Compile 001" width="auto" height="90px" class="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="issue-foot white-text">
+        <div class="container">
+            <div class="row">
+                <div class="eight columns">
+                    <h5>
+                        Created by Zack Labadie
+                    </h5>
+                    <h6>
+                        Questions, feedback, bad jokes: <a href="mailto:info@wtfiscompile.xyz" target="_blank">info@wtfiscompile.xyz</a>
+                    </h6>
+                </div>
+                <div class="four columns foot-icons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=wtfiscompile.xyz">
+                        <span class="icon-UI_Facebook icon"></span>
+                    </a>
+                    <a href="https://twitter.com/home?status=People.%20Tech.%20Modern%20oddities.%20Check%20out%20%23Compile,%20a%20DIY%20digital%20magazine%3A%20wtfiscompile.xyz">
+                        <span class="icon-UI_Twitter icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
