@@ -1,7 +1,3 @@
-
-
-
-
 $(document).ready(function() {
 
     // Skrollr for smooth scrolling and parallax effects
@@ -30,10 +26,18 @@ $(document).ready(function() {
     // Make it rain
     createTime();
 
+
     // // Lazy Load
     $(function() {
         $('.lazy').Lazy({
             delay: 5000
+        });
+    });
+
+
+    $('#close-mobile-warning').click(function() {
+        $('#mobile-warning').css({
+            'transform': 'scaleY(0)'
         });
     });
 
@@ -60,61 +64,61 @@ $(document).ready(function() {
     });
 
     $('#btn-1').hover(function(){
-      $('#nav-card-1').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-1').css({'top':mouseY-50, 'display':'flex'}).fadeIn('100');
     });
     $('#btn-1').mouseout(function(){
         $('#nav-card-1').fadeOut();
     });
     $('#btn-2').hover(function(){
-      $('#nav-card-2').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-2').css({'top':mouseY-50, 'display':'flex'}).fadeIn('100');
     });
     $('#btn-2').mouseout(function(){
         $('#nav-card-2').fadeOut();
     });
     $('#btn-3').hover(function(){
-      $('#nav-card-3').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-3').css({'top':mouseY-50, 'display':'flex'}).fadeIn('100');
     });
     $('#btn-3').mouseout(function(){
         $('#nav-card-3').fadeOut();
     });
     $('#btn-4').hover(function(){
-      $('#nav-card-4').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-4').css({'top':mouseY-50, 'display':'flex'}).fadeIn('100');
     });
     $('#btn-4').mouseout(function(){
         $('#nav-card-4').fadeOut();
     });
     $('#btn-5').hover(function(){
-      $('#nav-card-5').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-5').css({'top':mouseY-50, 'display':'flex'}).fadeIn('100');
     });
     $('#btn-5').mouseout(function(){
         $('#nav-card-5').fadeOut();
     });
     $('#btn-6').hover(function(){
-      $('#nav-card-6').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-6').css({'top':mouseY-50, 'display':'flex'}).fadeIn('100');
     });
     $('#btn-6').mouseout(function(){
         $('#nav-card-6').fadeOut();
     });
     $('#btn-7').hover(function(){
-      $('#nav-card-7').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-7').css({'top':mouseY-50, 'display':'flex'}).fadeIn('100');
     });
     $('#btn-7').mouseout(function(){
         $('#nav-card-7').fadeOut();
     });
     $('#btn-8').hover(function(){
-      $('#nav-card-8').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-8').css({'top':mouseY-50, 'display':'flex'}).fadeIn('100');
     });
     $('#btn-8').mouseout(function(){
         $('#nav-card-8').fadeOut();
     });
     $('#btn-9').hover(function(){
-      $('#nav-card-9').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-9').css({'top':mouseY-50, 'display':'flex'}).fadeIn('100');
     });
     $('#btn-9').mouseout(function(){
         $('#nav-card-9').fadeOut();
     });
     $('#btn-10').hover(function(){
-      $('#nav-card-10').css({'top':mouseY-50, 'display':'flex'}).fadeIn('200');
+      $('#nav-card-10').css({'top':mouseY-50, 'display':'flex'}).fadeIn('100');
     });
     $('#btn-10').mouseout(function(){
         $('#nav-card-10').fadeOut();
