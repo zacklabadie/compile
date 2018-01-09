@@ -1112,169 +1112,169 @@ a.button:visited{
     background-size: 30px;
     height: 30px;
     width: 30px;
-    left: 10px;
-    top: -15px;
+    left: -1%;
+    top: -2%;
 }
 .beach-ball.b{
     background-size: 30px;
     height: 30px;
     width: 30px;
-    left: 80px;
-    top: 20px;
+    left: -7%;
+    top: -6%;
 }
 .beach-ball.c{
     background-size: 35px;
     height: 35px;
     width: 35px;
-    left: 280px;
-    top: 35px;
+    left: 11%;
+    top: 6%;
 }
 .beach-ball.d{
     background-size: 30px;
     height: 30px;
     width: 30px;
-    left: 25px;
-    top: 110px;
+    left: 4%;
+    top: 15%;
 }
 .beach-ball.e{
     background-size: 50px;
     height: 50px;
     width: 50px;
-    left: 95px;
-    top: 160px;
+    left: 9%;
+    top: 29%;
 }
 .beach-ball.f{
     background-size: 30px;
     height: 30px;
     width: 30px;
-    left: -15px;
-    top: 220px;
+    left: -1%;
+    top: 28%;
 }
 .beach-ball.gg{
     background-size: 40px;
     height: 40px;
     width: 40px;
-    left: 60px;
-    top: 290px;
+    left: 5%;
+    top: 45%;
 }
 .beach-ball.h{
     background-size: 70px;
     height: 70px;
     width: 70px;
-    left: 180px;
-    top: 85px;
+    left: 17%;
+    top: 18%;
 }
 .beach-ball.i{
     background-size: 50px;
     height: 50px;
     width: 50px;
-    left: 240px;
-    top: 210px;
+    left: 20%;
+    top: 38%;
 }
 .beach-ball.j{
     background-size: 60px;
     height: 60px;
     width: 60px;
-    left: 285px;
-    top: 340px;
+    left: 26%;
+    top: 50%;
 }
 .beach-ball.k{
     background-size: 50px;
     height: 50px;
     width: 50px;
-    left: 185px;
-    top: 390px;
+    left: 15%;
+    bottom: 28%;
 }
 .beach-ball.l{
     background-size: 75px;
     height: 75px;
     width: 75px;
-    left: 390px;
-    top: 440px;
+    left: 43%;
+    bottom: 15%;
 }
 .beach-ball.m{
     background-size: 75px;
     height: 75px;
     width: 75px;
-    left: 390px;
-    top: 170px;
+    left: 31%;
+    top: 26%;
 }
 .beach-ball.n{
     background-size: 60px;
     height: 60px;
     width: 60px;
-    right: 320px;
-    bottom: 290px;
+    right: 29%;
+    bottom: 46%;
 }
 .beach-ball.o{
     background-size: 40px;
     height: 40px;
     width: 40px;
-    right: 380px;
-    bottom: 410px;
+    right: 40%;
+    top: 25%;
 }
 .beach-ball.p{
     background-size: 30px;
     height: 30px;
     width: 30px;
-    right: 160px;
-    bottom: 370px;
+    right: 22%;
+    top: 36%;
 }
 .beach-ball.q{
     background-size: 65px;
     height: 65px;
     width: 65px;
-    right: 210px;
-    bottom: 220px;
+    right: 14%;
+    bottom: 36%;
 }
 .beach-ball.r{
     background-size: 100px;
     height: 100px;
     width: 100px;
-    right: -50px;
-    bottom: 230px;
+    right: -2%;
+    bottom: 26%;
 }
 .beach-ball.s{
     background-size: 35px;
     height: 35px;
     width: 35px;
-    right: 500px;
-    bottom: 140px;
+    right: 42%;
+    bottom: 28%;
 }
 .beach-ball.t{
     background-size: 50px;
     height: 50px;
     width: 50px;
-    right: 620px;
-    bottom: 170px;
+    left: 35%;
+    bottom: 30%;
 }
 .beach-ball.u{
     background-size: 70px;
     height: 70px;
     width: 70px;
-    right: 570px;
-    bottom: 50px;
+    right: 38%;
+    bottom: 6%;
 }
 .beach-ball.v{
     background-size: 40px;
     height: 40px;
     width: 40px;
-    right: 460px;
-    bottom: 500px;
+    right: 30%;
+    top: 20%;
 }
 .beach-ball.w{
     background-size: 90px;
     height: 90px;
     width: 90px;
-    right: 300px;
-    bottom: 100px;
+    right: 23%;
+    bottom: 18%;
 }
 .beach-ball.x{
     background-size: 30px;
     height: 30px;
     width: 30px;
-    right: 230px;
-    bottom: 490px;
+    right: 7%;
+    top: 46%;
 }
 .beach-ball.y{
     background-size: 80px;
@@ -1287,15 +1287,15 @@ a.button:visited{
     background-size: 30px;
     height: 30px;
     width: 30px;
-    right: 590px;
-    bottom: 500px;
+    left: 46%;
+    top: 19%;
 }
 .beach-ball.aa{
     background-size: 35px;
     height: 35px;
     width: 35px;
-    left: 390px;
-    top: 70px;
+    left: 27%;
+    top: 15%;
 }
 .beach-ball.bb{
     background-size: 160px;
@@ -2736,6 +2736,16 @@ a.button:visited{
     #homepage-2019 .issue-feature .homepage-splash-wrap img{
         width: 80%;
     }
+    #homepage-2019 .future-issue h3{
+        font-size: 3em;
+    }
+    .beach-ball.j, .beach-ball.n{
+        display: none;
+    }
+    .top-splash img{
+        height: 115px;
+        width: auto;
+    }
 }
 @media (max-width: 700px){
     #mobile-warning{
@@ -2756,6 +2766,10 @@ a.button:visited{
     }
     .issue-teaser img{
         width: 60%;
+    }
+    .top-splash img{
+        height: 100px;
+        width: auto;
     }
 }
 @media (max-width: 550px){
@@ -2780,12 +2794,12 @@ a.button:visited{
     .issue-teaser h4{
         font-size: .85em;
         text-align: center;
-        padding: 0 20%;
+        padding: 0 10%;
         margin-bottom: 0;
     }
     .issue-teaser img{
-        width: 40%;
-        margin-bottom: 2em;
+        width: 50%;
+        margin-bottom: 1em;
     }
     .home-about p{
         font-size: 1.1em;
@@ -2808,6 +2822,12 @@ a.button:visited{
     }
     .home-archive h1{
         margin-bottom: 0;
+    }
+    #homepage-2019 .future-issue h3{
+        font-size: 2em;
+    }
+    #homepage-2019 .future-issue h5{
+        font-size: 1.2em;
     }
     #mobile-warning h2{
         margin-right: 15px;
