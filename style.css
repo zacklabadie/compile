@@ -2736,7 +2736,13 @@ a.button:visited{
     #homepage-2019 .issue-feature .homepage-splash-wrap img{
         width: 80%;
     }
-
+}
+@media (max-width: 700px){
+    #mobile-warning{
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+    }
 }
 @media (max-width: 600px){
     .homepage-splash-wrap img{
@@ -2750,10 +2756,6 @@ a.button:visited{
     }
     .issue-teaser img{
         width: 60%;
-    }
-    #mobile-warning{
-        -webkit-transform: scaleY(1);
-                transform: scaleY(1);
     }
 }
 @media (max-width: 550px){
